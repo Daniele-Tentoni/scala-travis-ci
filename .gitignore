@@ -1,5 +1,8 @@
 *.class
 *.log
-target/
+
 build/
+dist/
 project/
+target/
+project/plugins/project
