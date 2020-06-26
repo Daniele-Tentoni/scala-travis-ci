@@ -2,7 +2,7 @@ package org.dt
 
 object Hello {
   def printHello(name: String): String = name match {
-    case name if name.isBlank => "Hello World!"
+    case name if name.isEmpty => "Hello World!"
     case _ => "Hello " concat name
   }
 
