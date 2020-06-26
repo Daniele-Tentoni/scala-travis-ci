@@ -3,9 +3,13 @@
 
 .cache/
 .history/
+.idea/
 .lib/
 
 build/
 dist/
 target/
+
 project/plugins/project
+project/target
+project/propject
