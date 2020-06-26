@@ -7,6 +7,5 @@
 
 build/
 dist/
-project/
 target/
 project/plugins/project
