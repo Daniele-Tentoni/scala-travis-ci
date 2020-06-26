@@ -1,4 +1,5 @@
-scalaVersion := "2.13.1"
+ThisBuild / scalaVersion := "2.13.1"
 
-libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.0"
+lazy val hello = (project in file(".")).settings(name := "Hello")
+
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.0" % "test"
