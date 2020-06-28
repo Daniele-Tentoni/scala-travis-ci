@@ -1,7 +1,11 @@
 package org.ui
 
+import scalafx.Includes._
+import scalafx.beans.binding.Bindings
 import scalafx.beans.property._
 import scalafx.event.subscriptions.Subscription
+import scalafx.scene.paint.Color.{Green, Red}
+import scalafx.scene.shape.Rectangle
 
 object PropMaker {
   def makeDoubleProperty(value: Double): DoubleProperty =
@@ -28,4 +32,25 @@ object Properties extends App {
       println(s"Value of property '$name' is changing from $oldValue to $newValue")
     }
   }
+
+  val base = DoubleProperty(10)
+  val height = DoubleProperty(5)
+  val area = DoubleProperty(0)
+
+  area <== base * height / 2
+  base() = 20
+  height() = 10
+
+  val rect: Rectangle = new Rectangle{
+    fill <== when(hover) choose Green otherwise Red // Require scalafx.Includes._ imports.
+  }
+
+  // We can create a Custom Binding too
+  val a = new StringProperty()
+  val b = Bindings.createStringBinding(
+    () => Option(a()).getOrElse("").toLowerCase(),
+    a
+  )
+  a.value = "Hello"
+  println(s"Setting 'a' to ${a()}, 'b' = ${b()}")
 }

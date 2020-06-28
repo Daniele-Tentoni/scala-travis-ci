@@ -15,6 +15,7 @@ class PropertiesTests extends AnyFunSuite with BeforeAndAfterEach {
 
   /**
    * Override beforeEach from BeforeAndAfterEach for this behaviour.
+   * Doc: http://doc.scalatest.org/1.0/org/scalatest/BeforeAndAfterEach.html
    */
   override def beforeEach(): Unit = {
     super.beforeEach()
