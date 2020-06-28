@@ -24,35 +24,60 @@
           <div class="tab-pane active" id="codegrid">
             <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package org.ui
 </span>2 <span style=''>
-</span>3 <span style=''>import scalafx.beans.property._
-</span>4 <span style=''>import scalafx.event.subscriptions.Subscription
-</span>5 <span style=''>
-</span>6 <span style=''>object PropMaker {
-</span>7 <span style=''>  def makeDoubleProperty(value: Double): DoubleProperty =
-</span>8 <span style=''>    </span><span style='background: #AEF1AE'>DoubleProperty(value)</span><span style=''>
+</span>3 <span style=''>import scalafx.Includes._
+</span>4 <span style=''>import scalafx.beans.binding.Bindings
+</span>5 <span style=''>import scalafx.beans.property._
+</span>6 <span style=''>import scalafx.event.subscriptions.Subscription
+</span>7 <span style=''>import scalafx.scene.paint.Color.{Green, Red}
+</span>8 <span style=''>import scalafx.scene.shape.Rectangle
 </span>9 <span style=''>
-</span>10 <span style=''>  def addSubToProperty(prop: DoubleProperty)
-</span>11 <span style=''>                      (op: Number =&gt; Unit): Subscription =
-</span>12 <span style=''>    </span><span style='background: #AEF1AE'>prop.onChange { (_, _, newValue) =&gt;
-</span>13 <span style=''></span><span style='background: #AEF1AE'>      op.apply(newValue)
-</span>14 <span style=''></span><span style='background: #AEF1AE'>    }</span><span style=''>
-</span>15 <span style=''>}
-</span>16 <span style=''>
-</span>17 <span style=''>object Properties extends App {
-</span>18 <span style=''>  // Some types of Bindable Properties.
-</span>19 <span style=''>  val avg = </span><span style='background: #F0ADAD'>FloatProperty(0.5f)</span><span style=''>
-</span>20 <span style=''>  val cont = </span><span style='background: #F0ADAD'>IntegerProperty(0)</span><span style=''>
-</span>21 <span style=''>  val msg = </span><span style='background: #F0ADAD'>StringProperty(&quot;Nothing&quot;)</span><span style=''>
-</span>22 <span style=''>  val obj = </span><span style='background: #F0ADAD'>ObjectProperty(Properties)</span><span style=''>
-</span>23 <span style=''>
-</span>24 <span style=''>  // Possible creation of a subscription.
-</span>25 <span style=''>  val speed = </span><span style='background: #F0ADAD'>new</span><span style=''> DoubleProperty(this, &quot;speed&quot;, 55) {
-</span>26 <span style=''>    // Called when the value of the property get changed.
-</span>27 <span style=''>    </span><span style='background: #F0ADAD'>onChange { (_, oldValue, newValue) =&gt;
-</span>28 <span style=''></span><span style='background: #F0ADAD'>      println(s&quot;Value of property '$name' is changing from $oldValue to $newValue&quot;)
-</span>29 <span style=''></span><span style='background: #F0ADAD'>    }</span><span style=''>
-</span>30 <span style=''>  }
-</span>31 <span style=''>}
+</span>10 <span style=''>object PropMaker {
+</span>11 <span style=''>  def makeDoubleProperty(value: Double): DoubleProperty =
+</span>12 <span style=''>    </span><span style='background: #AEF1AE'>DoubleProperty(value)</span><span style=''>
+</span>13 <span style=''>
+</span>14 <span style=''>  def addSubToProperty(prop: DoubleProperty)
+</span>15 <span style=''>                      (op: Number =&gt; Unit): Subscription =
+</span>16 <span style=''>    </span><span style='background: #AEF1AE'>prop.onChange { (_, _, newValue) =&gt;
+</span>17 <span style=''></span><span style='background: #AEF1AE'>      op.apply(newValue)
+</span>18 <span style=''></span><span style='background: #AEF1AE'>    }</span><span style=''>
+</span>19 <span style=''>}
+</span>20 <span style=''>
+</span>21 <span style=''>object Properties extends App {
+</span>22 <span style=''>  // Some types of Bindable Properties.
+</span>23 <span style=''>  val avg = </span><span style='background: #F0ADAD'>FloatProperty(0.5f)</span><span style=''>
+</span>24 <span style=''>  val cont = </span><span style='background: #F0ADAD'>IntegerProperty(0)</span><span style=''>
+</span>25 <span style=''>  val msg = </span><span style='background: #F0ADAD'>StringProperty(&quot;Nothing&quot;)</span><span style=''>
+</span>26 <span style=''>  val obj = </span><span style='background: #F0ADAD'>ObjectProperty(Properties)</span><span style=''>
+</span>27 <span style=''>
+</span>28 <span style=''>  // Possible creation of a subscription.
+</span>29 <span style=''>  val speed = </span><span style='background: #F0ADAD'>new</span><span style=''> DoubleProperty(this, &quot;speed&quot;, 55) {
+</span>30 <span style=''>    // Called when the value of the property get changed.
+</span>31 <span style=''>    </span><span style='background: #F0ADAD'>onChange { (_, oldValue, newValue) =&gt;
+</span>32 <span style=''></span><span style='background: #F0ADAD'>      println(s&quot;Value of property '$name' is changing from $oldValue to $newValue&quot;)
+</span>33 <span style=''></span><span style='background: #F0ADAD'>    }</span><span style=''>
+</span>34 <span style=''>  }
+</span>35 <span style=''>
+</span>36 <span style=''>  val base = </span><span style='background: #F0ADAD'>DoubleProperty(10)</span><span style=''>
+</span>37 <span style=''>  val height = </span><span style='background: #F0ADAD'>DoubleProperty(5)</span><span style=''>
+</span>38 <span style=''>  val area = </span><span style='background: #F0ADAD'>DoubleProperty(0)</span><span style=''>
+</span>39 <span style=''>
+</span>40 <span style=''>  </span><span style='background: #F0ADAD'>area &lt;== base * height / 2</span><span style=''>
+</span>41 <span style=''>  </span><span style='background: #F0ADAD'>base() = 20</span><span style=''>
+</span>42 <span style=''>  </span><span style='background: #F0ADAD'>height() = 10</span><span style=''>
+</span>43 <span style=''>
+</span>44 <span style=''>  val rect: Rectangle = </span><span style='background: #F0ADAD'>new</span><span style=''> Rectangle{
+</span>45 <span style=''>    </span><span style='background: #F0ADAD'>fill &lt;== when(hover) choose Green otherwise Red</span><span style=''> // Require scalafx.Includes._ imports.
+</span>46 <span style=''>  }
+</span>47 <span style=''>
+</span>48 <span style=''>  // We can create a Custom Binding too
+</span>49 <span style=''>  val a = </span><span style='background: #F0ADAD'>new StringProperty()</span><span style=''>
+</span>50 <span style=''>  val b = </span><span style='background: #F0ADAD'>Bindings.createStringBinding(
+</span>51 <span style=''></span><span style='background: #F0ADAD'>    () =&gt; Option(a()).getOrElse(&quot;&quot;).toLowerCase(),
+</span>52 <span style=''></span><span style='background: #F0ADAD'>    a
+</span>53 <span style=''></span><span style='background: #F0ADAD'>  )</span><span style=''>
+</span>54 <span style=''>  </span><span style='background: #F0ADAD'>a.value = &quot;Hello&quot;</span><span style=''>
+</span>55 <span style=''>  </span><span style='background: #F0ADAD'>println(s&quot;Setting 'a' to ${a()}, 'b' = ${b()}&quot;)</span><span style=''>
+</span>56 <span style=''>}
 </span></pre>
           </div>
           <div class="tab-pane" id="statementlist">
@@ -66,15 +91,15 @@
         <th>Code</th>
       </tr><tr>
         <td>
-          8
+          12
         </td>
         <td>
           7
         </td>
         <td>
-          178
+          325
           -
-          199
+          346
         </td>
         <td>
           Apply
@@ -87,15 +112,15 @@
         </td>
       </tr><tr>
         <td>
-          12
+          16
         </td>
         <td>
           9
         </td>
         <td>
-          309
+          456
           -
-          375
+          522
         </td>
         <td>
           Apply
@@ -108,15 +133,15 @@
         </td>
       </tr><tr>
         <td>
-          13
+          17
         </td>
         <td>
           8
         </td>
         <td>
-          351
+          498
           -
-          369
+          516
         </td>
         <td>
           Apply
@@ -129,15 +154,15 @@
         </td>
       </tr><tr>
         <td>
-          19
+          23
         </td>
         <td>
           10
         </td>
         <td>
-          463
+          610
           -
-          482
+          629
         </td>
         <td>
           Apply
@@ -150,15 +175,15 @@
         </td>
       </tr><tr>
         <td>
-          20
+          24
         </td>
         <td>
           11
         </td>
         <td>
-          496
+          643
           -
-          514
+          661
         </td>
         <td>
           Apply
@@ -171,15 +196,15 @@
         </td>
       </tr><tr>
         <td>
-          21
+          25
         </td>
         <td>
           12
         </td>
         <td>
-          527
+          674
           -
-          552
+          699
         </td>
         <td>
           Apply
@@ -192,15 +217,15 @@
         </td>
       </tr><tr>
         <td>
-          22
+          26
         </td>
         <td>
           13
         </td>
         <td>
-          565
+          712
           -
-          591
+          738
         </td>
         <td>
           Apply
@@ -213,15 +238,15 @@
         </td>
       </tr><tr>
         <td>
-          25
+          29
         </td>
         <td>
           22
         </td>
         <td>
-          649
+          796
           -
-          652
+          799
         </td>
         <td>
           Apply
@@ -234,15 +259,15 @@
         </td>
       </tr><tr>
         <td>
-          27
+          31
         </td>
         <td>
           21
         </td>
         <td>
-          751
+          898
           -
-          878
+          1025
         </td>
         <td>
           Apply
@@ -255,15 +280,15 @@
         </td>
       </tr><tr>
         <td>
-          28
+          32
         </td>
         <td>
           17
         </td>
         <td>
-          870
+          1017
           -
-          871
+          1018
         </td>
         <td>
           Literal
@@ -276,15 +301,15 @@
         </td>
       </tr><tr>
         <td>
-          28
+          32
         </td>
         <td>
           20
         </td>
         <td>
-          795
+          942
           -
-          872
+          1019
         </td>
         <td>
           Apply
@@ -297,15 +322,15 @@
         </td>
       </tr><tr>
         <td>
-          28
+          32
         </td>
         <td>
           14
         </td>
         <td>
-          805
+          952
           -
-          825
+          972
         </td>
         <td>
           Literal
@@ -318,15 +343,15 @@
         </td>
       </tr><tr>
         <td>
-          28
+          32
         </td>
         <td>
           16
         </td>
         <td>
-          857
+          1004
           -
-          862
+          1009
         </td>
         <td>
           Literal
@@ -339,15 +364,15 @@
         </td>
       </tr><tr>
         <td>
-          28
+          32
         </td>
         <td>
           19
         </td>
         <td>
-          803
+          950
           -
-          871
+          1018
         </td>
         <td>
           Apply
@@ -360,15 +385,15 @@
         </td>
       </tr><tr>
         <td>
-          28
+          32
         </td>
         <td>
           18
         </td>
         <td>
-          825
+          972
           -
-          829
+          976
         </td>
         <td>
           Select
@@ -381,15 +406,15 @@
         </td>
       </tr><tr>
         <td>
-          28
+          32
         </td>
         <td>
           15
         </td>
         <td>
-          829
+          976
           -
-          849
+          996
         </td>
         <td>
           Literal
@@ -399,6 +424,615 @@
         </td>
         <td style="background: #F0ADAD">
           &quot;\' is changing from &quot;
+        </td>
+      </tr><tr>
+        <td>
+          36
+        </td>
+        <td>
+          23
+        </td>
+        <td>
+          1044
+          -
+          1062
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.DoubleProperty.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.beans.property.DoubleProperty.apply(10.0)
+        </td>
+      </tr><tr>
+        <td>
+          37
+        </td>
+        <td>
+          24
+        </td>
+        <td>
+          1078
+          -
+          1095
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.DoubleProperty.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.beans.property.DoubleProperty.apply(5.0)
+        </td>
+      </tr><tr>
+        <td>
+          38
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          1109
+          -
+          1126
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.DoubleProperty.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.beans.property.DoubleProperty.apply(0.0)
+        </td>
+      </tr><tr>
+        <td>
+          40
+        </td>
+        <td>
+          26
+        </td>
+        <td>
+          1139
+          -
+          1156
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.binding.NumberExpression./
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.base.*(property.this.DoubleProperty.sfxDoubleProperty2jfx(Properties.this.height))./(2)
+        </td>
+      </tr><tr>
+        <td>
+          40
+        </td>
+        <td>
+          28
+        </td>
+        <td>
+          1130
+          -
+          1156
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.Property.&lt;==
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.area.&lt;==(binding.this.NumberBinding.sfxNumberBinding2jfx(Properties.this.base.*(property.this.DoubleProperty.sfxDoubleProperty2jfx(Properties.this.height))./(2)))
+        </td>
+      </tr><tr>
+        <td>
+          40
+        </td>
+        <td>
+          27
+        </td>
+        <td>
+          1139
+          -
+          1156
+        </td>
+        <td>
+          ApplyImplicitView
+        </td>
+        <td>
+          scalafx.beans.binding.NumberBinding.sfxNumberBinding2jfx
+        </td>
+        <td style="background: #F0ADAD">
+          binding.this.NumberBinding.sfxNumberBinding2jfx(Properties.this.base.*(property.this.DoubleProperty.sfxDoubleProperty2jfx(Properties.this.height))./(2))
+        </td>
+      </tr><tr>
+        <td>
+          41
+        </td>
+        <td>
+          29
+        </td>
+        <td>
+          1159
+          -
+          1170
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.Property.update
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.base.update(20.0)
+        </td>
+      </tr><tr>
+        <td>
+          42
+        </td>
+        <td>
+          30
+        </td>
+        <td>
+          1173
+          -
+          1186
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.Property.update
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.height.update(10.0)
+        </td>
+      </tr><tr>
+        <td>
+          44
+        </td>
+        <td>
+          38
+        </td>
+        <td>
+          1212
+          -
+          1215
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.ui.Properties.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          32
+        </td>
+        <td>
+          1245
+          -
+          1250
+        </td>
+        <td>
+          ApplyImplicitView
+        </td>
+        <td>
+          scalafx.beans.property.ReadOnlyBooleanProperty.sfxReadOnlyBooleanProperty2jfx
+        </td>
+        <td style="background: #F0ADAD">
+          property.this.ReadOnlyBooleanProperty.sfxReadOnlyBooleanProperty2jfx($anon.this.hover)
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          35
+        </td>
+        <td>
+          1275
+          -
+          1278
+        </td>
+        <td>
+          ApplyImplicitView
+        </td>
+        <td>
+          scalafx.scene.paint.Color.sfxColor2jfx
+        </td>
+        <td style="background: #F0ADAD">
+          paint.this.Color.sfxColor2jfx(scalafx.scene.paint.Color.Red)
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          31
+        </td>
+        <td>
+          1245
+          -
+          1250
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.Node.hover
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.hover
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          34
+        </td>
+        <td>
+          1275
+          -
+          1278
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.Color.Red
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.scene.paint.Color.Red
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          37
+        </td>
+        <td>
+          1231
+          -
+          1278
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.Property.&lt;==
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.fill.&lt;==(scalafx.Includes.when(property.this.ReadOnlyBooleanProperty.sfxReadOnlyBooleanProperty2jfx($anon.this.hover)).choose[javafx.scene.paint.Color](scalafx.scene.paint.Color.Green).otherwise(paint.this.Color.sfxColor2jfx(scalafx.scene.paint.Color.Red)))
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          36
+        </td>
+        <td>
+          1240
+          -
+          1278
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.binding.Bindings.ObjectConditionBuilder.otherwise
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.Includes.when(property.this.ReadOnlyBooleanProperty.sfxReadOnlyBooleanProperty2jfx($anon.this.hover)).choose[javafx.scene.paint.Color](scalafx.scene.paint.Color.Green).otherwise(paint.this.Color.sfxColor2jfx(scalafx.scene.paint.Color.Red))
+        </td>
+      </tr><tr>
+        <td>
+          45
+        </td>
+        <td>
+          33
+        </td>
+        <td>
+          1259
+          -
+          1264
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.Color.Green
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.scene.paint.Color.Green
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          40
+        </td>
+        <td>
+          1373
+          -
+          1393
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.StringProperty.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scalafx.beans.property.StringProperty(property.this.StringProperty.&lt;init&gt;$default$1)
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          39
+        </td>
+        <td>
+          1373
+          -
+          1373
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.beans.property.StringProperty.&lt;init&gt;$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          property.this.StringProperty.&lt;init&gt;$default$1
+        </td>
+      </tr><tr>
+        <td>
+          50
+        </td>
+        <td>
+          43
+        </td>
+        <td>
+          1404
+          -
+          1494
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.binding.Bindings.createStringBinding
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.beans.binding.Bindings.createStringBinding((() =&gt; scala.Option.apply[String](Properties.this.a.apply()).getOrElse[String](&quot;&quot;).toLowerCase()), Properties.this.a)
+        </td>
+      </tr><tr>
+        <td>
+          51
+        </td>
+        <td>
+          41
+        </td>
+        <td>
+          1444
+          -
+          1483
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.toLowerCase
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Option.apply[String](Properties.this.a.apply()).getOrElse[String](&quot;&quot;).toLowerCase()
+        </td>
+      </tr><tr>
+        <td>
+          52
+        </td>
+        <td>
+          42
+        </td>
+        <td>
+          1489
+          -
+          1490
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          org.ui.Properties.a
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.a
+        </td>
+      </tr><tr>
+        <td>
+          54
+        </td>
+        <td>
+          44
+        </td>
+        <td>
+          1497
+          -
+          1514
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.StringProperty.value_=
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.a.value_=(&quot;Hello&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          55
+        </td>
+        <td>
+          50
+        </td>
+        <td>
+          1525
+          -
+          1563
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.StringContext.s
+        </td>
+        <td style="background: #F0ADAD">
+          scala.StringContext.apply(&quot;Setting \'a\' to &quot;, &quot;, \'b\' = &quot;, &quot;&quot;).s(Properties.this.a.apply(), Properties.this.b.apply())
+        </td>
+      </tr><tr>
+        <td>
+          55
+        </td>
+        <td>
+          47
+        </td>
+        <td>
+          1562
+          -
+          1563
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;&quot;
+        </td>
+      </tr><tr>
+        <td>
+          55
+        </td>
+        <td>
+          46
+        </td>
+        <td>
+          1548
+          -
+          1557
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;, \'b\' = &quot;
+        </td>
+      </tr><tr>
+        <td>
+          55
+        </td>
+        <td>
+          49
+        </td>
+        <td>
+          1558
+          -
+          1561
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.value.ObservableValue.apply
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.b.apply()
+        </td>
+      </tr><tr>
+        <td>
+          55
+        </td>
+        <td>
+          45
+        </td>
+        <td>
+          1527
+          -
+          1543
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Setting \'a\' to &quot;
+        </td>
+      </tr><tr>
+        <td>
+          55
+        </td>
+        <td>
+          48
+        </td>
+        <td>
+          1544
+          -
+          1547
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.value.ObservableValue.apply
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.a.apply()
+        </td>
+      </tr><tr>
+        <td>
+          55
+        </td>
+        <td>
+          51
+        </td>
+        <td>
+          1517
+          -
+          1564
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(scala.StringContext.apply(&quot;Setting \'a\' to &quot;, &quot;, \'b\' = &quot;, &quot;&quot;).s(Properties.this.a.apply(), Properties.this.b.apply()))
         </td>
       </tr>
     </table>
