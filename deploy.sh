@@ -1,3 +1,5 @@
+# Copy public files and fastOpt.
+
 if [ ! -d "public" ]; then
 	mkdir public
 fi
@@ -11,3 +13,11 @@ fi
 sbt fastOptJS
 
 cp target/scala-*/*.js public/js/
+
+# Copy the coverage reports.
+
+if [ ! -d "scoverage-report"]; then
+  mkdir scoverage-report
+fi
+
+cp target/scoverage-report/*.html scoverage-report/
