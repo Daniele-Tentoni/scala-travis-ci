@@ -1161,10 +1161,21 @@ $c_Lorg_dt_Main$.prototype.init___ = (function() {
   return this
 });
 $c_Lorg_dt_Main$.prototype.main__AT__V = (function(args) {
-  $m_Lscoverage_Invoker$().invoked__I__T__V(7, "/home/travis/build/Daniele-Tentoni/scala-travis-ci/target/scala-2.12/scoverage-data");
+  $m_Lscoverage_Invoker$().invoked__I__T__V(13, "/home/travis/build/Daniele-Tentoni/scala-travis-ci/target/scala-2.12/scoverage-data");
+  this.appendPar__Lorg_scalajs_dom_raw_Node__T__V(($m_Lscoverage_Invoker$().invoked__I__T__V(11, "/home/travis/build/Daniele-Tentoni/scala-travis-ci/target/scala-2.12/scoverage-data"), $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().body), ($m_Lscoverage_Invoker$().invoked__I__T__V(12, "/home/travis/build/Daniele-Tentoni/scala-travis-ci/target/scala-2.12/scoverage-data"), "Hello World"));
+  $m_Lscoverage_Invoker$().invoked__I__T__V(14, "/home/travis/build/Daniele-Tentoni/scala-travis-ci/target/scala-2.12/scoverage-data");
   var this$2 = $m_s_Console$();
   var this$3 = $as_Ljava_io_PrintStream(this$2.outVar$2.v$1);
   this$3.java$lang$JSConsoleBasedPrintStream$$printString__T__V("Hello world!\n")
+});
+$c_Lorg_dt_Main$.prototype.appendPar__Lorg_scalajs_dom_raw_Node__T__V = (function(targetNode, text) {
+  $m_Lscoverage_Invoker$().invoked__I__T__V(7, "/home/travis/build/Daniele-Tentoni/scala-travis-ci/target/scala-2.12/scoverage-data");
+  var parNode = $m_Lorg_scalajs_dom_package$().document__Lorg_scalajs_dom_raw_HTMLDocument().createElement("p");
+  $m_Lscoverage_Invoker$().invoked__I__T__V(8, "/home/travis/build/Daniele-Tentoni/scala-travis-ci/target/scala-2.12/scoverage-data");
+  parNode.textContent = text;
+  $m_Lscoverage_Invoker$().invoked__I__T__V(9, "/home/travis/build/Daniele-Tentoni/scala-travis-ci/target/scala-2.12/scoverage-data");
+  targetNode.appendChild(parNode);
+  $m_Lscoverage_Invoker$().invoked__I__T__V(10, "/home/travis/build/Daniele-Tentoni/scala-travis-ci/target/scala-2.12/scoverage-data")
 });
 var $d_Lorg_dt_Main$ = new $TypeData().initClass({
   Lorg_dt_Main$: 0
@@ -1179,6 +1190,83 @@ function $m_Lorg_dt_Main$() {
     $n_Lorg_dt_Main$ = new $c_Lorg_dt_Main$().init___()
   };
   return $n_Lorg_dt_Main$
+}
+/** @constructor */
+function $c_Lorg_scalajs_dom_package$() {
+  $c_O.call(this);
+  this.ApplicationCache$1 = null;
+  this.Blob$1 = null;
+  this.BlobPropertyBag$1 = null;
+  this.DOMException$1 = null;
+  this.Event$1 = null;
+  this.EventException$1 = null;
+  this.EventSource$1 = null;
+  this.FileReader$1 = null;
+  this.FormData$1 = null;
+  this.KeyboardEvent$1 = null;
+  this.MediaError$1 = null;
+  this.MutationObserverInit$1 = null;
+  this.Node$1 = null;
+  this.NodeFilter$1 = null;
+  this.PerformanceNavigation$1 = null;
+  this.PositionError$1 = null;
+  this.Range$1 = null;
+  this.TextEvent$1 = null;
+  this.TextTrack$1 = null;
+  this.URL$1 = null;
+  this.VisibilityState$1 = null;
+  this.WebSocket$1 = null;
+  this.WheelEvent$1 = null;
+  this.XMLHttpRequest$1 = null;
+  this.XPathResult$1 = null;
+  this.window$1 = null;
+  this.document$1 = null;
+  this.console$1 = null;
+  this.bitmap$0$1 = 0
+}
+$c_Lorg_scalajs_dom_package$.prototype = new $h_O();
+$c_Lorg_scalajs_dom_package$.prototype.constructor = $c_Lorg_scalajs_dom_package$;
+/** @constructor */
+function $h_Lorg_scalajs_dom_package$() {
+  /*<skip>*/
+}
+$h_Lorg_scalajs_dom_package$.prototype = $c_Lorg_scalajs_dom_package$.prototype;
+$c_Lorg_scalajs_dom_package$.prototype.init___ = (function() {
+  return this
+});
+$c_Lorg_scalajs_dom_package$.prototype.document__Lorg_scalajs_dom_raw_HTMLDocument = (function() {
+  return (((67108864 & this.bitmap$0$1) === 0) ? this.document$lzycompute__p1__Lorg_scalajs_dom_raw_HTMLDocument() : this.document$1)
+});
+$c_Lorg_scalajs_dom_package$.prototype.window__Lorg_scalajs_dom_raw_Window = (function() {
+  return (((33554432 & this.bitmap$0$1) === 0) ? this.window$lzycompute__p1__Lorg_scalajs_dom_raw_Window() : this.window$1)
+});
+$c_Lorg_scalajs_dom_package$.prototype.window$lzycompute__p1__Lorg_scalajs_dom_raw_Window = (function() {
+  if (((33554432 & this.bitmap$0$1) === 0)) {
+    this.window$1 = $g.window;
+    this.bitmap$0$1 = (33554432 | this.bitmap$0$1)
+  };
+  return this.window$1
+});
+$c_Lorg_scalajs_dom_package$.prototype.document$lzycompute__p1__Lorg_scalajs_dom_raw_HTMLDocument = (function() {
+  if (((67108864 & this.bitmap$0$1) === 0)) {
+    this.document$1 = this.window__Lorg_scalajs_dom_raw_Window().document;
+    this.bitmap$0$1 = (67108864 | this.bitmap$0$1)
+  };
+  return this.document$1
+});
+var $d_Lorg_scalajs_dom_package$ = new $TypeData().initClass({
+  Lorg_scalajs_dom_package$: 0
+}, false, "org.scalajs.dom.package$", {
+  Lorg_scalajs_dom_package$: 1,
+  O: 1
+});
+$c_Lorg_scalajs_dom_package$.prototype.$classData = $d_Lorg_scalajs_dom_package$;
+var $n_Lorg_scalajs_dom_package$ = (void 0);
+function $m_Lorg_scalajs_dom_package$() {
+  if ((!$n_Lorg_scalajs_dom_package$)) {
+    $n_Lorg_scalajs_dom_package$ = new $c_Lorg_scalajs_dom_package$().init___()
+  };
+  return $n_Lorg_scalajs_dom_package$
 }
 /** @constructor */
 function $c_Lscalajssupport_File() {
