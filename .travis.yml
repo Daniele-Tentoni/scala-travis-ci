@@ -4,7 +4,7 @@ dist: xenial
 
 language: scala
 
-jdk: openjdk8
+jdk: openjdk11
 
 scala:
   - 2.12.10 # scala version
