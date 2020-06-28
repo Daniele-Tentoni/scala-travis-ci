@@ -1,0 +1,80 @@
+<scoverage 
+statement-count="14" statements-invoked="0" statement-rate="0.00" branch-rate="0.00" version="1.0" timestamp="1593336791791">
+    <packages>
+        <package name="org.dt" statement-count="14" statements-invoked="0" statement-rate="0.00">
+            <classes>
+                <class 
+                name="org.dt.Hello" filename="org/dt/Hello.scala" statement-count="6" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="org.dt/Hello/printHello" statement-count="3" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="org.dt" class="Hello" class-type="Object" full-class-name="org.dt.Hello" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="printHello" start="118" end="132" line="5" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt" class="Hello" class-type="Object" full-class-name="org.dt.Hello" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="printHello" start="102" end="114" line="5" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt" class="Hello" class-type="Object" full-class-name="org.dt.Hello" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="printHello" start="147" end="167" line="6" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="org.dt/Hello/sumPairs" statement-count="3" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="org.dt" class="Hello" class-type="Object" full-class-name="org.dt.Hello" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="sumPairs" start="259" end="264" line="10" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt" class="Hello" class-type="Object" full-class-name="org.dt.Hello" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="sumPairs" start="245" end="255" line="10" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt" class="Hello" class-type="Object" full-class-name="org.dt.Hello" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="sumPairs" start="279" end="284" line="11" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="org.dt.Main" filename="org/dt/Hello.scala" statement-count="8" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="org.dt/Main/appendPar" statement-count="4" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="org.dt" class="Main" class-type="Object" full-class-name="org.dt.Main" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="appendPar" start="474" end="500" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt" class="Main" class-type="Object" full-class-name="org.dt.Main" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="appendPar" start="442" end="469" line="20" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt" class="Main" class-type="Object" full-class-name="org.dt.Main" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="appendPar" start="527" end="527" line="22" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt" class="Main" class-type="Object" full-class-name="org.dt.Main" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="appendPar" start="505" end="536" line="22" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method name="org.dt/Main/main" statement-count="4" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="org.dt" class="Main" class-type="Object" full-class-name="org.dt.Main" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="main" start="598" end="611" line="26" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt" class="Main" class-type="Object" full-class-name="org.dt.Main" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="main" start="632" end="655" line="27" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt" class="Main" class-type="Object" full-class-name="org.dt.Main" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="main" start="588" end="627" line="26" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt" class="Main" class-type="Object" full-class-name="org.dt.Main" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="main" start="613" end="626" line="26" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+                        </method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+    </packages>
+</scoverage>
