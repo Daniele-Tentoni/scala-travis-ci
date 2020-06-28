@@ -12,6 +12,11 @@ You may wish compile this project using sbt. You can get that from `apt` with:
 sudo apt install sbt
 ```
 
+If you have modified `build.sbt` file, reload it with:
+```bash
+sbt reload
+```
+
 You can run the compilation by executing the command
 ```bash
 sbt clean compile
