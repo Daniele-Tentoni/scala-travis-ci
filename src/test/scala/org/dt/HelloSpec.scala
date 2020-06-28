@@ -8,7 +8,7 @@ class HelloSpec extends AnyFunSuite {
   }
 
   test("Print hello print world") {
-    assert(Hello.printHello("").equals("Hell World!"))
+    assert(Hello.printHello("").equals("Hello World!"))
   }
 
   test("Print hello say hello!") {
