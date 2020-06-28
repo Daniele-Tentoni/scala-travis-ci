@@ -11,7 +11,6 @@ if [ ! -d "public/js" ]; then
 fi
 
 # Removed Scala.js, we'll use ScalaFX instead.
-
 # sbt fastOptJS
 
 # cp -r target/scala-*/*.js* public/js/

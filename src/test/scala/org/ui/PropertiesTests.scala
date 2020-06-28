@@ -19,7 +19,6 @@ class PropertiesTests extends AnyFunSuite with BeforeAndAfterEach {
   override def beforeEach(): Unit = {
     super.beforeEach()
     resetProp()
-    println("Before Each")
   }
 
   def resetProp(): Unit = prop = PropMaker.makeDoubleProperty(12)

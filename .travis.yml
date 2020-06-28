@@ -1,22 +1,24 @@
+# Info about vm.
 os: linux
-
 dist: xenial
-
 language: scala
-
-jdk: openjdk11
-
+jdk:
+  - openjdk11 # Java version. Add other Java versions under this.
 scala:
-  - 2.12.10 # scala version
+  - 2.12.10 # Scala version. Add other Scala versions under this.
 
 branches:
   only:
-    - master # build master branch only
+    - master # build master branch only.
 
+# We've enabled by default coverage functionality.
 script:
-  - sbt compile coverage test coverageReport
-  - bash deploy.sh # generate static files
+  - sbt compile
+  - sbt test
+  - sbt coverageReport
+  - bash deploy.sh # generate static files.
 
+# Deploy to GitHub some infos.
 deploy:
   provider: pages
   skip-cleanup: true
