@@ -16,6 +16,8 @@ cp target/scala-*/*.js public/js/
 
 # Copy the coverage reports.
 
+ls -l
+
 if [ ! -d "scoverage-report"]; then
   mkdir scoverage-report
 fi
