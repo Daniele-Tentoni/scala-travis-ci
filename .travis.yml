@@ -14,6 +14,7 @@ branches:
     - master # build master branch only
 
 script:
+  - sbt clean compile coverage test coverageReport
   - bash deploy.sh # generate static files
 
 deploy:
