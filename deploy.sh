@@ -12,7 +12,7 @@ fi
 
 sbt fastOptJS
 
-cp target/scala-*/*.js public/js/
+cp target/scala-*/*.js* public/js/
 
 # Copy the coverage reports.
 
@@ -22,4 +22,4 @@ if [ ! -d "public/scoverage-report" ]; then
   mkdir public/scoverage-report
 fi
 
-cp target/scala-*/scoverage-report/*.html public/scoverage-report/
+cp target/scala-*/scoverage-report/* public/scoverage-report/
