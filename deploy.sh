@@ -18,8 +18,8 @@ cp target/scala-*/*.js public/js/
 
 ls -l
 
-if [ ! -d "scoverage-report" ]; then
-  mkdir scoverage-report
+if [ ! -d "public/scoverage-report" ]; then
+  mkdir public/scoverage-report
 fi
 
-cp target/scala-*/scoverage-report/*.html scoverage-report/
+cp target/scala-*/scoverage-report/*.html public/scoverage-report/
