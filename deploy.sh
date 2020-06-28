@@ -10,9 +10,11 @@ if [ ! -d "public/js" ]; then
 	mkdir public/js
 fi
 
-sbt fastOptJS
+# Removed Scala.js, we'll use ScalaFX instead.
 
-cp -r target/scala-*/*.js* public/js/
+# sbt fastOptJS
+
+# cp -r target/scala-*/*.js* public/js/
 
 # Copy the coverage reports.
 
