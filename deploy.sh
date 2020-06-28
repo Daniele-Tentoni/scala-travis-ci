@@ -20,4 +20,4 @@ if [ ! -d "scoverage-report"]; then
   mkdir scoverage-report
 fi
 
-cp target/scoverage-report/*.html scoverage-report/
+cp target/scala-*/scoverage-report/*.html scoverage-report/
