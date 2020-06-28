@@ -15,7 +15,6 @@ class PropertiesTests extends AnyFunSuite{
   var message = "Nothing"
   var subscription: Subscription = PropMaker.addSubToProperty(prop)(num => {
     message = s"Property changed value to $num"
-    println(message)
   })
 
   test("Subscription to property") {
