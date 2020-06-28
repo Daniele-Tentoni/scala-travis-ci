@@ -1,0 +1,558 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          org/dt/ui/Properties.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package org.dt.ui
+</span>2 <span style=''>
+</span>3 <span style=''>import scalafx.beans.property.{BooleanProperty, DoubleProperty, FloatProperty, IntegerProperty, ObjectProperty, StringProperty}
+</span>4 <span style=''>
+</span>5 <span style=''>object Properties extends App{
+</span>6 <span style=''>  // Some types of Bindable Properties.
+</span>7 <span style=''>  val avg = </span><span style='background: #F0ADAD'>FloatProperty(0.5f)</span><span style=''>
+</span>8 <span style=''>  val cont = </span><span style='background: #F0ADAD'>IntegerProperty(0)</span><span style=''>
+</span>9 <span style=''>  val msg = </span><span style='background: #F0ADAD'>StringProperty(&quot;Nothing&quot;)</span><span style=''>
+</span>10 <span style=''>  val obj = </span><span style='background: #F0ADAD'>ObjectProperty(Properties)</span><span style=''>
+</span>11 <span style=''>  val speed = </span><span style='background: #F0ADAD'>new</span><span style=''> DoubleProperty(this, &quot;speed&quot;, 55) {
+</span>12 <span style=''>    // Called when the value of the property get changed.
+</span>13 <span style=''>    </span><span style='background: #F0ADAD'>onChange{ (_, oldValue, newValue) =&gt;
+</span>14 <span style=''></span><span style='background: #F0ADAD'>      println(s&quot;Value of property '$name' is changing from $oldValue to $newValue&quot;)
+</span>15 <span style=''></span><span style='background: #F0ADAD'>    }</span><span style=''>
+</span>16 <span style=''>  }
+</span>17 <span style=''>
+</span>18 <span style=''>  </span><span style='background: #F0ADAD'>speed() = 60</span><span style=''>
+</span>19 <span style=''>  </span><span style='background: #F0ADAD'>speed() = 70</span><span style=''>
+</span>20 <span style=''>  </span><span style='background: #F0ADAD'>speed.value = 75</span><span style=''>
+</span>21 <span style=''>
+</span>22 <span style=''>  // Can remove subscriptions.
+</span>23 <span style=''>  val prop = </span><span style='background: #F0ADAD'>BooleanProperty(false)</span><span style=''>
+</span>24 <span style=''>
+</span>25 <span style=''>  val subscription = </span><span style='background: #F0ADAD'>prop.onChange { (_, _, newValue) =&gt;
+</span>26 <span style=''></span><span style='background: #F0ADAD'>    println(s&quot;Property changed value to $newValue&quot;)
+</span>27 <span style=''></span><span style='background: #F0ADAD'>  }</span><span style=''>
+</span>28 <span style=''>
+</span>29 <span style=''>  </span><span style='background: #F0ADAD'>prop.value = true</span><span style=''> // Property changed value to true.
+</span>30 <span style=''>  </span><span style='background: #F0ADAD'>subscription.cancel()</span><span style=''>
+</span>31 <span style=''>
+</span>32 <span style=''>  // Listener will not be notified about this change.
+</span>33 <span style=''>  </span><span style='background: #F0ADAD'>prop.value = false</span><span style=''>
+</span>34 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          7
+        </td>
+        <td>
+          7
+        </td>
+        <td>
+          231
+          -
+          250
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.FloatProperty.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.beans.property.FloatProperty.apply(0.5)
+        </td>
+      </tr><tr>
+        <td>
+          8
+        </td>
+        <td>
+          8
+        </td>
+        <td>
+          264
+          -
+          282
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.IntegerProperty.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.beans.property.IntegerProperty.apply(0)
+        </td>
+      </tr><tr>
+        <td>
+          9
+        </td>
+        <td>
+          9
+        </td>
+        <td>
+          295
+          -
+          320
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.StringProperty.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.beans.property.StringProperty.apply(&quot;Nothing&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          10
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          333
+          -
+          359
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.ObjectProperty.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.beans.property.ObjectProperty.apply[org.dt.ui.Properties.type](Properties)
+        </td>
+      </tr><tr>
+        <td>
+          11
+        </td>
+        <td>
+          19
+        </td>
+        <td>
+          374
+          -
+          377
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          org.dt.ui.Properties.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          18
+        </td>
+        <td>
+          476
+          -
+          602
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.value.ObservableValue.onChange
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.onChange[Number](((x$1: scalafx.beans.value.ObservableValue[Double,Number], oldValue: Number, newValue: Number) =&gt; scala.Predef.println(scala.StringContext.apply(&quot;Value of property \'&quot;, &quot;\' is changing from &quot;, &quot; to &quot;, &quot;&quot;).s($anon.this.name, oldValue, newValue))))
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          17
+        </td>
+        <td>
+          519
+          -
+          596
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(scala.StringContext.apply(&quot;Value of property \'&quot;, &quot;\' is changing from &quot;, &quot; to &quot;, &quot;&quot;).s($anon.this.name, oldValue, newValue))
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          529
+          -
+          549
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Value of property \'&quot;
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          14
+        </td>
+        <td>
+          594
+          -
+          595
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;&quot;
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          13
+        </td>
+        <td>
+          581
+          -
+          586
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot; to &quot;
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          16
+        </td>
+        <td>
+          527
+          -
+          595
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.StringContext.s
+        </td>
+        <td style="background: #F0ADAD">
+          scala.StringContext.apply(&quot;Value of property \'&quot;, &quot;\' is changing from &quot;, &quot; to &quot;, &quot;&quot;).s($anon.this.name, oldValue, newValue)
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          12
+        </td>
+        <td>
+          553
+          -
+          573
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;\' is changing from &quot;
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          15
+        </td>
+        <td>
+          549
+          -
+          553
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.beans.property.ReadOnlyProperty.name
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.name
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          20
+        </td>
+        <td>
+          610
+          -
+          622
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.Property.update
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.speed.update(60.0)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          21
+        </td>
+        <td>
+          625
+          -
+          637
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.Property.update
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.speed.update(70.0)
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          22
+        </td>
+        <td>
+          640
+          -
+          656
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.DoubleProperty.value_=
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.speed.value_=(75.0)
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          23
+        </td>
+        <td>
+          702
+          -
+          724
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.BooleanProperty.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.beans.property.BooleanProperty.apply(false)
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          26
+        </td>
+        <td>
+          747
+          -
+          838
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.value.ObservableValue.onChange
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.prop.onChange[Boolean](((x$2: scalafx.beans.value.ObservableValue[Boolean,Boolean], x$3: Boolean, newValue: Boolean) =&gt; scala.Predef.println(scala.StringContext.apply(&quot;Property changed value to &quot;, &quot;&quot;).s(newValue))))
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          25
+        </td>
+        <td>
+          787
+          -
+          834
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(scala.StringContext.apply(&quot;Property changed value to &quot;, &quot;&quot;).s(newValue))
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          24
+        </td>
+        <td>
+          795
+          -
+          833
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.StringContext.s
+        </td>
+        <td style="background: #F0ADAD">
+          scala.StringContext.apply(&quot;Property changed value to &quot;, &quot;&quot;).s(newValue)
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          27
+        </td>
+        <td>
+          842
+          -
+          859
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.BooleanProperty.value_=
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.prop.value_=(true)
+        </td>
+      </tr><tr>
+        <td>
+          30
+        </td>
+        <td>
+          28
+        </td>
+        <td>
+          897
+          -
+          918
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.event.subscriptions.Subscription.cancel
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.subscription.cancel()
+        </td>
+      </tr><tr>
+        <td>
+          33
+        </td>
+        <td>
+          29
+        </td>
+        <td>
+          976
+          -
+          994
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.beans.property.BooleanProperty.value_=
+        </td>
+        <td style="background: #F0ADAD">
+          Properties.this.prop.value_=(false)
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

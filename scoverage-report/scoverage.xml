@@ -1,7 +1,7 @@
 <scoverage 
-statement-count="53" statements-invoked="6" statement-rate="11.32" branch-rate="100.00" version="1.0" timestamp="1593343259040">
+statement-count="76" statements-invoked="6" statement-rate="7.89" branch-rate="100.00" version="1.0" timestamp="1593344260916">
     <packages>
-        <package name="org.dt" statement-count="53" statements-invoked="6" statement-rate="11.32">
+        <package name="org.dt" statement-count="6" statements-invoked="6" statement-rate="100.00">
             <classes>
                 <class 
                 name="org.dt.Hello" filename="org/dt/Hello.scala" statement-count="6" statements-invoked="6" statement-rate="100.00" branch-rate="100.00">
@@ -36,152 +36,235 @@ statement-count="53" statements-invoked="6" statement-rate="11.32" branch-rate="
 </method>
                     </methods>
 </class>
+            </classes>
+        </package>
+        <package name="org.dt.ui" statement-count="70" statements-invoked="0" statement-rate="0.00">
+            <classes>
                 <class 
-                name="org.dt.ScalaFXSample" filename="org/dt/Hello.scala" statement-count="47" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                name="org.dt.ui.Properties" filename="org/dt/ui/Properties.scala" statement-count="23" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
                     <methods>
                         <method 
-                        name="org.dt/ScalaFXSample/&lt;none&gt;" statement-count="47" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                        name="org.dt.ui/Properties/&lt;none&gt;" statement-count="23" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
                             <statements>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="951" end="1057" line="36" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Object" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="702" end="724" line="23" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="730" end="733" line="28" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="519" end="596" line="14" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1183" end="1183" line="44" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Object" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="264" end="282" line="8" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1372" end="1383" line="50" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Object" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="747" end="838" line="25" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="661" end="1465" line="26" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="529" end="549" line="14" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1017" end="1043" line="38" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Object" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="976" end="994" line="33" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="755" end="760" line="29" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="610" end="622" line="18" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1183" end="1183" line="44" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="594" end="595" line="14" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1299" end="1425" line="48" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="581" end="586" line="14" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1104" end="1121" line="42" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="640" end="656" line="20" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="796" end="816" line="31" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="527" end="595" line="14" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="825" end="1447" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Object" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="231" end="250" line="7" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1255" end="1259" line="46" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Object" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="787" end="834" line="26" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1176" end="1286" line="44" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Object" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="333" end="359" line="10" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="951" end="951" line="36" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Object" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="897" end="918" line="30" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="992" end="993" line="37" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="374" end="377" line="11" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="836" end="1447" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Object" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="842" end="859" line="29" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="767" end="1455" line="30" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Object" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="295" end="320" line="9" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1339" end="1357" line="49" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="476" end="602" line="13" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="902" end="931" line="35" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="625" end="637" line="19" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1249" end="1272" line="46" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="553" end="573" line="14" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="951" end="951" line="36" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Class" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="549" end="553" line="14" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1034" end="1042" line="38" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="Properties" class-type="Object" full-class-name="org.dt.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/Properties.scala" method="&lt;none&gt;" start="795" end="833" line="26" branch="false" invocation-count="0" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="org.dt.ui.ScalaFXSample" filename="org/dt/ui/ScalaFXSample.scala" statement-count="47" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                    <methods>
+                        <method 
+                        name="org.dt.ui/ScalaFXSample/&lt;none&gt;" statement-count="47" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
+                            <statements>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="786" end="789" line="29" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="692" end="717" line="27" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="888" end="888" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="669" end="672" line="26" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="839" end="868" line="31" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1308" end="1311" line="48" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="453" end="465" line="17" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="851" end="854" line="33" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="656" end="656" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1183" end="1183" line="44" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1052" end="1062" line="37" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="806" end="816" line="31" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="966" end="976" line="34" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1183" end="1286" line="44" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="579" end="594" line="22" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="951" end="951" line="36" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="656" end="656" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1224" end="1225" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="482" end="485" line="18" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1081" end="1084" line="41" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="427" end="1166" line="16" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1134" end="1163" line="43" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="888" end="888" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1183" end="1183" line="44" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="649" end="762" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="951" end="951" line="36" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="728" end="737" line="26" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="748" end="760" line="29" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1103" end="1116" line="39" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="951" end="951" line="36" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="656" end="762" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="777" end="780" line="30" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="435" end="438" line="16" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="874" end="889" line="34" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1077" end="1088" line="38" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1261" end="1271" line="46" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="888" end="888" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1347" end="1357" line="49" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1004" end="1130" line="36" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1023" end="1032" line="38" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="888" end="888" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1398" end="1411" line="51" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="722" end="748" line="26" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="722" end="1461" line="28" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="809" end="826" line="30" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="1183" end="1183" line="44" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="366" end="1170" line="14" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.dt" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/Hello.scala" method="&lt;none&gt;" start="944" end="1057" line="36" branch="false" invocation-count="0" ignored="false">
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="460" end="465" line="17" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="530" end="1152" line="20" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="960" end="964" line="34" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="656" end="656" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="501" end="521" line="19" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="881" end="991" line="32" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="697" end="698" line="25" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="888" end="991" line="32" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="541" end="1152" line="20" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1044" end="1062" line="37" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="656" end="656" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="954" end="977" line="34" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="472" end="1160" line="18" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="607" end="636" line="23" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="556" end="559" line="21" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="888" end="888" line="32" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="374" end="377" line="14" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="397" end="422" line="15" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="739" end="747" line="26" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1013" end="1016" line="36" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="656" end="656" line="24" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="929" end="930" line="33" branch="false" invocation-count="0" ignored="false">
+</statement>
+                                <statement 
+                                package="org.dt.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.dt.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/dt/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="511" end="521" line="19" branch="false" invocation-count="0" ignored="false">
 </statement>
                             </statements>
 </method>
