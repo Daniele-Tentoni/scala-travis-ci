@@ -26,31 +26,15 @@
 </span>2 <span style=''>
 </span>3 <span style=''>object Hello {
 </span>4 <span style=''>  def printHello(name: String): String = name match {
-</span>5 <span style=''>    case name if </span><span style='background: #F0ADAD'>name.isEmpty</span><span style=''> =&gt; </span><span style='background: #F0ADAD'>&quot;Hello World!&quot;</span><span style=''>
-</span>6 <span style=''>    case _ =&gt; </span><span style='background: #F0ADAD'>&quot;Hello &quot; concat name</span><span style=''>
+</span>5 <span style=''>    case name if </span><span style='background: #AEF1AE'>name.isEmpty</span><span style=''> =&gt; </span><span style='background: #AEF1AE'>&quot;Hello World!&quot;</span><span style=''>
+</span>6 <span style=''>    case _ =&gt; </span><span style='background: #AEF1AE'>&quot;Hello &quot; concat name</span><span style=''>
 </span>7 <span style=''>  }
 </span>8 <span style=''>
 </span>9 <span style=''>  def sumPairs(x: Int, y: Int): Int = (x, y) match {
-</span>10 <span style=''>    case (x, y) if </span><span style='background: #F0ADAD'>x % 2 == 0</span><span style=''> =&gt; </span><span style='background: #F0ADAD'>x + y</span><span style=''>
-</span>11 <span style=''>    case _ =&gt; </span><span style='background: #F0ADAD'>x - y</span><span style=''>
+</span>10 <span style=''>    case (x, y) if </span><span style='background: #AEF1AE'>x % 2 == 0</span><span style=''> =&gt; </span><span style='background: #AEF1AE'>x + y</span><span style=''>
+</span>11 <span style=''>    case _ =&gt; </span><span style='background: #AEF1AE'>x - y</span><span style=''>
 </span>12 <span style=''>  }
 </span>13 <span style=''>}
-</span>14 <span style=''>
-</span>15 <span style=''>import org.scalajs.dom
-</span>16 <span style=''>import org.scalajs.dom.document
-</span>17 <span style=''>
-</span>18 <span style=''>object Main {
-</span>19 <span style=''>  def appendPar(targetNode: dom.Node, text: String): Unit = {
-</span>20 <span style=''>    val parNode = </span><span style='background: #F0ADAD'>document.createElement(&quot;p&quot;)</span><span style=''>
-</span>21 <span style=''>    </span><span style='background: #F0ADAD'>parNode.textContent = text</span><span style=''>
-</span>22 <span style=''>    </span><span style='background: #F0ADAD'>targetNode.appendChild(parNode)</span><span style=''>
-</span>23 <span style=''>  }
-</span>24 <span style=''>
-</span>25 <span style=''>  def main(args: Array[String]): Unit = {
-</span>26 <span style=''>    </span><span style='background: #F0ADAD'>appendPar(document.body, &quot;Hello World&quot;)</span><span style=''>
-</span>27 <span style=''>    </span><span style='background: #F0ADAD'>println(&quot;Hello world!&quot;)</span><span style=''>
-</span>28 <span style=''>  }
-</span>29 <span style=''>}
 </span></pre>
           </div>
           <div class="tab-pane" id="statementlist">
@@ -80,7 +64,7 @@
         <td>
           &lt;nosymbol&gt;
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           &quot;Hello World!&quot;
         </td>
       </tr><tr>
@@ -101,7 +85,7 @@
         <td>
           java.lang.String.isEmpty
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           name.isEmpty()
         </td>
       </tr><tr>
@@ -122,7 +106,7 @@
         <td>
           java.lang.String.concat
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           &quot;Hello &quot;.concat(name)
         </td>
       </tr><tr>
@@ -143,7 +127,7 @@
         <td>
           scala.Int.+
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           x.+(y)
         </td>
       </tr><tr>
@@ -164,7 +148,7 @@
         <td>
           scala.Int.==
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           x.%(2).==(0)
         </td>
       </tr><tr>
@@ -185,176 +169,8 @@
         <td>
           scala.Int.-
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           x.-(y)
-        </td>
-      </tr><tr>
-        <td>
-          20
-        </td>
-        <td>
-          7
-        </td>
-        <td>
-          442
-          -
-          469
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          org.scalajs.dom.raw.Document.createElement
-        </td>
-        <td style="background: #F0ADAD">
-          org.scalajs.dom.`package`.document.createElement(&quot;p&quot;)
-        </td>
-      </tr><tr>
-        <td>
-          21
-        </td>
-        <td>
-          8
-        </td>
-        <td>
-          474
-          -
-          500
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          org.scalajs.dom.raw.Node.textContent_=
-        </td>
-        <td style="background: #F0ADAD">
-          parNode.textContent_=(text)
-        </td>
-      </tr><tr>
-        <td>
-          22
-        </td>
-        <td>
-          10
-        </td>
-        <td>
-          527
-          -
-          527
-        </td>
-        <td>
-          Literal
-        </td>
-        <td>
-          &lt;nosymbol&gt;
-        </td>
-        <td style="background: #F0ADAD">
-          ()
-        </td>
-      </tr><tr>
-        <td>
-          22
-        </td>
-        <td>
-          9
-        </td>
-        <td>
-          505
-          -
-          536
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          org.scalajs.dom.raw.Node.appendChild
-        </td>
-        <td style="background: #F0ADAD">
-          targetNode.appendChild(parNode)
-        </td>
-      </tr><tr>
-        <td>
-          26
-        </td>
-        <td>
-          11
-        </td>
-        <td>
-          598
-          -
-          611
-        </td>
-        <td>
-          Select
-        </td>
-        <td>
-          org.scalajs.dom.raw.HTMLDocument.body
-        </td>
-        <td style="background: #F0ADAD">
-          org.scalajs.dom.`package`.document.body
-        </td>
-      </tr><tr>
-        <td>
-          26
-        </td>
-        <td>
-          13
-        </td>
-        <td>
-          588
-          -
-          627
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          org.dt.Main.appendPar
-        </td>
-        <td style="background: #F0ADAD">
-          Main.this.appendPar(org.scalajs.dom.`package`.document.body, &quot;Hello World&quot;)
-        </td>
-      </tr><tr>
-        <td>
-          26
-        </td>
-        <td>
-          12
-        </td>
-        <td>
-          613
-          -
-          626
-        </td>
-        <td>
-          Literal
-        </td>
-        <td>
-          &lt;nosymbol&gt;
-        </td>
-        <td style="background: #F0ADAD">
-          &quot;Hello World&quot;
-        </td>
-      </tr><tr>
-        <td>
-          27
-        </td>
-        <td>
-          14
-        </td>
-        <td>
-          632
-          -
-          655
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          scala.Predef.println
-        </td>
-        <td style="background: #F0ADAD">
-          scala.Predef.println(&quot;Hello world!&quot;)
         </td>
       </tr>
     </table>
