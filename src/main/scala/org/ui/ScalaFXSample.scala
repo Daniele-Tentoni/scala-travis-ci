@@ -1,4 +1,4 @@
-package org.dt.ui
+package org.ui
 
 import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
@@ -6,8 +6,8 @@ import scalafx.geometry.Insets
 import scalafx.scene.Scene
 import scalafx.scene.effect.DropShadow
 import scalafx.scene.layout.HBox
-import scalafx.scene.paint._
-import scalafx.scene.paint.Color._
+import scalafx.scene.paint.Color.{Black, Cyan, DodgerBlue, PaleGreen, SeaGreen}
+import scalafx.scene.paint.{LinearGradient, Stops}
 import scalafx.scene.text.Text
 
 object ScalaFXSample extends JFXApp {
