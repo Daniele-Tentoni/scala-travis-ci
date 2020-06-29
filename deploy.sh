@@ -1,34 +1,38 @@
-# Copy public files and fastOpt.
-
+# Create necessary folders.
 if [ ! -d "public" ]; then
 	mkdir public
 fi
-
-cp -fr source/* public/
 
 if [ ! -d "public/js" ]; then
 	mkdir public/js
 fi
 
-# Removed Scala.js, we'll use ScalaFX instead.
-# sbt fastOptJS
-
-# cp -r target/scala-*/*.js* public/js/
-
-# Copy the coverage reports.
-
-ls -l
-
 if [ ! -d "public/scoverage-report" ]; then
   mkdir public/scoverage-report
 fi
-
-cp -r target/scala-*/scoverage-report/* public/scoverage-report/
-
-# Copy the docs files
 
 if [ ! -d "public/docs" ]; then
   mkdir public/docs
 fi
 
+# Copy the coverage reports.
+
+ls -l
+
+# Execute sbt scripts for test, coverage and doc.
+sbt compile test coverageReport doc
+
+# Removed Scala.js, we'll use ScalaFX instead.
+# sbt fastOptJS
+
+# Copy static html files.
+cp -fr source/* public/
+
+# Copy Scala.js files.
+# cp -r target/scala-*/*.js* public/js/
+
+# Copy scoverage report html files.
+cp -r target/scala-*/scoverage-report/* public/scoverage-report/
+
+# Copy scaladoc html files.
 cp -r target/scala-*/api/* public/docs/

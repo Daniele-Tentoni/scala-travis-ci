@@ -13,10 +13,6 @@ branches:
 
 # We've enabled by default coverage functionality.
 script:
-  - sbt compile
-  - sbt test
-  - sbt coverageReport
-  - sbt doc
   - bash deploy.sh # generate static files.
 
 # Deploy to GitHub some infos.
