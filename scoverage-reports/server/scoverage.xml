@@ -1,0 +1,22 @@
+<scoverage 
+statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00" version="1.0" timestamp="1593442246245">
+    <packages>
+        <package name="it.parttimeteam" statement-count="1" statements-invoked="1" statement-rate="100.00">
+            <classes>
+                <class 
+                name="it.parttimeteam.ConstantProducer" filename="it/parttimeteam/ConstantProducer.scala" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="it.parttimeteam/ConstantProducer/get" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="it.parttimeteam" class="ConstantProducer" class-type="Class" full-class-name="it.parttimeteam.ConstantProducer" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/it/parttimeteam/ConstantProducer.scala" method="get" start="124" end="128" line="4" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
+    </packages>
+</scoverage>
