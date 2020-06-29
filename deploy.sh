@@ -8,7 +8,7 @@ if [ ! -d "public/js" ]; then
 fi
 
 if [ ! -d "public/scoverage-report" ]; then
-  mkdir public/scoverage-report
+  mkdir public/scoverage-reports
   if [ ! -d "public/scoverage-reports/client" ]; then
     mkdir public/scoverage-reports/client
   fi
