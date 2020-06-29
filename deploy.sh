@@ -24,3 +24,11 @@ if [ ! -d "public/scoverage-report" ]; then
 fi
 
 cp -r target/scala-*/scoverage-report/* public/scoverage-report/
+
+# Copy the docs files
+
+if [ ! -d "public/docs" ]; then
+  mkdir public/docs
+fi
+
+cp -r target/scala-*/api/* public/docs/
