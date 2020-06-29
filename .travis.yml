@@ -15,6 +15,18 @@ branches:
 script:
   - bash deploy.sh # generate static files.
 
+notifications:
+  email:
+    - recipients:
+      - d.tentoni@wedoit.io
+      - daniele.tentoni2@studio.unibo.it
+      - l.giorgetti@wedoit.io
+      - luca.giorgetti@studio.unibo.it
+      - lorenzo.pagnini@studio.unibo.it
+      - daniele.tentoni.1996@gmail.com
+    on_success: change
+    on_failure: always
+
 # Deploy to GitHub some infos.
 deploy:
   provider: pages

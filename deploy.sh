@@ -9,10 +9,22 @@ fi
 
 if [ ! -d "public/scoverage-report" ]; then
   mkdir public/scoverage-report
+  if [ ! -d "public/scoverage-reports/client" ]; then
+    mkdir public/scoverage-reports/client
+  fi
+  if [ ! -d "public/scoverage-reports/server" ]; then
+    mkdir public/scoverage-reports/server
+  fi
 fi
 
-if [ ! -d "public/docs" ]; then
-  mkdir public/docs
+if [ ! -d "public/api" ]; then
+  mkdir public/api
+  if [ ! -d "public/api/client" ]; then
+    mkdir public/api/client
+  fi
+  if [ ! -d "public/api/server" ]; then
+    mkdir public/api/server
+  fi
 fi
 
 # Copy the coverage reports.
@@ -33,6 +45,10 @@ cp -fr source/* public/
 
 # Copy scoverage report html files.
 cp -r target/scala-*/scoverage-report/* public/scoverage-report/
+cp -r client/target/scala-*/scoverage-report/* public/scoverage-reports/client
+cp -r server/target/scala-*/scoverage-report/* public/scoverage-reports/server
 
 # Copy scaladoc html files.
 cp -r target/scala-*/api/* public/docs/
+cp -r client/target/scala-*/api/* public/api/client
+cp -r server/target/scala-*/api/* public/api/server
