@@ -19,7 +19,7 @@ script:
 # Send notifications to those address.
 notifications:
   email:
-    - recipients:
+    recipients:
       - d.tentoni@wedoit.io
       - daniele.tentoni2@studio.unibo.it
       - l.giorgetti@wedoit.io
