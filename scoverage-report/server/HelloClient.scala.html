@@ -2,7 +2,7 @@
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title id="title">
-          org/dt/Hello.scala.html
+          server/HelloClient.scala.html
         </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
         $(document).ready(function() {$(".tablesorter").tablesorter();});
@@ -22,35 +22,14 @@
         </ul>
         <div class="tab-content">
           <div class="tab-pane active" id="codegrid">
-            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package org.dt
+            <pre style='font-size: 12pt; font-family: courier;'>1 <span style=''>package server
 </span>2 <span style=''>
-</span>3 <span style=''>/**
-</span>4 <span style=''> * Provide some useful functions for testing.
-</span>5 <span style=''> */
-</span>6 <span style=''>object Hello {
-</span>7 <span style=''>  /**
-</span>8 <span style=''>   * Print an Hello to someone.
-</span>9 <span style=''>   *
-</span>10 <span style=''>   * @param name Name to hello.
-</span>11 <span style=''>   * @return Hello to him.
-</span>12 <span style=''>   */
-</span>13 <span style=''>  def printHello(name: String): String = name match {
-</span>14 <span style=''>    case name if </span><span style='background: #F0ADAD'>name.isEmpty</span><span style=''> =&gt; </span><span style='background: #F0ADAD'>&quot;Hello World!&quot;</span><span style=''>
-</span>15 <span style=''>    case _ =&gt; </span><span style='background: #F0ADAD'>&quot;Hello &quot; concat name</span><span style=''>
-</span>16 <span style=''>  }
-</span>17 <span style=''>
-</span>18 <span style=''>  /**
-</span>19 <span style=''>   * Sum pair numbers ot not.
-</span>20 <span style=''>   *
-</span>21 <span style=''>   * @param x First number.
-</span>22 <span style=''>   * @param y Second number.
-</span>23 <span style=''>   * @return Thre result of the op.
-</span>24 <span style=''>   */
-</span>25 <span style=''>  def sumPairs(x: Int, y: Int): Int = (x, y) match {
-</span>26 <span style=''>    case (x, y) if </span><span style='background: #F0ADAD'>x % 2 == 0</span><span style=''> =&gt; </span><span style='background: #F0ADAD'>x + y</span><span style=''>
-</span>27 <span style=''>    case _ =&gt; </span><span style='background: #F0ADAD'>x - y</span><span style=''>
-</span>28 <span style=''>  }
-</span>29 <span style=''>}
+</span>3 <span style=''>object HelloClient {
+</span>4 <span style=''>  def printGoodbye(name: String, times: Int): String = times match {
+</span>5 <span style=''>    case times if </span><span style='background: #F0ADAD'>times &gt; 0</span><span style=''> =&gt; </span><span style='background: #F0ADAD'>&quot;Goodbye &quot; + printGoodbye(name, times - 1)</span><span style=''>
+</span>6 <span style=''>    case _ =&gt; </span><span style='background: #F0ADAD'>name + &quot; server.&quot;</span><span style=''>
+</span>7 <span style=''>  }
+</span>8 <span style=''>}
 </span></pre>
           </div>
           <div class="tab-pane" id="statementlist">
@@ -64,120 +43,36 @@
         <th>Code</th>
       </tr><tr>
         <td>
-          14
+          5
         </td>
         <td>
-          8
+          227
         </td>
         <td>
-          280
+          124
           -
-          294
-        </td>
-        <td>
-          Literal
-        </td>
-        <td>
-          &lt;nosymbol&gt;
-        </td>
-        <td style="background: #F0ADAD">
-          &quot;Hello World!&quot;
-        </td>
-      </tr><tr>
-        <td>
-          14
-        </td>
-        <td>
-          7
-        </td>
-        <td>
-          264
-          -
-          276
+          133
         </td>
         <td>
           Apply
         </td>
         <td>
-          java.lang.String.isEmpty
+          scala.Int.&gt;
         </td>
         <td style="background: #F0ADAD">
-          name.isEmpty()
+          times.&gt;(0)
         </td>
       </tr><tr>
         <td>
-          15
+          5
         </td>
         <td>
-          9
+          229
         </td>
         <td>
-          309
+          169
           -
-          329
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          java.lang.String.concat
-        </td>
-        <td style="background: #F0ADAD">
-          &quot;Hello &quot;.concat(name)
-        </td>
-      </tr><tr>
-        <td>
-          26
-        </td>
-        <td>
-          11
-        </td>
-        <td>
-          561
-          -
-          566
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          scala.Int.+
-        </td>
-        <td style="background: #F0ADAD">
-          x.+(y)
-        </td>
-      </tr><tr>
-        <td>
-          26
-        </td>
-        <td>
-          10
-        </td>
-        <td>
-          547
-          -
-          557
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          scala.Int.==
-        </td>
-        <td style="background: #F0ADAD">
-          x.%(2).==(0)
-        </td>
-      </tr><tr>
-        <td>
-          27
-        </td>
-        <td>
-          12
-        </td>
-        <td>
-          581
-          -
-          586
+          178
         </td>
         <td>
           Apply
@@ -186,7 +81,91 @@
           scala.Int.-
         </td>
         <td style="background: #F0ADAD">
-          x.-(y)
+          times.-(1)
+        </td>
+      </tr><tr>
+        <td>
+          5
+        </td>
+        <td>
+          228
+        </td>
+        <td>
+          137
+          -
+          147
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Goodbye &quot;
+        </td>
+      </tr><tr>
+        <td>
+          5
+        </td>
+        <td>
+          231
+        </td>
+        <td>
+          137
+          -
+          179
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.+
+        </td>
+        <td style="background: #F0ADAD">
+          &quot;Goodbye &quot;.+(HelloClient.this.printGoodbye(name, times.-(1)))
+        </td>
+      </tr><tr>
+        <td>
+          5
+        </td>
+        <td>
+          230
+        </td>
+        <td>
+          150
+          -
+          179
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          server.HelloClient.printGoodbye
+        </td>
+        <td style="background: #F0ADAD">
+          HelloClient.this.printGoodbye(name, times.-(1))
+        </td>
+      </tr><tr>
+        <td>
+          6
+        </td>
+        <td>
+          232
+        </td>
+        <td>
+          194
+          -
+          211
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.+
+        </td>
+        <td style="background: #F0ADAD">
+          name.+(&quot; server.&quot;)
         </td>
       </tr>
     </table>
