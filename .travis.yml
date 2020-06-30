@@ -16,7 +16,8 @@ jdk:
   - openjdk11 # Java version. Add other Java versions under this.
   
 scala:
-  - 2.12.10 # Scala version. Add other Scala versions under this.
+  - 2.12.11 # Scala version. Add other Scala versions under this.
+  - 2.13.3
 
 # Trigger build only on master branch.
 branches:
@@ -28,17 +29,17 @@ script:
   - bash deploy.sh # generate static files.
 
 # Send notifications to those address.
-notifications:
-  email:
-    recipients:
-      - d.tentoni@wedoit.io
-      - daniele.tentoni2@studio.unibo.it
-      - l.giorgetti@wedoit.io
-      - luca.giorgetti@studio.unibo.it
-      - lorenzo.pagnini@studio.unibo.it
-      - daniele.tentoni.1996@gmail.com
-    on_success: change
-    on_failure: always
+# notifications:
+#   email:
+#     recipients:
+#       - d.tentoni@wedoit.io
+#       - daniele.tentoni2@studio.unibo.it
+#       - l.giorgetti@wedoit.io
+#       - luca.giorgetti@studio.unibo.it
+#       - lorenzo.pagnini@studio.unibo.it
+#       - daniele.tentoni.1996@gmail.com
+#     on_success: change
+#     on_failure: always
 
 # Deploy to GitHub some infos.
 deploy:
