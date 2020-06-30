@@ -6,8 +6,6 @@ os:
   - osx
   - windows
 
-dist: xenial
-
 jdk:
   - oraclejdk8
   - oraclejdk11
@@ -28,6 +26,11 @@ jobs:
       jdk:
         - oraclejdk8
       os: linux
+    - os: osx
+      jdk:
+        - oraclejdk8
+    - os: windows
+      language: scala
    # - jdk:
    #     - oraclejdk8
    #   os: osx
@@ -63,6 +66,8 @@ deploy:
   - provider: releases
     skip_cleanup: true
     token: $GH_TOKEN
+    file_glob: true
+    file: client/target/scala-*/*SNAPSHOT.jar
     on:
       branch: master
       tags: true
