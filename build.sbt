@@ -1,7 +1,7 @@
 // Version of Scala used by the project
 // scalaVersion := "2.12.10"
 name := "scala-travis-ci"
-scalaVersion in ThisBuild := "2.12.10"
+scalaVersion in ThisBuild := "2.12.11"
 organization in ThisBuild := "it.parttimeteam.scalatravisci"
 
 // Project version
