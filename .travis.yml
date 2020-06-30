@@ -3,6 +3,7 @@ os: linux
 dist: xenial
 language: scala
 jdk:
+  - openjdk8
   - openjdk11 # Java version. Add other Java versions under this.
 scala:
   - 2.12.10 # Scala version. Add other Scala versions under this.
