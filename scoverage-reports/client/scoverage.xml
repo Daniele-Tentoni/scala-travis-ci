@@ -1,5 +1,5 @@
 <scoverage 
-statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00" version="1.0" timestamp="1593529214808">
+statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00" version="1.0" timestamp="1593529296073">
     <packages>
         <package name="it.parttimeteam" statement-count="1" statements-invoked="1" statement-rate="100.00">
             <classes>
@@ -10,7 +10,7 @@ statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="
                         name="it.parttimeteam/RandomProducer/get" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="it.parttimeteam" class="RandomProducer" class-type="Class" full-class-name="it.parttimeteam.RandomProducer" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/client/src/main/scala/it/parttimeteam/RandomProducer.scala" method="get" start="98" end="120" line="4" branch="false" invocation-count="1" ignored="false">
+                                package="it.parttimeteam" class="RandomProducer" class-type="Class" full-class-name="it.parttimeteam.RandomProducer" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/client/src/main/scala/it/parttimeteam/RandomProducer.scala" method="get" start="98" end="120" line="4" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
