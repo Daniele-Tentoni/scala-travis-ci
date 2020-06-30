@@ -10,7 +10,6 @@ dist:
   - trusty
   
 jdk:
-  - openjdk8
   - openjdk11 # Java version. Add other Java versions under this.
   
 scala:
@@ -41,9 +40,16 @@ notifications:
 # Deploy to GitHub some infos.
 deploy:
   provider: pages
-  skip-cleanup: true
-  github-token: $GH_TOKEN
-  keep-history: true
+  cleanup: true
+  token: $GH_TOKEN
+  keep_history: true
   on:
     branch: master
-  local-dir: public
+  local_dir: public
+  
+deploy:
+  provider: releases
+  api_key: $GH_TOKEN
+  cleanup: true
+  on:
+    tags: true
