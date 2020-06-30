@@ -9,7 +9,7 @@ if [ ! -d "public/js" ]; then
 	mkdir public/js
 fi
 
-if [ ! -d "public/scoverage-report" ]; then
+if [ ! -d "public/scoverage-reports" ]; then
   mkdir public/scoverage-reports
   if [ ! -d "public/scoverage-reports/client" ]; then
     mkdir public/scoverage-reports/client
@@ -46,7 +46,7 @@ cp -fr source/* public/
 # cp -r target/scala-*/*.js* public/js/
 
 # Copy scoverage report html files.
-cp -r target/scala-*/scoverage-report/* public/scoverage-report/
+cp -r target/scala-*/scoverage-report/* public/scoverage-reports/
 cp -r client/target/scala-*/scoverage-report/* public/scoverage-reports/client
 cp -r server/target/scala-*/scoverage-report/* public/scoverage-reports/server
 
