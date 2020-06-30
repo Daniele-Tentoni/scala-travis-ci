@@ -1,11 +1,6 @@
 # Info about vm and jvm.
 language: scala
 
-os:
-  - linux
-  - osx
-  - windows
-
 dist: xenial
 
 jdk:
@@ -46,8 +41,11 @@ jobs:
     - os: windows # Windows dose not compile in scala.
       language: scala
   include:
-    - stage: Run sbt
+    - stage: Run sbt on Linux openjdk11
+      os: linux
       script: bash deploy.sh
+    - stage: Run sbt on Macos openjdk11
+      os: osx
     - stage: Deploy to Github Pages
       deploy:
         provider: pages
