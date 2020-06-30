@@ -24,14 +24,9 @@ branches:
     - master # build master branch only.
     - dev
 
-jobs:
-  exclude:
-    - os: windows # Windows dose not compile in scala.
-      language: scala
-
 # We've enabled by default coverage functionality.
-script:
-  - bash deploy.sh # generate static files.
+# script:
+#   - bash deploy.sh # generate static files.
 
 # Send notifications to those address.
 # notifications:
@@ -46,22 +41,31 @@ script:
 #     on_success: change
 #     on_failure: always
 
-# Deploy to GitHub some infos.
-deploy:
-  - provider: pages # Deploy to Github pages.
-    strategy: git
-    skip_cleanup: true # Don't clean up build directories.
-    token: $GH_TOKEN
-    keep_history: true
-    on:
-      branch: master # Deploy only commit to master branch.
-    local_dir: public
-  - provider: releases # Deploy to Github Releases.
-    strategy: git
-    skip_cleanup: true
-    token: $GH_TOKEN
-    file_glob: true
-    file: client/target/scala-*/*SNAPSHOT.jar
-    on:
-      branch: master # Deploy only commit to master branch with a tag.
-      tags: true
+jobs:
+  exclude:
+    - os: windows # Windows dose not compile in scala.
+      language: scala
+  include:
+    - stage: Run sbt
+      script: bash deploy.sh
+    - stage: Deploy to Github Pages
+      deploy:
+        provider: pages
+        strategy: git
+        skip_cleanup: true
+        token: $GH_TOKEN
+        keep_history: true
+        on:
+          branch: master
+        local_dir: public
+    - stage: Deploy to Github Releases
+      deploy:
+        provider: releases
+        strategy: git
+        skip_cleanup: true
+        token: $GH_TOKEN
+        file_glob: true
+        file: client/target/scala-*/*SNAPSHOT.jar
+        on:
+          branch: master
+          # tags: true
