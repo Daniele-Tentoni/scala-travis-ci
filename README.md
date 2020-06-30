@@ -41,3 +41,11 @@ You can commit without trigger a build, writing a commit message like
 ```git
 git commit -m "[skip travis] Update README"
 ```
+
+Actual configured builds:
+
+| JDK | OS | DIST | NOTE |
+| --- | --- | --- | --- |
+| openjdk11 | linux | xenial |
+| openjdk11 | osx |
+| openjdk11 | windows | | unsupported |
