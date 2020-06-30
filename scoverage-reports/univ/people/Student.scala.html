@@ -1,0 +1,338 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          univ/people/Student.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package univ.people
+</span>2 <span style=''>
+</span>3 <span style=''>import people.{Ager, Person}
+</span>4 <span style=''>
+</span>5 <span style=''>case class Student(
+</span>6 <span style=''>               override val name:String,
+</span>7 <span style=''>               override val surname:String,
+</span>8 <span style=''>               protected var _age:Int
+</span>9 <span style=''>             )
+</span>10 <span style=''>  extends Person
+</span>11 <span style=''>    with Frequenter
+</span>12 <span style=''>    with Ager {
+</span>13 <span style=''>  override def sayHello(person: Person): String = </span><span style='background: #AEF1AE'>&quot;Hello &quot; + person.toString</span><span style=''>
+</span>14 <span style=''>
+</span>15 <span style=''>  var courses: Set[String] = </span><span style='background: #AEF1AE'>Set.empty</span><span style=''>
+</span>16 <span style=''>
+</span>17 <span style=''>  override def courseAvg(): Double = </span><span style='background: #AEF1AE'>courses.map(e =&gt; e.length).sum.doubleValue / courses.size</span><span style=''>
+</span>18 <span style=''>
+</span>19 <span style=''>  def addCourse(course: String): Unit =
+</span>20 <span style=''>    // if (!(courses contains course))
+</span>21 <span style=''>      </span><span style='background: #AEF1AE'>courses = courses + course</span><span style=''>
+</span>22 <span style=''>
+</span>23 <span style=''>  override def age: Int = </span><span style='background: #AEF1AE'>_age</span><span style=''>
+</span>24 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          227
+        </td>
+        <td>
+          323
+          -
+          338
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          people.Person.toString
+        </td>
+        <td style="background: #AEF1AE">
+          person.toString()
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          229
+        </td>
+        <td>
+          312
+          -
+          320
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Hello &quot;
+        </td>
+      </tr><tr>
+        <td>
+          13
+        </td>
+        <td>
+          243
+        </td>
+        <td>
+          312
+          -
+          338
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.+
+        </td>
+        <td style="background: #AEF1AE">
+          &quot;Hello &quot;.+(person.toString())
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          233
+        </td>
+        <td>
+          369
+          -
+          378
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.generic.ImmutableSetFactory.empty
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.Set.empty[String]
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          235
+        </td>
+        <td>
+          444
+          -
+          444
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.math.Numeric.IntIsIntegral
+        </td>
+        <td style="background: #AEF1AE">
+          math.this.Numeric.IntIsIntegral
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          238
+        </td>
+        <td>
+          428
+          -
+          428
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.immutable.Set.canBuildFrom
+        </td>
+        <td style="background: #AEF1AE">
+          immutable.this.Set.canBuildFrom[Int]
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          223
+        </td>
+        <td>
+          434
+          -
+          442
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          java.lang.String.length
+        </td>
+        <td style="background: #AEF1AE">
+          e.length()
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          241
+        </td>
+        <td>
+          462
+          -
+          474
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.collection.TraversableOnce.size
+        </td>
+        <td style="background: #AEF1AE">
+          Student.this.courses.size
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          230
+        </td>
+        <td>
+          417
+          -
+          474
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Double./
+        </td>
+        <td style="background: #AEF1AE">
+          scala.Predef.int2Integer(Student.this.courses.map[Int, scala.collection.immutable.Set[Int]](((e: String) =&gt; e.length()))(immutable.this.Set.canBuildFrom[Int]).sum[Int](math.this.Numeric.IntIsIntegral)).doubleValue()./(Student.this.courses.size)
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          224
+        </td>
+        <td>
+          417
+          -
+          447
+        </td>
+        <td>
+          ApplyToImplicitArgs
+        </td>
+        <td>
+          scala.collection.TraversableOnce.sum
+        </td>
+        <td style="background: #AEF1AE">
+          Student.this.courses.map[Int, scala.collection.immutable.Set[Int]](((e: String) =&gt; e.length()))(immutable.this.Set.canBuildFrom[Int]).sum[Int](math.this.Numeric.IntIsIntegral)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          228
+        </td>
+        <td>
+          571
+          -
+          587
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.SetLike.+
+        </td>
+        <td style="background: #AEF1AE">
+          Student.this.courses.+(course)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          242
+        </td>
+        <td>
+          561
+          -
+          587
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          univ.people.Student.courses_=
+        </td>
+        <td style="background: #AEF1AE">
+          Student.this.courses_=(Student.this.courses.+(course))
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          232
+        </td>
+        <td>
+          615
+          -
+          619
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          univ.people.Student._age
+        </td>
+        <td style="background: #AEF1AE">
+          Student.this._age
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>
