@@ -43,10 +43,12 @@ jobs:
   include:
     - stage: Run sbt on Linux openjdk11
       os: linux
-      script: bash deploy.sh
+      script: sbt clean compile test
     - stage: Run sbt on Macos openjdk11
       os: osx
+      script: sbt clean compile test
     - stage: Deploy to Github Pages
+      script: bash deploy.sh
       deploy:
         provider: pages
         strategy: git
@@ -57,6 +59,7 @@ jobs:
           branch: master
         local_dir: public
     - stage: Deploy to Github Releases
+      script: bash deploy.sh
       deploy:
         provider: releases
         strategy: git
