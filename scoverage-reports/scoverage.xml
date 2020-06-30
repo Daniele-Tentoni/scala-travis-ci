@@ -1,5 +1,5 @@
 <scoverage 
-statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate="0.00" version="1.0" timestamp="1593529938768">
+statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate="0.00" version="1.0" timestamp="1593530848692">
     <packages>
         <package name="it.parttimeteam" statement-count="7" statements-invoked="2" statement-rate="28.57">
             <classes>
@@ -10,7 +10,7 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="it.parttimeteam/RandomProducer/get" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="it.parttimeteam" class="RandomProducer" class-type="Class" full-class-name="it.parttimeteam.RandomProducer" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/client/src/main/scala/it/parttimeteam/RandomProducer.scala" method="get" start="98" end="120" line="4" branch="false" invocation-count="1" ignored="false">
+                                package="it.parttimeteam" class="RandomProducer" class-type="Class" full-class-name="it.parttimeteam.RandomProducer" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/client/src/main/scala/it/parttimeteam/RandomProducer.scala" method="get" start="98" end="120" line="4" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -23,7 +23,7 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="it.parttimeteam/ConstantProducer/get" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="it.parttimeteam" class="ConstantProducer" class-type="Class" full-class-name="it.parttimeteam.ConstantProducer" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/it/parttimeteam/ConstantProducer.scala" method="get" start="124" end="128" line="4" branch="false" invocation-count="1" ignored="false">
+                                package="it.parttimeteam" class="ConstantProducer" class-type="Class" full-class-name="it.parttimeteam.ConstantProducer" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/it/parttimeteam/ConstantProducer.scala" method="get" start="124" end="128" line="4" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -36,19 +36,19 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="it.parttimeteam/ProducerUtils/getMany" statement-count="5" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
                             <statements>
                                 <statement 
-                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="132" end="132" line="5" branch="false" invocation-count="0" ignored="false">
+                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="107" end="148" line="5" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="107" end="148" line="5" branch="false" invocation-count="0" ignored="false">
+                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="111" end="125" line="5" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="133" end="147" line="5" branch="false" invocation-count="0" ignored="false">
+                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="141" end="146" line="5" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="141" end="146" line="5" branch="false" invocation-count="0" ignored="false">
+                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="132" end="132" line="5" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="111" end="125" line="5" branch="false" invocation-count="0" ignored="false">
+                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="133" end="147" line="5" branch="false" invocation-count="0" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -65,145 +65,145 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="org.ui/ScalaFXSample/&lt;none&gt;" statement-count="47" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
                             <statements>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="786" end="812" line="26" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="1055" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="952" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="536" end="1224" line="18" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="952" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="720" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="605" end="1216" line="20" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="952" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="713" end="826" line="24" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1018" end="1041" line="34" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="720" line="24" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="720" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="594" end="1216" line="20" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="643" end="658" line="22" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="430" end="1234" line="14" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="945" end="1055" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="565" end="585" line="19" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1030" end="1040" line="34" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1116" end="1126" line="37" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="761" end="762" line="25" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="517" end="529" line="17" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="903" end="932" line="31" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="620" end="623" line="21" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1077" end="1080" line="36" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1167" end="1180" line="39" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="605" end="1216" line="20" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="850" end="853" line="29" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="491" end="1230" line="16" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="720" line="24" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="952" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="461" end="486" line="15" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="594" end="1216" line="20" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="952" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="952" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="575" end="585" line="19" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="565" end="585" line="19" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="671" end="700" line="23" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="803" end="811" line="26" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1108" end="1126" line="37" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="430" end="1234" line="14" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="792" end="801" line="26" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1116" end="1126" line="37" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1024" end="1028" line="34" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="786" end="812" line="26" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="524" end="529" line="17" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="720" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1141" end="1152" line="38" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1167" end="1180" line="39" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="993" end="994" line="33" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="850" end="853" line="29" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="826" line="24" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="713" end="826" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="546" end="549" line="18" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="575" end="585" line="19" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="873" end="890" line="30" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="461" end="486" line="15" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1068" end="1194" line="36" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="720" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="499" end="502" line="16" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="952" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="438" end="441" line="14" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="517" end="529" line="17" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="720" line="24" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1024" end="1028" line="34" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="720" line="24" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1108" end="1126" line="37" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="952" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="993" end="994" line="33" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="761" end="762" line="25" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="671" end="700" line="23" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="536" end="1224" line="18" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="524" end="529" line="17" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="1055" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1141" end="1152" line="38" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="720" line="24" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="826" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="952" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="873" end="890" line="30" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1018" end="1041" line="34" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="620" end="623" line="21" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="643" end="658" line="22" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="546" end="549" line="18" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="945" end="1055" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1068" end="1194" line="36" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="491" end="1230" line="16" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="499" end="502" line="16" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1030" end="1040" line="34" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="792" end="801" line="26" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="803" end="811" line="26" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="438" end="441" line="14" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="1077" end="1080" line="36" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="720" end="720" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="903" end="932" line="31" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="ScalaFXSample" class-type="Class" full-class-name="org.ui.ScalaFXSample" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/ScalaFXSample.scala" method="&lt;none&gt;" start="952" end="952" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -216,130 +216,130 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="org.ui/Properties/&lt;none&gt;" statement-count="42" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
                             <statements>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1139" end="1156" line="40" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1212" end="1215" line="44" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="610" end="629" line="23" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1240" end="1278" line="45" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1404" end="1494" line="50" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1497" end="1514" line="54" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1373" end="1393" line="49" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1275" end="1278" line="45" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="643" end="661" line="24" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1245" end="1250" line="45" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1044" end="1062" line="36" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1245" end="1250" line="45" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1527" end="1543" line="55" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="674" end="699" line="25" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="952" end="972" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1275" end="1278" line="45" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1159" end="1170" line="41" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1017" end="1018" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="796" end="799" line="29" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1517" end="1564" line="55" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1259" end="1264" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="950" end="1018" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="972" end="976" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1544" end="1547" line="55" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1373" end="1373" line="49" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1373" end="1393" line="49" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1173" end="1186" line="42" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1044" end="1062" line="36" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1525" end="1563" line="55" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1527" end="1543" line="55" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="712" end="738" line="26" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1404" end="1494" line="50" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1548" end="1557" line="55" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="610" end="629" line="23" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1562" end="1563" line="55" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1159" end="1170" line="41" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1004" end="1009" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="952" end="972" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1130" end="1156" line="40" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="796" end="799" line="29" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1444" end="1483" line="51" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1525" end="1563" line="55" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1078" end="1095" line="37" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="972" end="976" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1489" end="1490" line="52" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1173" end="1186" line="42" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="942" end="1019" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1373" end="1373" line="49" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="976" end="996" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1558" end="1561" line="55" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="898" end="1025" line="31" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="643" end="661" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1275" end="1278" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1139" end="1156" line="40" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1139" end="1156" line="40" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1259" end="1264" line="45" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1109" end="1126" line="38" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1548" end="1557" line="55" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1231" end="1278" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1130" end="1156" line="40" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1017" end="1018" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1004" end="1009" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1212" end="1215" line="44" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1444" end="1483" line="51" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1240" end="1278" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="942" end="1019" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1497" end="1514" line="54" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="712" end="738" line="26" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1245" end="1250" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1489" end="1490" line="52" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1544" end="1547" line="55" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1078" end="1095" line="37" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1245" end="1250" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="976" end="996" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1275" end="1278" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="898" end="1025" line="31" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="674" end="699" line="25" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1562" end="1563" line="55" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1517" end="1564" line="55" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1139" end="1156" line="40" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1558" end="1561" line="55" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1231" end="1278" line="45" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Properties" class-type="Class" full-class-name="org.ui.Properties" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="950" end="1018" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Properties" class-type="Object" full-class-name="org.ui.Properties" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="&lt;none&gt;" start="1109" end="1126" line="38" branch="false" invocation-count="0" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -352,7 +352,7 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="org.ui/PropMaker/makeDoubleProperty" statement-count="1" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
                             <statements>
                                 <statement 
-                                package="org.ui" class="PropMaker" class-type="Object" full-class-name="org.ui.PropMaker" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="makeDoubleProperty" start="325" end="346" line="12" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="PropMaker" class-type="Object" full-class-name="org.ui.PropMaker" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="makeDoubleProperty" start="325" end="346" line="12" branch="false" invocation-count="0" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -360,10 +360,10 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="org.ui/PropMaker/addSubToProperty" statement-count="2" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
                             <statements>
                                 <statement 
-                                package="org.ui" class="PropMaker" class-type="Object" full-class-name="org.ui.PropMaker" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="addSubToProperty" start="456" end="522" line="16" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="PropMaker" class-type="Object" full-class-name="org.ui.PropMaker" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="addSubToProperty" start="456" end="522" line="16" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="PropMaker" class-type="Object" full-class-name="org.ui.PropMaker" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="addSubToProperty" start="498" end="516" line="17" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="PropMaker" class-type="Object" full-class-name="org.ui.PropMaker" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Properties.scala" method="addSubToProperty" start="498" end="516" line="17" branch="false" invocation-count="0" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -376,187 +376,187 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="org.ui/Dialogs/&lt;none&gt;" statement-count="61" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
                             <statements>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1583" end="1596" line="50" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2545" end="2546" line="83" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1906" end="1935" line="60" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2117" end="2136" line="67" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2481" end="2484" line="81" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="783" end="788" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="953" end="971" line="30" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="773" end="789" line="24" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2141" end="2163" line="68" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1557" end="1638" line="49" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2374" end="2401" line="77" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1012" end="1018" line="33" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2556" end="2564" line="84" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="875" end="912" line="27" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1598" end="1613" line="50" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2414" end="2429" line="78" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2323" end="2338" line="75" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1502" end="1537" line="47" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2552" end="2571" line="84" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1228" end="1249" line="40" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2406" end="2429" line="78" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2085" end="2103" line="66" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2277" end="2297" line="73" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1059" end="1072" line="34" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1615" end="1632" line="50" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="794" end="823" line="25" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2343" end="2369" line="76" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1360" end="1376" line="44" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2566" end="2567" line="84" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1802" end="1828" line="58" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2198" end="2240" line="71" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2531" end="2547" line="83" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1370" end="1375" line="44" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2284" end="2297" line="73" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2012" end="2071" line="65" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1699" end="1702" line="56" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1274" end="1297" line="41" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2542" end="2543" line="83" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1184" end="1205" line="39" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1087" end="1122" line="35" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1435" end="1497" line="46" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2302" end="2318" line="74" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2569" end="2570" line="84" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2481" end="2484" line="81" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1381" end="1430" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2141" end="2163" line="68" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="426" end="666" line="20" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1906" end="1935" line="60" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="733" end="736" line="23" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1583" end="1596" line="50" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1863" end="1891" line="59" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="953" end="971" line="30" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1543" end="1638" line="49" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1320" end="1323" line="43" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2434" end="2457" line="79" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2374" end="2401" line="77" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2535" end="2540" line="83" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2323" end="2338" line="75" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="332" end="398" line="12" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1568" end="1581" line="50" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2168" end="2179" line="69" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2556" end="2564" line="84" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2258" end="2261" line="72" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2406" end="2429" line="78" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2500" end="2526" line="82" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1676" end="1695" line="54" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="828" end="870" line="26" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2579" end="2879" line="94" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2284" end="2297" line="73" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2552" end="2571" line="84" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1802" end="1828" line="58" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2343" end="2369" line="76" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2442" end="2457" line="79" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2277" end="2297" line="73" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1743" end="1769" line="57" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2566" end="2567" line="84" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2531" end="2547" line="83" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2198" end="2240" line="71" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2542" end="2543" line="83" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1598" end="1613" line="50" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="783" end="788" line="24" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2012" end="2071" line="65" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1557" end="1638" line="49" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1435" end="1497" line="46" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="773" end="789" line="24" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1370" end="1375" line="44" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2545" end="2546" line="83" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1274" end="1297" line="41" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2117" end="2136" line="67" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="426" end="666" line="20" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1699" end="1702" line="56" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1381" end="1430" line="45" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1228" end="1249" line="40" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2569" end="2570" line="84" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2085" end="2103" line="66" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1615" end="1632" line="50" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1502" end="1537" line="47" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1543" end="1638" line="49" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="875" end="912" line="27" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2535" end="2540" line="83" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1012" end="1018" line="33" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2434" end="2457" line="79" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2414" end="2429" line="78" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="332" end="398" line="12" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="794" end="823" line="25" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2168" end="2179" line="69" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1059" end="1072" line="34" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2258" end="2261" line="72" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1360" end="1376" line="44" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1184" end="1205" line="39" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1320" end="1323" line="43" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="733" end="736" line="23" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1568" end="1581" line="50" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1863" end="1891" line="59" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2579" end="2879" line="94" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2500" end="2526" line="82" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1087" end="1122" line="35" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2442" end="2457" line="79" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1676" end="1695" line="54" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Object" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="1743" end="1769" line="57" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="2302" end="2318" line="74" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="Dialogs" class-type="Class" full-class-name="org.ui.Dialogs" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/Dialogs.scala" method="&lt;none&gt;" start="828" end="870" line="26" branch="false" invocation-count="0" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -569,187 +569,187 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="org.ui/LoginDialogDemo/&lt;none&gt;" statement-count="61" statements-invoked="0" statement-rate="0.00" branch-rate="0.00">
                             <statements>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1180" end="1181" line="39" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1512" end="1559" line="50" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1034" end="1043" line="34" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="457" end="460" line="14" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1191" end="1199" line="40" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1354" end="1369" line="45" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="532" end="574" line="17" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1886" end="1926" line="62" branch="true" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="505" end="527" line="16" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1201" end="1202" line="40" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1660" end="1702" line="56" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="646" end="653" line="21" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1177" end="1178" line="39" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1187" end="1206" line="40" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1942" end="1946" line="64" branch="true" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1087" end="1120" line="37" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1598" end="1602" line="53" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2027" end="2027" line="66" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2079" end="2123" line="69" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1091" end="1113" line="37" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2155" end="2187" line="70" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="839" end="842" line="25" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="999" end="1002" line="32" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="655" end="672" line="21" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1893" end="1908" line="62" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1942" end="1946" line="64" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2016" end="2016" line="66" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1153" end="1175" line="39" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1863" end="1878" line="61" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="861" end="884" line="26" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2033" end="2039" line="68" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1798" end="1946" line="60" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1048" end="1081" line="35" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1149" end="1182" line="39" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1678" end="1701" line="56" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1567" end="1603" line="53" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1535" end="1558" line="50" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1204" end="1205" line="40" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1125" end="1144" line="38" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="947" end="970" line="29" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1847" end="1878" line="61" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1180" end="1181" line="39" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1142" end="1143" line="38" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1191" end="1199" line="40" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2087" end="2122" line="69" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1034" end="1043" line="34" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1129" end="1137" line="38" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1942" end="1946" line="64" branch="true" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1598" end="1602" line="53" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1598" end="1602" line="53" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2009" end="2029" line="66" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1886" end="1926" line="62" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="631" end="673" line="21" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1660" end="1702" line="56" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1373" end="1401" line="46" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1177" end="1178" line="39" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1115" end="1116" line="37" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1893" end="1908" line="62" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1058" end="1081" line="35" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2016" end="2016" line="66" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1354" end="1369" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1321" end="1370" line="45" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="921" end="924" line="28" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2155" end="2187" line="70" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1020" end="1029" line="33" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="999" end="1002" line="32" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1118" end="1119" line="37" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2079" end="2123" line="69" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1139" end="1140" line="38" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2033" end="2039" line="68" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="494" end="499" line="15" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="505" end="527" line="16" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1091" end="1113" line="37" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1863" end="1878" line="61" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1910" end="1925" line="62" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1048" end="1081" line="35" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2027" end="2027" line="66" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="532" end="574" line="17" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1187" end="1206" line="40" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2087" end="2122" line="69" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1087" end="1120" line="37" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1847" end="1878" line="61" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1463" end="1563" line="49" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1142" end="1143" line="38" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="861" end="884" line="26" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="2009" end="2029" line="66" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="484" end="500" line="15" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="631" end="673" line="21" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="457" end="460" line="14" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1115" end="1116" line="37" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1354" end="1369" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1598" end="1602" line="53" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1886" end="1926" line="62" branch="true" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="921" end="924" line="28" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1512" end="1559" line="50" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1020" end="1029" line="33" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1149" end="1182" line="39" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1535" end="1558" line="50" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="655" end="672" line="21" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1678" end="1701" line="56" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="839" end="842" line="25" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1058" end="1081" line="35" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="646" end="653" line="21" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1354" end="1369" line="45" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1204" end="1205" line="40" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1118" end="1119" line="37" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1201" end="1202" line="40" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1139" end="1140" line="38" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1153" end="1175" line="39" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1129" end="1137" line="38" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1942" end="1946" line="64" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1125" end="1144" line="38" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1798" end="1946" line="60" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="494" end="499" line="15" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1567" end="1603" line="53" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1910" end="1925" line="62" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1886" end="1926" line="62" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1373" end="1401" line="46" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1321" end="1370" line="45" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Object" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="1463" end="1563" line="49" branch="false" invocation-count="0" ignored="false">
 </statement>
                                 <statement 
-                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="947" end="970" line="29" branch="false" invocation-count="0" ignored="false">
+                                package="org.ui" class="LoginDialogDemo" class-type="Class" full-class-name="org.ui.LoginDialogDemo" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/src/main/scala/org/ui/LoginDialogDemo.scala" method="&lt;none&gt;" start="484" end="500" line="15" branch="false" invocation-count="0" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -766,13 +766,13 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="people/Person/toString" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="people" class="Person" class-type="Trait" full-class-name="people.Person" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/people/Person.scala" method="toString" start="331" end="338" line="23" branch="false" invocation-count="1" ignored="false">
+                                package="people" class="Person" class-type="Trait" full-class-name="people.Person" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/people/Person.scala" method="toString" start="331" end="338" line="23" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="people" class="Person" class-type="Trait" full-class-name="people.Person" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/people/Person.scala" method="toString" start="318" end="338" line="23" branch="false" invocation-count="1" ignored="false">
+                                package="people" class="Person" class-type="Trait" full-class-name="people.Person" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/people/Person.scala" method="toString" start="318" end="338" line="23" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="people" class="Person" class-type="Trait" full-class-name="people.Person" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/people/Person.scala" method="toString" start="325" end="328" line="23" branch="false" invocation-count="1" ignored="false">
+                                package="people" class="Person" class-type="Trait" full-class-name="people.Person" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/people/Person.scala" method="toString" start="325" end="328" line="23" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -789,7 +789,7 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="univ.people/Teacher/age" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="age" start="396" end="400" line="16" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="age" start="396" end="400" line="16" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -797,13 +797,13 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="univ.people/Teacher/sayHello" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="sayHello" start="315" end="330" line="12" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="sayHello" start="315" end="330" line="12" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="sayHello" start="304" end="312" line="12" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="sayHello" start="304" end="330" line="12" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="sayHello" start="304" end="330" line="12" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="sayHello" start="304" end="312" line="12" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -811,7 +811,7 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="univ.people/Teacher/age_=" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="age_=" start="360" end="368" line="14" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="age_=" start="360" end="368" line="14" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -819,7 +819,7 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="univ.people/Teacher/&lt;none&gt;" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="&lt;none&gt;" start="250" end="252" line="10" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="&lt;none&gt;" start="250" end="252" line="10" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -832,10 +832,10 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="univ.people/Student/addCourse" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="addCourse" start="561" end="587" line="21" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="addCourse" start="571" end="587" line="21" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="addCourse" start="571" end="587" line="21" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="addCourse" start="561" end="587" line="21" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -843,7 +843,7 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="univ.people/Student/&lt;none&gt;" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="&lt;none&gt;" start="369" end="378" line="15" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="&lt;none&gt;" start="369" end="378" line="15" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -851,7 +851,7 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="univ.people/Student/age" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="age" start="615" end="619" line="23" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="age" start="615" end="619" line="23" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -859,22 +859,22 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="univ.people/Student/courseAvg" statement-count="6" statements-invoked="6" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="417" end="474" line="17" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="444" end="444" line="17" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="417" end="447" line="17" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="428" end="428" line="17" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="434" end="442" line="17" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="434" end="442" line="17" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="462" end="474" line="17" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="462" end="474" line="17" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="444" end="444" line="17" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="417" end="474" line="17" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="428" end="428" line="17" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="417" end="447" line="17" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -882,13 +882,13 @@ statement-count="243" statements-invoked="24" statement-rate="9.88" branch-rate=
                         name="univ.people/Student/sayHello" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="323" end="338" line="13" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="323" end="338" line="13" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="312" end="320" line="13" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="312" end="320" line="13" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/Users/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="312" end="338" line="13" branch="false" invocation-count="1" ignored="false">
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="312" end="338" line="13" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
