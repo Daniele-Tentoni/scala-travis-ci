@@ -5,7 +5,7 @@ scalaVersion in ThisBuild := "2.12.10"
 organization in ThisBuild := "it.parttimeteam.scalatravisci"
 
 // Project version
-version := "1.0.0"
+version := "0.1.0"
 
 // Determine OS version of JavaFX binaries
 lazy val osName = System.getProperty("os.name") match {

@@ -1,20 +1,19 @@
 # Info about vm and jvm.
 language: scala
 
-os: 
+os:
   - linux
   - osx
-  
-dist: 
-  - xenial
-  - trusty
-  
+  - windows
+
+dist: xenial
+
 jdk:
   - oraclejdk8
   - oraclejdk11
   - openjdk10
   - openjdk11 # Java version. Add other Java versions under this.
-  
+
 scala:
   - 2.12.11 # Scala version. Add other Scala versions under this.
   - 2.13.3
@@ -23,6 +22,17 @@ scala:
 branches:
   only:
     - master # build master branch only.
+
+jobs:
+  exclude:
+    - jdk:
+        - oraclejdk8
+      dist: xenial
+    - jdk:
+        - oraclejdk8
+      os: osx
+
+
 
 # We've enabled by default coverage functionality.
 script:
@@ -43,18 +53,16 @@ script:
 
 # Deploy to GitHub some infos.
 deploy:
-  provider: pages
-  cleanup: true
-  token: $GH_TOKEN
-  keep_history: true
-  on:
-    branch: master
-  local_dir: public
-  
-deploy:
-  provider: releases
-  api_key: $GH_TOKEN
-  cleanup: true
-  on:
-    branch: master
-    tags: true
+  - provider: pages
+    cleanup: true
+    token: $GH_TOKEN
+    keep_history: true
+    on:
+      branch: master
+    local_dir: public
+  - provider: releases
+    cleanup: true
+    token: $GH_TOKEN
+    on:
+      branch: master
+      tags: true
