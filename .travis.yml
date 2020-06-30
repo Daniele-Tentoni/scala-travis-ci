@@ -6,6 +6,8 @@ os:
   - osx
   - windows
 
+dist: xenial
+
 jdk:
   - oraclejdk8
   - oraclejdk11
@@ -57,6 +59,7 @@ script:
 # Deploy to GitHub some infos.
 deploy:
   - provider: pages
+    strategy: git
     skip_cleanup: true
     token: $GH_TOKEN
     keep_history: true
@@ -64,6 +67,7 @@ deploy:
       branch: master
     local_dir: public
   - provider: releases
+    strategy: git
     skip_cleanup: true
     token: $GH_TOKEN
     file_glob: true
