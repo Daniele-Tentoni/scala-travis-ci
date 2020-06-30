@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Create necessary folders.
 if [ ! -d "public" ]; then
 	mkdir public
