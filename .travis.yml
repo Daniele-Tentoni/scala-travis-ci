@@ -52,4 +52,5 @@ deploy:
   api_key: $GH_TOKEN
   cleanup: true
   on:
+    branch: master
     tags: true
