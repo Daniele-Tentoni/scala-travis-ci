@@ -9,35 +9,25 @@ os:
 dist: xenial
 
 jdk:
-  - oraclejdk8
-  - oraclejdk11
   - openjdk11 # Java version. Add other Java versions under this.
 
 scala:
   - 2.12.11 # Scala version. Add other Scala versions under this.
-  - 2.13.3
+  # - 2.13.3 Last stable version
+
+git:
+  autocrlf: input
 
 # Trigger build only on master branch.
 branches:
   only:
     - master # build master branch only.
+    - dev
 
 jobs:
   exclude:
-    - dist: xenial
-      jdk:
-        - oraclejdk8
-      os: linux
-    - os: osx
-      jdk:
-        - oraclejdk8
-    - os: windows
+    - os: windows # Windows dose not compile in scala.
       language: scala
-   # - jdk:
-   #     - oraclejdk8
-   #   os: osx
-
-
 
 # We've enabled by default coverage functionality.
 script:
@@ -58,20 +48,20 @@ script:
 
 # Deploy to GitHub some infos.
 deploy:
-  - provider: pages
+  - provider: pages # Deploy to Github pages.
     strategy: git
-    skip_cleanup: true
+    skip_cleanup: true # Don't clean up build directories.
     token: $GH_TOKEN
     keep_history: true
     on:
-      branch: master
+      branch: master # Deploy only commit to master branch.
     local_dir: public
-  - provider: releases
+  - provider: releases # Deploy to Github Releases.
     strategy: git
     skip_cleanup: true
     token: $GH_TOKEN
     file_glob: true
     file: client/target/scala-*/*SNAPSHOT.jar
     on:
-      branch: master
+      branch: master # Deploy only commit to master branch with a tag.
       tags: true
