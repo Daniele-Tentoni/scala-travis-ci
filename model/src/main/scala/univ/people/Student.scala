@@ -17,7 +17,7 @@ case class Student(
   override def courseAvg(): Double = courses.map(e => e.length).sum.doubleValue / courses.size
 
   def addCourse(course: String): Unit =
-    if (!(courses contains course))
+    // if (!(courses contains course))
       courses = courses + course
 
   override def age: Int = _age

@@ -15,9 +15,9 @@ class StudentSpec extends AnyFunSuite {
     assert(student.courses == Set("Matematica"))
   }
 
+
   test("Add existing course to a student") {
     student.addCourse("Matematica")
-    assert(student.courses != Set("Matematica", "Matematica"))
     assert(student.courses == Set("Matematica"))
   }
 
