@@ -56,7 +56,9 @@ jobs:
         token: $GH_TOKEN
         keep_history: true
         on:
-          branch: master
+          branches:
+            - master
+            - dev
         local_dir: public
     - stage: Deploy to Github Releases
       script: bash deploy.sh
