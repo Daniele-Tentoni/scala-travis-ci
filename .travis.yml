@@ -10,6 +10,9 @@ dist:
   - trusty
   
 jdk:
+  - oraclejdk8
+  - oraclejdk11
+  - openjdk10
   - openjdk11 # Java version. Add other Java versions under this.
   
 scala:
