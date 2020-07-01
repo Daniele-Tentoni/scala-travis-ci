@@ -61,7 +61,6 @@ jobs:
       script: bash travis_scripts/compile_for_release.sh # Deploying artifacts need only compile.
       deploy:
         provider: releases
-        strategy: git
         skip_cleanup: true
         token: $GH_TOKEN
         file_glob: true
