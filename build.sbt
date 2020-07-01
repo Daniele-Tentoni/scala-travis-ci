@@ -63,7 +63,7 @@ lazy val model = (project in file("model")).settings(
 lazy val commons = (project in file("commons")).settings(
   name := "commons",
   settings,
-  libraryDependencies += akkaTyped
+  libraryDependencies ++= testDependencies
 ).dependsOn(
   model
 )
