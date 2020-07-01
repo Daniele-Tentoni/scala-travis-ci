@@ -34,7 +34,7 @@ fi
 ls -l
 
 # Execute sbt scripts for test, coverage and doc.
-sbt compile coverage test coverageReport coverageAggregate doc
+sbt clean coverage test coverageReport coverageAggregate doc
 
 # Removed Scala.js, we'll use ScalaFX instead.
 # sbt fastOptJS
