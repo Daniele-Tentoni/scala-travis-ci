@@ -41,11 +41,10 @@ jobs:
     - os: windows # Windows dose not compile in scala.
       language: scala
   include:
-    - stage: Run sbt on Linux openjdk11
-      os: linux
-      script: sbt clean compile test
-    - stage: Run sbt on Macos openjdk11
-      os: osx
+    - stage: Run sbt with openjdk11
+      os:
+        - linux
+        - osx
       script: sbt clean compile test
     - stage: Deploy to Github Pages
       script: bash deploy.sh
@@ -56,9 +55,7 @@ jobs:
         token: $GH_TOKEN
         keep_history: true
         on:
-          branches:
-            - master
-            - dev
+          branch: dev
         local_dir: public
     - stage: Deploy to Github Releases
       script: bash deploy.sh
