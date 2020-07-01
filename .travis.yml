@@ -55,6 +55,8 @@ jobs:
         on:
           branch: dev
         local_dir: public
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
     - stage: Deploy to Github Releases
       script: bash travis_scripts/compile_for_release.sh # Deploying artifacts need only compile.
       deploy:
@@ -68,4 +70,4 @@ jobs:
           - server/target/scala-*/*SNAPSHOT.jar
         on:
           branch: master
-          # tags: true
+          tags: true
