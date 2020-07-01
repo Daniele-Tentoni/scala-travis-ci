@@ -51,6 +51,6 @@ cp -r client/target/scala-*/scoverage-report/* public/scoverage-reports/client
 cp -r server/target/scala-*/scoverage-report/* public/scoverage-reports/server
 
 # Copy scaladoc html files.
-cp -r target/scala-*/api/* public/docs/
+cp -r target/scala-*/api/* public/api/
 cp -r client/target/scala-*/api/* public/api/client
 cp -r server/target/scala-*/api/* public/api/server

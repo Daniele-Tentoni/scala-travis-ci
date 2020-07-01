@@ -71,3 +71,11 @@ jobs:
         on:
           branch: master
           tags: true
+
+stages:
+  - name: Run sbt with openjdk11
+    if: (type = pull_request OR type = push) AND (branch = master OR branch = dev)
+  - name: Deploy to Github Pages
+    if: type = push AND (branch = master OR branch = dev)
+  - name: Deploy to Github Releases
+    if: type = push AND branch = master
