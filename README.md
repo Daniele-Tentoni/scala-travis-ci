@@ -1,8 +1,10 @@
 # scala-travis-ci
 
-| Travis CI |
-| --- |
-| [![Build Status](https://travis-ci.com/Daniele-Tentoni/scala-travis-ci.svg?branch=master)](https://travis-ci.com/Daniele-Tentoni/scala-travis-ci) |
+### Integrations
+| NAME | VALUE |
+| --- | --- |
+| Travis CI | [![Build Status](https://travis-ci.com/Daniele-Tentoni/scala-travis-ci.svg?branch=master)](https://travis-ci.com/Daniele-Tentoni/scala-travis-ci) | 
+| Codecov | [![codecov](https://codecov.io/gh/Daniele-Tentoni/scala-travis-ci/branch/master/graph/badge.svg)](https://codecov.io/gh/Daniele-Tentoni/scala-travis-ci) |
 
 Find more infos on Pages [here!](https://daniele-tentoni.github.io/scala-travis-ci/)
 

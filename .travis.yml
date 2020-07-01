@@ -1,7 +1,7 @@
 # Info about vm and jvm.
-language: scala
+language: scala # The project language.
 
-dist: xenial
+dist: xenial # Default distro for linux vm.
 
 jdk:
   - openjdk11 # Java version. Add other Java versions under this.
@@ -53,7 +53,7 @@ jobs:
         token: $GH_TOKEN
         keep_history: true
         on:
-          branch: dev
+          branch: master
         local_dir: public
       after_success:
         - bash <(curl -s https://codecov.io/bash)
@@ -72,10 +72,11 @@ jobs:
           branch: master
           tags: true
 
+# Conditional builds
 stages:
-  - name: Run sbt with openjdk11
-    if: (type = pull_request OR type = push) AND (branch = master OR branch = dev)
-  - name: Deploy to Github Pages
-    if: type = push AND (branch = master OR branch = dev)
-  - name: Deploy to Github Releases
-    if: type = push AND branch = master
+  - name: Run sbt with openjdk11 # Run this only if is a pr or push on master or dev.
+    if: type IN (pull_request, push) AND branch IN (master, dev)
+  - name: Deploy to Github Pages # Run this only if is a push on master or dev.
+    if: type = push AND branch IN (master, dev)
+  - name: Deploy to Github Releases # Run this only if is a push on master. (See other rules on deploy.)
+    if: type = push AND branch = master AND tag IS present
