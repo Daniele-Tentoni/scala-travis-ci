@@ -21,7 +21,7 @@ branches:
 
 # We've enabled by default coverage functionality.
 # script:
-#   - bash deploy.sh # generate static files.
+#   - bash deploy_to_pages.sh # generate static files.
 
 # Send notifications to those address.
 # notifications:
@@ -37,18 +37,15 @@ branches:
 #     on_failure: always
 
 jobs:
-  exclude:
-    - os: windows # Windows dose not compile in scala.
-      language: scala
   include:
-    - stage: Run sbt on Linux openjdk11
+    - stage: Run sbt with openjdk11
       os: linux
-      script: sbt clean compile test
-    - stage: Run sbt on Macos openjdk11
+      script: sbt compile coverage test
+    - stage: Run sbt with openjdk11
       os: osx
-      script: sbt clean compile test
+      script: sbt compile coverage test
     - stage: Deploy to Github Pages
-      script: bash deploy.sh
+      script: bash travis_scripts/deploy_to_pages.sh
       deploy:
         provider: pages
         strategy: git
@@ -56,17 +53,29 @@ jobs:
         token: $GH_TOKEN
         keep_history: true
         on:
-          branch: master
+          branch: dev
         local_dir: public
+      after_success:
+        - bash <(curl -s https://codecov.io/bash)
     - stage: Deploy to Github Releases
-      script: bash deploy.sh
+      script: bash travis_scripts/compile_for_release.sh # Deploying artifacts need only compile.
       deploy:
         provider: releases
         strategy: git
         skip_cleanup: true
         token: $GH_TOKEN
         file_glob: true
-        file: client/target/scala-*/*SNAPSHOT.jar
+        file:
+          - client/target/scala-*/*SNAPSHOT.jar
+          - server/target/scala-*/*SNAPSHOT.jar
         on:
           branch: master
-          # tags: true
+          tags: true
+
+stages:
+  - name: Run sbt with openjdk11
+    if: (type = pull_request OR type = push) AND (branch = master OR branch = dev)
+  - name: Deploy to Github Pages
+    if: type = push AND (branch = master OR branch = dev)
+  - name: Deploy to Github Releases
+    if: type = push AND branch = master

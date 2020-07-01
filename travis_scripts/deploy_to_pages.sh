@@ -34,7 +34,7 @@ fi
 ls -l
 
 # Execute sbt scripts for test, coverage and doc.
-sbt compile coverage test coverageReport coverageAggregate doc
+sbt clean coverage test coverageReport coverageAggregate doc
 
 # Removed Scala.js, we'll use ScalaFX instead.
 # sbt fastOptJS
@@ -51,6 +51,6 @@ cp -r client/target/scala-*/scoverage-report/* public/scoverage-reports/client
 cp -r server/target/scala-*/scoverage-report/* public/scoverage-reports/server
 
 # Copy scaladoc html files.
-cp -r target/scala-*/api/* public/docs/
+cp -r target/scala-*/api/* public/api/
 cp -r client/target/scala-*/api/* public/api/client
 cp -r server/target/scala-*/api/* public/api/server
