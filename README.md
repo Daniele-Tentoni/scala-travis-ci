@@ -49,3 +49,5 @@ Actual configured builds:
 | openjdk11 | linux | xenial |
 | openjdk11 | osx |
 | openjdk11 | windows | | unsupported |
+
+We wanna try another useful integrations.
