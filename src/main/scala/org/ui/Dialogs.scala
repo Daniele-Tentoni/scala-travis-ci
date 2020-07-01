@@ -1,3 +1,4 @@
+/*
 package org.ui
 
 import java.io.{FileNotFoundException, PrintWriter, StringWriter}
@@ -93,3 +94,4 @@ object Dialogs extends JFXApp {
     dialogPane().setExpandableContent(expContent)
   }.showAndWait()
 }
+*/

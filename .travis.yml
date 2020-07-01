@@ -5,7 +5,6 @@ dist: xenial # Default distro for linux vm.
 
 jdk:
   - openjdk11 # Java version. Add other Java versions under this.
-  - openjdk14
 
 install: true
 

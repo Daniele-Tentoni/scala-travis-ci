@@ -50,7 +50,7 @@ lazy val testDependencies = Seq(
 lazy val javaFXModules = Seq("base", "controls", "fxml", "graphics", "media", "swing", "web")
 lazy val scalaFXDep = javaFXModules.map( m=>
   "org.openjfx" % s"javafx-$m" % "14.0.1" classifier osName
-).union(Seq(scalafx))
+)
 /*
  * END LIBRARY DEFINITIONS.
  */
@@ -92,7 +92,7 @@ lazy val client = (project in file("client")).settings(
   mainClass := Some("it.parttimeteam.ConstantProducer"),
   libraryDependencies ++= (akkaDependencies ++
     testDependencies ++
-    scalaFXDep
+    scalaFXDep.union(Seq(scalafx))
     ),
   exportJars := true
 ).dependsOn(

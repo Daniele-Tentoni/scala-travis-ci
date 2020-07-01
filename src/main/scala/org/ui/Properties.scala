@@ -1,3 +1,4 @@
+/*
 package org.ui
 
 import scalafx.Includes._
@@ -53,4 +54,4 @@ object Properties extends App {
   )
   a.value = "Hello"
   println(s"Setting 'a' to ${a()}, 'b' = ${b()}")
-}
+}*/
