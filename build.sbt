@@ -45,6 +45,12 @@ lazy val testDependencies = Seq(
   scalatest,
   scalactic
 )
+
+// Add JavaFX dependencies
+lazy val javaFXModules = Seq("base", "controls", "fxml", "graphics", "media", "swing", "web")
+lazy val scalaFXDep = javaFXModules.map( m=>
+  "org.openjfx" % s"javafx-$m" % "14.0.1" classifier osName
+).union(Seq(scalafx))
 /*
  * END LIBRARY DEFINITIONS.
  */
@@ -72,7 +78,9 @@ lazy val server = (project in file("server")).settings(
   name := "server",
   settings,
   mainClass := Some("it.parttimeteam.RandomProducer"),
-  libraryDependencies ++= (akkaDependencies ++ testDependencies)
+  libraryDependencies ++= (akkaDependencies ++
+    testDependencies
+    )
 ).dependsOn(
   model,
   commons
@@ -82,7 +90,10 @@ lazy val client = (project in file("client")).settings(
   name := "client",
   settings,
   mainClass := Some("it.parttimeteam.ConstantProducer"),
-  libraryDependencies ++= (akkaDependencies ++ testDependencies),
+  libraryDependencies ++= (akkaDependencies ++
+    testDependencies ++
+    scalaFXDep
+    ),
   exportJars := true
 ).dependsOn(
   model,
@@ -121,12 +132,6 @@ libraryDependencies += scalafx
 fork := true
 
 coverageEnabled := true
-
-// Add JavaFX dependencies
-lazy val javaFXModules = Seq("base", "controls", "fxml", "graphics", "media", "swing", "web")
-libraryDependencies ++= javaFXModules.map( m=>
-  "org.openjfx" % s"javafx-$m" % "14.0.1" classifier osName
-)
 
 // Removed Scala.JS plugin, we'll use ScalaFX instead.
 // libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "1.0.0"
