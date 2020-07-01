@@ -34,6 +34,8 @@ You can get coverage reports with
 sbat coverage test coverageReport
 ```
 
+Starting with Java 11 JavaFX is no longer part of Java distribution. You need to add JavaFX binaries explicity to the project depended on your operating system.
+
 ### Travis CI
 
 We use [Travis CI](https://travis-ci.com/) for continuous integration.

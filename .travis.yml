@@ -5,6 +5,9 @@ dist: xenial # Default distro for linux vm.
 
 jdk:
   - openjdk11 # Java version. Add other Java versions under this.
+  - openjdk14
+
+install: true
 
 scala:
   - 2.12.11 # Scala version. Add other Scala versions under this.
