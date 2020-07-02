@@ -43,4 +43,9 @@ object ScalaFXSample extends JFXApp {
       }
     }
   }
+
+  override def main(args: Array[String]): Unit = {
+    super.main(args)
+    println("Started.")
+  }
 }

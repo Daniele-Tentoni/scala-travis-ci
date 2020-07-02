@@ -4,7 +4,8 @@ import scalafx.application.JFXApp
 import scalafx.application.JFXApp.PrimaryStage
 import scalafx.geometry.Insets
 import scalafx.scene.Scene
-import scalafx.scene.layout.HBox
+import scalafx.scene.control.Label
+import scalafx.scene.layout.{BorderPane, HBox}
 import scalafx.scene.paint.Color._
 import scalafx.scene.paint.{LinearGradient, Stops}
 import scalafx.scene.text.Text
@@ -14,6 +15,10 @@ object MoreComplexUi extends JFXApp{
     title = "More complex app"
     scene = new Scene {
       fill = White
+      root = new BorderPane {
+        padding = Insets(25)
+        center = new Label("Hello SBT")
+      }
       content = new HBox {
         padding = Insets(20)
         children = Seq(
@@ -24,20 +29,6 @@ object MoreComplexUi extends JFXApp{
               stops = Stops(PaleGreen, SeaGreen)
             )
           },
-          new Text {
-            text = "Load game"
-            fill = new LinearGradient(
-              endX = 0,
-              stops = Stops(SeaGreen, PaleGreen)
-            )
-          },
-          new Text {
-            text = "Settings"
-            fill = new LinearGradient(
-              endX = 0,
-              stops = Stops(SeaGreen, PaleGreen)
-            )
-          }
         )
       }
     }
