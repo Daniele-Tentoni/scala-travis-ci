@@ -1,3 +1,4 @@
+/*
 package org.ui
 
 import javafx.scene.Node
@@ -70,3 +71,4 @@ object LoginDialogDemo extends JFXApp{
     case None               => println("Dialog returned: None")
   }
 }
+*/
