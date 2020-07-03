@@ -26,8 +26,9 @@
 </span>2 <span style=''>
 </span>3 <span style=''>trait ProducerUtils {
 </span>4 <span style=''>  producer: Producer =&gt;
-</span>5 <span style=''>  def getMany(n:Int): Seq[String] = </span><span style='background: #F0ADAD'>Seq(producer.get()).union(getMany(n - 1))</span><span style=''>
-</span>6 <span style=''>}
+</span>5 <span style=''>  def getMany(n:Int): Seq[String] =
+</span>6 <span style=''>    </span><span style='background: #AEF1AE'>for (i &lt;- 0 to n) yield producer.get()</span><span style=''>
+</span>7 <span style=''>}
 </span></pre>
           </div>
           <div class="tab-pane" id="statementlist">
@@ -41,36 +42,78 @@
         <th>Code</th>
       </tr><tr>
         <td>
-          5
+          6
         </td>
         <td>
-          218
+          86
         </td>
         <td>
-          107
+          121
           -
-          148
+          122
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          0
+        </td>
+      </tr><tr>
+        <td>
+          6
+        </td>
+        <td>
+          85
+        </td>
+        <td>
+          111
+          -
+          149
         </td>
         <td>
           ApplyToImplicitArgs
         </td>
         <td>
-          scala.collection.SeqLike.union
+          scala.collection.TraversableLike.map
         </td>
-        <td style="background: #F0ADAD">
-          scala.collection.Seq.apply[String](ProducerUtils.this.get()).union[String, Seq[String]](ProducerUtils.this.getMany(n.-(1)))(collection.this.Seq.canBuildFrom[String])
+        <td style="background: #AEF1AE">
+          scala.Predef.intWrapper(0).to(n).map[String, Seq[String]](((i: Int) =&gt; ProducerUtils.this.get()))(immutable.this.IndexedSeq.canBuildFrom[String])
         </td>
       </tr><tr>
         <td>
-          5
+          6
         </td>
         <td>
-          220
+          87
         </td>
         <td>
-          111
+          118
           -
-          125
+          118
+        </td>
+        <td>
+          TypeApply
+        </td>
+        <td>
+          scala.collection.immutable.IndexedSeq.canBuildFrom
+        </td>
+        <td style="background: #AEF1AE">
+          immutable.this.IndexedSeq.canBuildFrom[String]
+        </td>
+      </tr><tr>
+        <td>
+          6
+        </td>
+        <td>
+          84
+        </td>
+        <td>
+          135
+          -
+          149
         </td>
         <td>
           Apply
@@ -78,71 +121,8 @@
         <td>
           it.parttimeteam.Producer.get
         </td>
-        <td style="background: #F0ADAD">
+        <td style="background: #AEF1AE">
           ProducerUtils.this.get()
-        </td>
-      </tr><tr>
-        <td>
-          5
-        </td>
-        <td>
-          217
-        </td>
-        <td>
-          141
-          -
-          146
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          scala.Int.-
-        </td>
-        <td style="background: #F0ADAD">
-          n.-(1)
-        </td>
-      </tr><tr>
-        <td>
-          5
-        </td>
-        <td>
-          219
-        </td>
-        <td>
-          132
-          -
-          132
-        </td>
-        <td>
-          TypeApply
-        </td>
-        <td>
-          scala.collection.Seq.canBuildFrom
-        </td>
-        <td style="background: #F0ADAD">
-          collection.this.Seq.canBuildFrom[String]
-        </td>
-      </tr><tr>
-        <td>
-          5
-        </td>
-        <td>
-          221
-        </td>
-        <td>
-          133
-          -
-          147
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          it.parttimeteam.ProducerUtils.getMany
-        </td>
-        <td style="background: #F0ADAD">
-          ProducerUtils.this.getMany(n.-(1))
         </td>
       </tr>
     </table>

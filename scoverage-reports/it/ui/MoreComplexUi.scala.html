@@ -1,0 +1,945 @@
+<html>
+      <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title id="title">
+          it/ui/MoreComplexUi.scala.html
+        </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
+        $(document).ready(function() {$(".tablesorter").tablesorter();});
+      </script>
+        <style>
+          table.codegrid { font-family: monospace; font-size: 12px; width: auto!important; }table.statementlist { width: auto!important; font-size: 13px; } table.codegrid td { padding: 0!important; border: 0!important } table td.linenumber { width: 40px!important; } 
+        </style>
+      </head>
+      <body style="font-family: monospace;">
+        <ul class="nav nav-tabs">
+          <li>
+            <a href="#codegrid" data-toggle="tab">Codegrid</a>
+          </li>
+          <li>
+            <a href="#statementlist" data-toggle="tab">Statement List</a>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div class="tab-pane active" id="codegrid">
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package it.ui
+</span>2 <span style=''>
+</span>3 <span style=''>import scalafx.application.JFXApp
+</span>4 <span style=''>import scalafx.application.JFXApp.PrimaryStage
+</span>5 <span style=''>import scalafx.geometry.Insets
+</span>6 <span style=''>import scalafx.scene.Scene
+</span>7 <span style=''>import scalafx.scene.control.Label
+</span>8 <span style=''>import scalafx.scene.layout.{BorderPane, HBox}
+</span>9 <span style=''>import scalafx.scene.paint.Color._
+</span>10 <span style=''>import scalafx.scene.paint.{LinearGradient, Stops}
+</span>11 <span style=''>import scalafx.scene.text.Text
+</span>12 <span style=''>
+</span>13 <span style=''>object MoreComplexUi extends JFXApp{
+</span>14 <span style=''>  </span><span style='background: #F0ADAD'>stage = new PrimaryStage {
+</span>15 <span style=''></span><span style='background: #F0ADAD'>    title = &quot;More complex app&quot;
+</span>16 <span style=''></span><span style='background: #F0ADAD'>    scene = new Scene {
+</span>17 <span style=''></span><span style='background: #F0ADAD'>      fill = White
+</span>18 <span style=''></span><span style='background: #F0ADAD'>      root = new BorderPane {
+</span>19 <span style=''></span><span style='background: #F0ADAD'>        padding = Insets(25)
+</span>20 <span style=''></span><span style='background: #F0ADAD'>        center = new Label(&quot;Hello SBT&quot;)
+</span>21 <span style=''></span><span style='background: #F0ADAD'>      }
+</span>22 <span style=''></span><span style='background: #F0ADAD'>      content = new HBox {
+</span>23 <span style=''></span><span style='background: #F0ADAD'>        padding = Insets(20)
+</span>24 <span style=''></span><span style='background: #F0ADAD'>        children = Seq(
+</span>25 <span style=''></span><span style='background: #F0ADAD'>          new Text {
+</span>26 <span style=''></span><span style='background: #F0ADAD'>            text = &quot;New game&quot;
+</span>27 <span style=''></span><span style='background: #F0ADAD'>            fill = new LinearGradient(
+</span>28 <span style=''></span><span style='background: #F0ADAD'>              endX = 0,
+</span>29 <span style=''></span><span style='background: #F0ADAD'>              stops = Stops(PaleGreen, SeaGreen)
+</span>30 <span style=''></span><span style='background: #F0ADAD'>            )
+</span>31 <span style=''></span><span style='background: #F0ADAD'>          },
+</span>32 <span style=''></span><span style='background: #F0ADAD'>        )
+</span>33 <span style=''></span><span style='background: #F0ADAD'>      }
+</span>34 <span style=''></span><span style='background: #F0ADAD'>    }
+</span>35 <span style=''></span><span style='background: #F0ADAD'>  }</span><span style=''>
+</span>36 <span style=''>}
+</span></pre>
+          </div>
+          <div class="tab-pane" id="statementlist">
+            <table cellspacing="0" cellpadding="0" class="table statementlist">
+      <tr>
+        <th>Line</th>
+        <th>Stmt Id</th>
+        <th>Pos</th>
+        <th>Tree</th>
+        <th>Symbol</th>
+        <th>Code</th>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          82
+        </td>
+        <td>
+          393
+          -
+          898
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.application.JFXApp.stage_=
+        </td>
+        <td style="background: #F0ADAD">
+          MoreComplexUi.this.stage_=({
+  final class $anon extends scalafx.application.JFXApp.PrimaryStage {
+    def &lt;init&gt;(): &lt;$anon: scalafx.application.JFXApp.PrimaryStage&gt; = {
+      $anon.super.&lt;init&gt;();
+      ()
+    };
+    $anon.this.title_=(&quot;More complex app&quot;);
+    $anon.this.scene_=({
+      final class $anon extends scalafx.scene.Scene {
+        def &lt;init&gt;(): &lt;$anon: scalafx.scene.Scene&gt; = {
+          $anon.super.&lt;init&gt;(scene.this.Scene.&lt;init&gt;$default$1);
+          ()
+        };
+        $anon.this.fill_=(scalafx.scene.paint.Color.White);
+        $anon.this.root_=({
+          final class $anon extends scalafx.scene.layout.BorderPane {
+            def &lt;init&gt;(): &lt;$anon: scalafx.scene.layout.BorderPane&gt; = {
+              $anon.super.&lt;init&gt;(layout.this.BorderPane.&lt;init&gt;$default$1);
+              ()
+            };
+            $anon.this.padding_=(scalafx.geometry.Insets.apply(25.0));
+            $anon.this.center_=(new scalafx.scene.control.Label(&quot;Hello SBT&quot;))
+          };
+          new $anon()
+        });
+        $anon.this.content_=({
+          final class $anon extends scalafx.scene.layout.HBox {
+            def &lt;init&gt;(): &lt;$anon: scalafx.scene.layout.HBox&gt; = {
+              $anon.super.&lt;init&gt;();
+              ()
+            };
+            $anon.this.padding_=(scalafx.geometry.Insets.apply(20.0));
+            $anon.this.children_=(scala.collection.Seq.apply[scalafx.scene.text.Text]({
+              final class $anon extends scalafx.scene.text.Text {
+                def &lt;init&gt;(): &lt;$anon: scalafx.scene.text.Text&gt; = {
+                  $anon.super.&lt;init&gt;(text.this.Text.&lt;init&gt;$default$1);
+                  ()
+                };
+                $anon.this.text_=(&quot;New game&quot;);
+                $anon.this.fill_=({
+                  &lt;artifact&gt; val x$1: Double = 0.0;
+                  &lt;artifact&gt; val x$2: Seq[javafx.scene.paint.Stop] @scala.reflect.internal.annotations.uncheckedBounds = scalafx.scene.paint.Stops.apply(scalafx.scene.paint.Color.PaleGreen, scalafx.scene.paint.Color.SeaGreen);
+                  &lt;artifact&gt; val x$3: Double = paint.this.LinearGradient.&lt;init&gt;$default$1;
+                  &lt;artifact&gt; val x$4: Double = paint.this.LinearGradient.&lt;init&gt;$default$2;
+                  &lt;artifact&gt; val x$5: Double = paint.this.LinearGradient.&lt;init&gt;$default$4;
+                  &lt;artifact&gt; val x$6: Boolean = paint.this.LinearGradient.&lt;init&gt;$default$5;
+                  &lt;artifact&gt; val x$7: scalafx.scene.paint.CycleMethod = paint.this.LinearGradient.&lt;init&gt;$default$6;
+                  new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
+                })
+              };
+              new $anon()
+            }))
+          };
+          new $anon()
+        })
+      };
+      new $anon()
+    })
+  };
+  new $anon()
+})
+        </td>
+      </tr><tr>
+        <td>
+          14
+        </td>
+        <td>
+          6
+        </td>
+        <td>
+          401
+          -
+          404
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          it.ui.MoreComplexUi.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          15
+        </td>
+        <td>
+          24
+        </td>
+        <td>
+          424
+          -
+          450
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.stage.Stage.title_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.title_=(&quot;More complex app&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          41
+        </td>
+        <td>
+          455
+          -
+          894
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.stage.Stage.scene_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.scene_=({
+  final class $anon extends scalafx.scene.Scene {
+    def &lt;init&gt;(): &lt;$anon: scalafx.scene.Scene&gt; = {
+      $anon.super.&lt;init&gt;(scene.this.Scene.&lt;init&gt;$default$1);
+      ()
+    };
+    $anon.this.fill_=(scalafx.scene.paint.Color.White);
+    $anon.this.root_=({
+      final class $anon extends scalafx.scene.layout.BorderPane {
+        def &lt;init&gt;(): &lt;$anon: scalafx.scene.layout.BorderPane&gt; = {
+          $anon.super.&lt;init&gt;(layout.this.BorderPane.&lt;init&gt;$default$1);
+          ()
+        };
+        $anon.this.padding_=(scalafx.geometry.Insets.apply(25.0));
+        $anon.this.center_=(new scalafx.scene.control.Label(&quot;Hello SBT&quot;))
+      };
+      new $anon()
+    });
+    $anon.this.content_=({
+      final class $anon extends scalafx.scene.layout.HBox {
+        def &lt;init&gt;(): &lt;$anon: scalafx.scene.layout.HBox&gt; = {
+          $anon.super.&lt;init&gt;();
+          ()
+        };
+        $anon.this.padding_=(scalafx.geometry.Insets.apply(20.0));
+        $anon.this.children_=(scala.collection.Seq.apply[scalafx.scene.text.Text]({
+          final class $anon extends scalafx.scene.text.Text {
+            def &lt;init&gt;(): &lt;$anon: scalafx.scene.text.Text&gt; = {
+              $anon.super.&lt;init&gt;(text.this.Text.&lt;init&gt;$default$1);
+              ()
+            };
+            $anon.this.text_=(&quot;New game&quot;);
+            $anon.this.fill_=({
+              &lt;artifact&gt; val x$1: Double = 0.0;
+              &lt;artifact&gt; val x$2: Seq[javafx.scene.paint.Stop] @scala.reflect.internal.annotations.uncheckedBounds = scalafx.scene.paint.Stops.apply(scalafx.scene.paint.Color.PaleGreen, scalafx.scene.paint.Color.SeaGreen);
+              &lt;artifact&gt; val x$3: Double = paint.this.LinearGradient.&lt;init&gt;$default$1;
+              &lt;artifact&gt; val x$4: Double = paint.this.LinearGradient.&lt;init&gt;$default$2;
+              &lt;artifact&gt; val x$5: Double = paint.this.LinearGradient.&lt;init&gt;$default$4;
+              &lt;artifact&gt; val x$6: Boolean = paint.this.LinearGradient.&lt;init&gt;$default$5;
+              &lt;artifact&gt; val x$7: scalafx.scene.paint.CycleMethod = paint.this.LinearGradient.&lt;init&gt;$default$6;
+              new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
+            })
+          };
+          new $anon()
+        }))
+      };
+      new $anon()
+    })
+  };
+  new $anon()
+})
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          74
+        </td>
+        <td>
+          463
+          -
+          466
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          it.ui.MoreComplexUi.$anon.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          71
+        </td>
+        <td>
+          488
+          -
+          493
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.Color.White
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.scene.paint.Color.White
+        </td>
+      </tr><tr>
+        <td>
+          17
+        </td>
+        <td>
+          37
+        </td>
+        <td>
+          481
+          -
+          493
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.Scene.fill_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.fill_=(scalafx.scene.paint.Color.White)
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          67
+        </td>
+        <td>
+          507
+          -
+          510
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          it.ui.MoreComplexUi.$anon.$anon.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          18
+        </td>
+        <td>
+          51
+        </td>
+        <td>
+          500
+          -
+          600
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.Scene.root_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.root_=({
+  final class $anon extends scalafx.scene.layout.BorderPane {
+    def &lt;init&gt;(): &lt;$anon: scalafx.scene.layout.BorderPane&gt; = {
+      $anon.super.&lt;init&gt;(layout.this.BorderPane.&lt;init&gt;$default$1);
+      ()
+    };
+    $anon.this.padding_=(scalafx.geometry.Insets.apply(25.0));
+    $anon.this.center_=(new scalafx.scene.control.Label(&quot;Hello SBT&quot;))
+  };
+  new $anon()
+})
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          26
+        </td>
+        <td>
+          542
+          -
+          552
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.geometry.Insets.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.geometry.Insets.apply(25.0)
+        </td>
+      </tr><tr>
+        <td>
+          19
+        </td>
+        <td>
+          81
+        </td>
+        <td>
+          532
+          -
+          552
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.layout.Region.padding_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.padding_=(scalafx.geometry.Insets.apply(25.0))
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          44
+        </td>
+        <td>
+          570
+          -
+          592
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.control.Label.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scalafx.scene.control.Label(&quot;Hello SBT&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          20
+        </td>
+        <td>
+          11
+        </td>
+        <td>
+          561
+          -
+          592
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.layout.BorderPane.center_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.center_=(new scalafx.scene.control.Label(&quot;Hello SBT&quot;))
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          20
+        </td>
+        <td>
+          607
+          -
+          888
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.Scene.content_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.content_=({
+  final class $anon extends scalafx.scene.layout.HBox {
+    def &lt;init&gt;(): &lt;$anon: scalafx.scene.layout.HBox&gt; = {
+      $anon.super.&lt;init&gt;();
+      ()
+    };
+    $anon.this.padding_=(scalafx.geometry.Insets.apply(20.0));
+    $anon.this.children_=(scala.collection.Seq.apply[scalafx.scene.text.Text]({
+      final class $anon extends scalafx.scene.text.Text {
+        def &lt;init&gt;(): &lt;$anon: scalafx.scene.text.Text&gt; = {
+          $anon.super.&lt;init&gt;(text.this.Text.&lt;init&gt;$default$1);
+          ()
+        };
+        $anon.this.text_=(&quot;New game&quot;);
+        $anon.this.fill_=({
+          &lt;artifact&gt; val x$1: Double = 0.0;
+          &lt;artifact&gt; val x$2: Seq[javafx.scene.paint.Stop] @scala.reflect.internal.annotations.uncheckedBounds = scalafx.scene.paint.Stops.apply(scalafx.scene.paint.Color.PaleGreen, scalafx.scene.paint.Color.SeaGreen);
+          &lt;artifact&gt; val x$3: Double = paint.this.LinearGradient.&lt;init&gt;$default$1;
+          &lt;artifact&gt; val x$4: Double = paint.this.LinearGradient.&lt;init&gt;$default$2;
+          &lt;artifact&gt; val x$5: Double = paint.this.LinearGradient.&lt;init&gt;$default$4;
+          &lt;artifact&gt; val x$6: Boolean = paint.this.LinearGradient.&lt;init&gt;$default$5;
+          &lt;artifact&gt; val x$7: scalafx.scene.paint.CycleMethod = paint.this.LinearGradient.&lt;init&gt;$default$6;
+          new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
+        })
+      };
+      new $anon()
+    }))
+  };
+  new $anon()
+})
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          55
+        </td>
+        <td>
+          617
+          -
+          620
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          it.ui.MoreComplexUi.$anon.$anon.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          17
+        </td>
+        <td>
+          646
+          -
+          656
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.geometry.Insets.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.geometry.Insets.apply(20.0)
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          72
+        </td>
+        <td>
+          636
+          -
+          656
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.layout.Region.padding_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.padding_=(scalafx.geometry.Insets.apply(20.0))
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          14
+        </td>
+        <td>
+          676
+          -
+          880
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.collection.generic.GenericCompanion.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.collection.Seq.apply[scalafx.scene.text.Text]({
+  final class $anon extends scalafx.scene.text.Text {
+    def &lt;init&gt;(): &lt;$anon: scalafx.scene.text.Text&gt; = {
+      $anon.super.&lt;init&gt;(text.this.Text.&lt;init&gt;$default$1);
+      ()
+    };
+    $anon.this.text_=(&quot;New game&quot;);
+    $anon.this.fill_=({
+      &lt;artifact&gt; val x$1: Double = 0.0;
+      &lt;artifact&gt; val x$2: Seq[javafx.scene.paint.Stop] @scala.reflect.internal.annotations.uncheckedBounds = scalafx.scene.paint.Stops.apply(scalafx.scene.paint.Color.PaleGreen, scalafx.scene.paint.Color.SeaGreen);
+      &lt;artifact&gt; val x$3: Double = paint.this.LinearGradient.&lt;init&gt;$default$1;
+      &lt;artifact&gt; val x$4: Double = paint.this.LinearGradient.&lt;init&gt;$default$2;
+      &lt;artifact&gt; val x$5: Double = paint.this.LinearGradient.&lt;init&gt;$default$4;
+      &lt;artifact&gt; val x$6: Boolean = paint.this.LinearGradient.&lt;init&gt;$default$5;
+      &lt;artifact&gt; val x$7: scalafx.scene.paint.CycleMethod = paint.this.LinearGradient.&lt;init&gt;$default$6;
+      new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
+    })
+  };
+  new $anon()
+})
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          64
+        </td>
+        <td>
+          665
+          -
+          880
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.layout.Pane.children_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.children_=(scala.collection.Seq.apply[scalafx.scene.text.Text]({
+  final class $anon extends scalafx.scene.text.Text {
+    def &lt;init&gt;(): &lt;$anon: scalafx.scene.text.Text&gt; = {
+      $anon.super.&lt;init&gt;(text.this.Text.&lt;init&gt;$default$1);
+      ()
+    };
+    $anon.this.text_=(&quot;New game&quot;);
+    $anon.this.fill_=({
+      &lt;artifact&gt; val x$1: Double = 0.0;
+      &lt;artifact&gt; val x$2: Seq[javafx.scene.paint.Stop] @scala.reflect.internal.annotations.uncheckedBounds = scalafx.scene.paint.Stops.apply(scalafx.scene.paint.Color.PaleGreen, scalafx.scene.paint.Color.SeaGreen);
+      &lt;artifact&gt; val x$3: Double = paint.this.LinearGradient.&lt;init&gt;$default$1;
+      &lt;artifact&gt; val x$4: Double = paint.this.LinearGradient.&lt;init&gt;$default$2;
+      &lt;artifact&gt; val x$5: Double = paint.this.LinearGradient.&lt;init&gt;$default$4;
+      &lt;artifact&gt; val x$6: Boolean = paint.this.LinearGradient.&lt;init&gt;$default$5;
+      &lt;artifact&gt; val x$7: scalafx.scene.paint.CycleMethod = paint.this.LinearGradient.&lt;init&gt;$default$6;
+      new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
+    })
+  };
+  new $anon()
+}))
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          48
+        </td>
+        <td>
+          691
+          -
+          694
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          it.ui.MoreComplexUi.$anon.$anon.$anon.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          38
+        </td>
+        <td>
+          714
+          -
+          731
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.text.Text.text_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.text_=(&quot;New game&quot;)
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          23
+        </td>
+        <td>
+          751
+          -
+          751
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$4
+        </td>
+        <td style="background: #F0ADAD">
+          paint.this.LinearGradient.&lt;init&gt;$default$4
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          80
+        </td>
+        <td>
+          744
+          -
+          857
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.shape.Shape.fill_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.fill_=({
+  &lt;artifact&gt; val x$1: Double = 0.0;
+  &lt;artifact&gt; val x$2: Seq[javafx.scene.paint.Stop] @scala.reflect.internal.annotations.uncheckedBounds = scalafx.scene.paint.Stops.apply(scalafx.scene.paint.Color.PaleGreen, scalafx.scene.paint.Color.SeaGreen);
+  &lt;artifact&gt; val x$3: Double = paint.this.LinearGradient.&lt;init&gt;$default$1;
+  &lt;artifact&gt; val x$4: Double = paint.this.LinearGradient.&lt;init&gt;$default$2;
+  &lt;artifact&gt; val x$5: Double = paint.this.LinearGradient.&lt;init&gt;$default$4;
+  &lt;artifact&gt; val x$6: Boolean = paint.this.LinearGradient.&lt;init&gt;$default$5;
+  &lt;artifact&gt; val x$7: scalafx.scene.paint.CycleMethod = paint.this.LinearGradient.&lt;init&gt;$default$6;
+  new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
+})
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          40
+        </td>
+        <td>
+          751
+          -
+          751
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$6
+        </td>
+        <td style="background: #F0ADAD">
+          paint.this.LinearGradient.&lt;init&gt;$default$6
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          751
+          -
+          857
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          69
+        </td>
+        <td>
+          751
+          -
+          751
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          paint.this.LinearGradient.&lt;init&gt;$default$5
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          54
+        </td>
+        <td>
+          751
+          -
+          751
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          paint.this.LinearGradient.&lt;init&gt;$default$2
+        </td>
+      </tr><tr>
+        <td>
+          27
+        </td>
+        <td>
+          66
+        </td>
+        <td>
+          751
+          -
+          751
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          paint.this.LinearGradient.&lt;init&gt;$default$1
+        </td>
+      </tr><tr>
+        <td>
+          28
+        </td>
+        <td>
+          27
+        </td>
+        <td>
+          792
+          -
+          793
+        </td>
+        <td>
+          Literal
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          0.0
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          77
+        </td>
+        <td>
+          823
+          -
+          832
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.Color.PaleGreen
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.scene.paint.Color.PaleGreen
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          10
+        </td>
+        <td>
+          817
+          -
+          843
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.paint.Stops.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.scene.paint.Stops.apply(scalafx.scene.paint.Color.PaleGreen, scalafx.scene.paint.Color.SeaGreen)
+        </td>
+      </tr><tr>
+        <td>
+          29
+        </td>
+        <td>
+          42
+        </td>
+        <td>
+          834
+          -
+          842
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.Color.SeaGreen
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.scene.paint.Color.SeaGreen
+        </td>
+      </tr>
+    </table>
+          </div>
+        </div>
+      </body>
+    </html>

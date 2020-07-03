@@ -2,7 +2,7 @@
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title id="title">
-          org/ui/ScalaFXSample.scala.html
+          it/ui/ScalaFXSample.scala.html
         </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
         $(document).ready(function() {$(".tablesorter").tablesorter();});
@@ -22,7 +22,7 @@
         </ul>
         <div class="tab-content">
           <div class="tab-pane active" id="codegrid">
-            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package org.ui
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package it.ui
 </span>2 <span style=''>
 </span>3 <span style=''>import scalafx.application.JFXApp
 </span>4 <span style=''>import scalafx.application.JFXApp.PrimaryStage
@@ -30,8 +30,8 @@
 </span>6 <span style=''>import scalafx.scene.Scene
 </span>7 <span style=''>import scalafx.scene.effect.DropShadow
 </span>8 <span style=''>import scalafx.scene.layout.HBox
-</span>9 <span style=''>import scalafx.scene.paint.Color.{Black, Cyan, DodgerBlue, PaleGreen, SeaGreen}
-</span>10 <span style=''>import scalafx.scene.paint.{LinearGradient, Stops}
+</span>9 <span style=''>import scalafx.scene.paint.{LinearGradient, Stops}
+</span>10 <span style=''>import scalafx.scene.paint.Color.{Black, Cyan, DodgerBlue, PaleGreen, SeaGreen}
 </span>11 <span style=''>import scalafx.scene.text.Text
 </span>12 <span style=''>
 </span>13 <span style=''>object ScalaFXSample extends JFXApp {
@@ -67,7 +67,12 @@
 </span>43 <span style=''></span><span style='background: #F0ADAD'>      }
 </span>44 <span style=''></span><span style='background: #F0ADAD'>    }
 </span>45 <span style=''></span><span style='background: #F0ADAD'>  }</span><span style=''>
-</span>46 <span style=''>}
+</span>46 <span style=''>
+</span>47 <span style=''>  override def main(args: Array[String]): Unit = {
+</span>48 <span style=''>    </span><span style='background: #F0ADAD'>super.main(args)</span><span style=''>
+</span>49 <span style=''>    </span><span style='background: #F0ADAD'>println(&quot;Started.&quot;)</span><span style=''>
+</span>50 <span style=''>  }
+</span>51 <span style=''>}
 </span></pre>
           </div>
           <div class="tab-pane" id="statementlist">
@@ -84,12 +89,12 @@
           14
         </td>
         <td>
-          76
+          80
         </td>
         <td>
-          430
+          429
           -
-          1234
+          1233
         </td>
         <td>
           Apply
@@ -187,18 +192,18 @@
           14
         </td>
         <td>
-          152
+          79
         </td>
         <td>
-          438
+          437
           -
-          441
+          440
         </td>
         <td>
           Apply
         </td>
         <td>
-          org.ui.ScalaFXSample.$anon.&lt;init&gt;
+          it.ui.ScalaFXSample.$anon.&lt;init&gt;
         </td>
         <td style="background: #F0ADAD">
           new $anon()
@@ -208,12 +213,12 @@
           15
         </td>
         <td>
-          156
+          34
         </td>
         <td>
-          461
+          460
           -
-          486
+          485
         </td>
         <td>
           Apply
@@ -229,12 +234,33 @@
           16
         </td>
         <td>
-          208
+          77
         </td>
         <td>
-          491
+          498
           -
-          1230
+          501
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          it.ui.ScalaFXSample.$anon.$anon.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new $anon()
+        </td>
+      </tr><tr>
+        <td>
+          16
+        </td>
+        <td>
+          78
+        </td>
+        <td>
+          490
+          -
+          1229
         </td>
         <td>
           Apply
@@ -319,57 +345,15 @@
         </td>
       </tr><tr>
         <td>
-          16
-        </td>
-        <td>
-          66
-        </td>
-        <td>
-          499
-          -
-          502
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          org.ui.ScalaFXSample.$anon.$anon.&lt;init&gt;
-        </td>
-        <td style="background: #F0ADAD">
-          new $anon()
-        </td>
-      </tr><tr>
-        <td>
           17
         </td>
         <td>
-          213
+          35
         </td>
         <td>
-          517
+          523
           -
-          529
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          scalafx.scene.Scene.fill_=
-        </td>
-        <td style="background: #F0ADAD">
-          $anon.this.fill_=(scalafx.scene.paint.Color.Black)
-        </td>
-      </tr><tr>
-        <td>
-          17
-        </td>
-        <td>
-          78
-        </td>
-        <td>
-          524
-          -
-          529
+          528
         </td>
         <td>
           Select
@@ -382,15 +366,36 @@
         </td>
       </tr><tr>
         <td>
+          17
+        </td>
+        <td>
+          36
+        </td>
+        <td>
+          516
+          -
+          528
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.Scene.fill_=
+        </td>
+        <td style="background: #F0ADAD">
+          $anon.this.fill_=(scalafx.scene.paint.Color.Black)
+        </td>
+      </tr><tr>
+        <td>
           18
         </td>
         <td>
-          146
+          76
         </td>
         <td>
-          536
+          535
           -
-          1224
+          1223
         </td>
         <td>
           Apply
@@ -468,18 +473,18 @@
           18
         </td>
         <td>
-          9
+          75
         </td>
         <td>
-          546
+          545
           -
-          549
+          548
         </td>
         <td>
           Apply
         </td>
         <td>
-          org.ui.ScalaFXSample.$anon.$anon.$anon.&lt;init&gt;
+          it.ui.ScalaFXSample.$anon.$anon.$anon.&lt;init&gt;
         </td>
         <td style="background: #F0ADAD">
           new $anon()
@@ -489,12 +494,12 @@
           19
         </td>
         <td>
-          85
+          38
         </td>
         <td>
-          565
+          564
           -
-          585
+          584
         </td>
         <td>
           Apply
@@ -510,12 +515,12 @@
           19
         </td>
         <td>
-          174
+          37
         </td>
         <td>
-          575
+          574
           -
-          585
+          584
         </td>
         <td>
           Apply
@@ -531,85 +536,12 @@
           20
         </td>
         <td>
-          136
+          74
         </td>
         <td>
-          605
+          593
           -
-          1216
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          scala.collection.generic.GenericCompanion.apply
-        </td>
-        <td style="background: #F0ADAD">
-          scala.collection.Seq.apply[scalafx.scene.text.Text]({
-  final class $anon extends scalafx.scene.text.Text {
-    def &lt;init&gt;(): &lt;$anon: scalafx.scene.text.Text&gt; = {
-      $anon.super.&lt;init&gt;(text.this.Text.&lt;init&gt;$default$1);
-      ()
-    };
-    $anon.this.text_=(&quot;Hello &quot;);
-    $anon.this.style_=(&quot;-fx-font-size: 48pt&quot;);
-    $anon.this.fill_=({
-      &lt;artifact&gt; val x$1: Double = 0.0;
-      &lt;artifact&gt; val x$2: Seq[javafx.scene.paint.Stop] @scala.reflect.internal.annotations.uncheckedBounds = scalafx.scene.paint.Stops.apply(scalafx.scene.paint.Color.PaleGreen, scalafx.scene.paint.Color.SeaGreen);
-      &lt;artifact&gt; val x$3: Double = paint.this.LinearGradient.&lt;init&gt;$default$1;
-      &lt;artifact&gt; val x$4: Double = paint.this.LinearGradient.&lt;init&gt;$default$2;
-      &lt;artifact&gt; val x$5: Double = paint.this.LinearGradient.&lt;init&gt;$default$4;
-      &lt;artifact&gt; val x$6: Boolean = paint.this.LinearGradient.&lt;init&gt;$default$5;
-      &lt;artifact&gt; val x$7: scalafx.scene.paint.CycleMethod = paint.this.LinearGradient.&lt;init&gt;$default$6;
-      new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
-    })
-  };
-  new $anon()
-}, {
-  final class $anon extends scalafx.scene.text.Text {
-    def &lt;init&gt;(): &lt;$anon: scalafx.scene.text.Text&gt; = {
-      $anon.super.&lt;init&gt;(text.this.Text.&lt;init&gt;$default$1);
-      ()
-    };
-    $anon.this.text_=(&quot;World!!!&quot;);
-    $anon.this.style_=(&quot;-fx-font-size: 48pt&quot;);
-    $anon.this.fill_=({
-      &lt;artifact&gt; val x$1: Double = 0.0;
-      &lt;artifact&gt; val x$2: Seq[javafx.scene.paint.Stop] @scala.reflect.internal.annotations.uncheckedBounds = scalafx.scene.paint.Stops.apply(scalafx.scene.paint.Color.Cyan, scalafx.scene.paint.Color.DodgerBlue);
-      &lt;artifact&gt; val x$3: Double = paint.this.LinearGradient.&lt;init&gt;$default$1;
-      &lt;artifact&gt; val x$4: Double = paint.this.LinearGradient.&lt;init&gt;$default$2;
-      &lt;artifact&gt; val x$5: Double = paint.this.LinearGradient.&lt;init&gt;$default$4;
-      &lt;artifact&gt; val x$6: Boolean = paint.this.LinearGradient.&lt;init&gt;$default$5;
-      &lt;artifact&gt; val x$7: scalafx.scene.paint.CycleMethod = paint.this.LinearGradient.&lt;init&gt;$default$6;
-      new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
-    });
-    $anon.this.effect_=({
-      final class $anon extends scalafx.scene.effect.DropShadow {
-        def &lt;init&gt;(): &lt;$anon: scalafx.scene.effect.DropShadow&gt; = {
-          $anon.super.&lt;init&gt;(effect.this.DropShadow.&lt;init&gt;$default$1);
-          ()
-        };
-        $anon.this.color_=(scalafx.scene.paint.Color.DodgerBlue);
-        $anon.this.radius_=(25.0);
-        $anon.this.spread_=(0.25)
-      };
-      new $anon()
-    })
-  };
-  new $anon()
-})
-        </td>
-      </tr><tr>
-        <td>
-          20
-        </td>
-        <td>
-          91
-        </td>
-        <td>
-          594
-          -
-          1216
+          1215
         </td>
         <td>
           Apply
@@ -674,21 +606,94 @@
         </td>
       </tr><tr>
         <td>
-          21
+          20
         </td>
         <td>
-          153
+          73
         </td>
         <td>
-          620
+          604
           -
-          623
+          1215
         </td>
         <td>
           Apply
         </td>
         <td>
-          org.ui.ScalaFXSample.$anon.$anon.$anon.$anon.&lt;init&gt;
+          scala.collection.generic.GenericCompanion.apply
+        </td>
+        <td style="background: #F0ADAD">
+          scala.collection.Seq.apply[scalafx.scene.text.Text]({
+  final class $anon extends scalafx.scene.text.Text {
+    def &lt;init&gt;(): &lt;$anon: scalafx.scene.text.Text&gt; = {
+      $anon.super.&lt;init&gt;(text.this.Text.&lt;init&gt;$default$1);
+      ()
+    };
+    $anon.this.text_=(&quot;Hello &quot;);
+    $anon.this.style_=(&quot;-fx-font-size: 48pt&quot;);
+    $anon.this.fill_=({
+      &lt;artifact&gt; val x$1: Double = 0.0;
+      &lt;artifact&gt; val x$2: Seq[javafx.scene.paint.Stop] @scala.reflect.internal.annotations.uncheckedBounds = scalafx.scene.paint.Stops.apply(scalafx.scene.paint.Color.PaleGreen, scalafx.scene.paint.Color.SeaGreen);
+      &lt;artifact&gt; val x$3: Double = paint.this.LinearGradient.&lt;init&gt;$default$1;
+      &lt;artifact&gt; val x$4: Double = paint.this.LinearGradient.&lt;init&gt;$default$2;
+      &lt;artifact&gt; val x$5: Double = paint.this.LinearGradient.&lt;init&gt;$default$4;
+      &lt;artifact&gt; val x$6: Boolean = paint.this.LinearGradient.&lt;init&gt;$default$5;
+      &lt;artifact&gt; val x$7: scalafx.scene.paint.CycleMethod = paint.this.LinearGradient.&lt;init&gt;$default$6;
+      new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
+    })
+  };
+  new $anon()
+}, {
+  final class $anon extends scalafx.scene.text.Text {
+    def &lt;init&gt;(): &lt;$anon: scalafx.scene.text.Text&gt; = {
+      $anon.super.&lt;init&gt;(text.this.Text.&lt;init&gt;$default$1);
+      ()
+    };
+    $anon.this.text_=(&quot;World!!!&quot;);
+    $anon.this.style_=(&quot;-fx-font-size: 48pt&quot;);
+    $anon.this.fill_=({
+      &lt;artifact&gt; val x$1: Double = 0.0;
+      &lt;artifact&gt; val x$2: Seq[javafx.scene.paint.Stop] @scala.reflect.internal.annotations.uncheckedBounds = scalafx.scene.paint.Stops.apply(scalafx.scene.paint.Color.Cyan, scalafx.scene.paint.Color.DodgerBlue);
+      &lt;artifact&gt; val x$3: Double = paint.this.LinearGradient.&lt;init&gt;$default$1;
+      &lt;artifact&gt; val x$4: Double = paint.this.LinearGradient.&lt;init&gt;$default$2;
+      &lt;artifact&gt; val x$5: Double = paint.this.LinearGradient.&lt;init&gt;$default$4;
+      &lt;artifact&gt; val x$6: Boolean = paint.this.LinearGradient.&lt;init&gt;$default$5;
+      &lt;artifact&gt; val x$7: scalafx.scene.paint.CycleMethod = paint.this.LinearGradient.&lt;init&gt;$default$6;
+      new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
+    });
+    $anon.this.effect_=({
+      final class $anon extends scalafx.scene.effect.DropShadow {
+        def &lt;init&gt;(): &lt;$anon: scalafx.scene.effect.DropShadow&gt; = {
+          $anon.super.&lt;init&gt;(effect.this.DropShadow.&lt;init&gt;$default$1);
+          ()
+        };
+        $anon.this.color_=(scalafx.scene.paint.Color.DodgerBlue);
+        $anon.this.radius_=(25.0);
+        $anon.this.spread_=(0.25)
+      };
+      new $anon()
+    })
+  };
+  new $anon()
+})
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          52
+        </td>
+        <td>
+          619
+          -
+          622
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          it.ui.ScalaFXSample.$anon.$anon.$anon.$anon.&lt;init&gt;
         </td>
         <td style="background: #F0ADAD">
           new $anon()
@@ -698,12 +703,12 @@
           22
         </td>
         <td>
-          8
+          39
         </td>
         <td>
-          643
+          642
           -
-          658
+          657
         </td>
         <td>
           Apply
@@ -719,12 +724,12 @@
           23
         </td>
         <td>
-          141
+          40
         </td>
         <td>
-          671
+          670
           -
-          700
+          699
         </td>
         <td>
           Apply
@@ -740,12 +745,33 @@
           24
         </td>
         <td>
-          83
+          50
         </td>
         <td>
-          720
+          719
           -
-          720
+          825
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;
+        </td>
+        <td style="background: #F0ADAD">
+          new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          47
+        </td>
+        <td>
+          719
+          -
+          719
         </td>
         <td>
           Select
@@ -761,12 +787,12 @@
           24
         </td>
         <td>
-          134
+          46
         </td>
         <td>
-          720
+          719
           -
-          720
+          719
         </td>
         <td>
           Select
@@ -782,12 +808,54 @@
           24
         </td>
         <td>
-          10
+          49
         </td>
         <td>
-          720
+          719
           -
-          720
+          719
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$6
+        </td>
+        <td style="background: #F0ADAD">
+          paint.this.LinearGradient.&lt;init&gt;$default$6
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          45
+        </td>
+        <td>
+          719
+          -
+          719
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$1
+        </td>
+        <td style="background: #F0ADAD">
+          paint.this.LinearGradient.&lt;init&gt;$default$1
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          48
+        </td>
+        <td>
+          719
+          -
+          719
         </td>
         <td>
           Select
@@ -803,12 +871,12 @@
           24
         </td>
         <td>
-          28
+          51
         </td>
         <td>
-          713
+          712
           -
-          826
+          825
         </td>
         <td>
           Apply
@@ -830,78 +898,15 @@
         </td>
       </tr><tr>
         <td>
-          24
-        </td>
-        <td>
-          210
-        </td>
-        <td>
-          720
-          -
-          720
-        </td>
-        <td>
-          Select
-        </td>
-        <td>
-          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$1
-        </td>
-        <td style="background: #F0ADAD">
-          paint.this.LinearGradient.&lt;init&gt;$default$1
-        </td>
-      </tr><tr>
-        <td>
-          24
-        </td>
-        <td>
-          63
-        </td>
-        <td>
-          720
-          -
-          826
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          scalafx.scene.paint.LinearGradient.&lt;init&gt;
-        </td>
-        <td style="background: #F0ADAD">
-          new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
-        </td>
-      </tr><tr>
-        <td>
-          24
-        </td>
-        <td>
-          143
-        </td>
-        <td>
-          720
-          -
-          720
-        </td>
-        <td>
-          Select
-        </td>
-        <td>
-          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$6
-        </td>
-        <td style="background: #F0ADAD">
-          paint.this.LinearGradient.&lt;init&gt;$default$6
-        </td>
-      </tr><tr>
-        <td>
           25
         </td>
         <td>
-          65
+          41
         </td>
         <td>
-          761
+          760
           -
-          762
+          761
         </td>
         <td>
           Literal
@@ -917,33 +922,12 @@
           26
         </td>
         <td>
-          157
+          44
         </td>
         <td>
-          803
+          785
           -
           811
-        </td>
-        <td>
-          Select
-        </td>
-        <td>
-          scalafx.scene.paint.Color.SeaGreen
-        </td>
-        <td style="background: #F0ADAD">
-          scalafx.scene.paint.Color.SeaGreen
-        </td>
-      </tr><tr>
-        <td>
-          26
-        </td>
-        <td>
-          79
-        </td>
-        <td>
-          786
-          -
-          812
         </td>
         <td>
           Apply
@@ -959,12 +943,33 @@
           26
         </td>
         <td>
-          24
+          43
         </td>
         <td>
-          792
+          802
           -
-          801
+          810
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.Color.SeaGreen
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.scene.paint.Color.SeaGreen
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          42
+        </td>
+        <td>
+          791
+          -
+          800
         </td>
         <td>
           Select
@@ -980,18 +985,18 @@
           29
         </td>
         <td>
-          216
+          72
         </td>
         <td>
-          850
+          849
           -
-          853
+          852
         </td>
         <td>
           Apply
         </td>
         <td>
-          org.ui.ScalaFXSample.$anon.$anon.$anon.$anon.&lt;init&gt;
+          it.ui.ScalaFXSample.$anon.$anon.$anon.$anon.&lt;init&gt;
         </td>
         <td style="background: #F0ADAD">
           new $anon()
@@ -1001,12 +1006,12 @@
           30
         </td>
         <td>
-          81
+          53
         </td>
         <td>
-          873
+          872
           -
-          890
+          889
         </td>
         <td>
           Apply
@@ -1022,12 +1027,12 @@
           31
         </td>
         <td>
-          211
+          54
         </td>
         <td>
-          903
+          902
           -
-          932
+          931
         </td>
         <td>
           Apply
@@ -1043,54 +1048,54 @@
           32
         </td>
         <td>
-          137
+          59
         </td>
         <td>
-          952
+          951
           -
-          1055
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          scalafx.scene.paint.LinearGradient.&lt;init&gt;
-        </td>
-        <td style="background: #F0ADAD">
-          new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
-        </td>
-      </tr><tr>
-        <td>
-          32
-        </td>
-        <td>
-          23
-        </td>
-        <td>
-          952
-          -
-          952
+          951
         </td>
         <td>
           Select
         </td>
         <td>
-          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$2
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$1
         </td>
         <td style="background: #F0ADAD">
-          paint.this.LinearGradient.&lt;init&gt;$default$2
+          paint.this.LinearGradient.&lt;init&gt;$default$1
         </td>
       </tr><tr>
         <td>
           32
         </td>
         <td>
-          89
+          62
         </td>
         <td>
-          945
+          951
           -
-          1055
+          951
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$5
+        </td>
+        <td style="background: #F0ADAD">
+          paint.this.LinearGradient.&lt;init&gt;$default$5
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          65
+        </td>
+        <td>
+          944
+          -
+          1054
         </td>
         <td>
           Apply
@@ -1115,54 +1120,33 @@
           32
         </td>
         <td>
-          82
-        </td>
-        <td>
-          952
-          -
-          952
-        </td>
-        <td>
-          Select
-        </td>
-        <td>
-          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$5
-        </td>
-        <td style="background: #F0ADAD">
-          paint.this.LinearGradient.&lt;init&gt;$default$5
-        </td>
-      </tr><tr>
-        <td>
-          32
-        </td>
-        <td>
           64
         </td>
         <td>
-          952
+          951
           -
-          952
+          1054
         </td>
         <td>
-          Select
+          Apply
         </td>
         <td>
-          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$1
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;
         </td>
         <td style="background: #F0ADAD">
-          paint.this.LinearGradient.&lt;init&gt;$default$1
+          new scalafx.scene.paint.LinearGradient(x$3, x$4, x$1, x$5, x$6, x$7, x$2)
         </td>
       </tr><tr>
         <td>
           32
         </td>
         <td>
-          165
+          61
         </td>
         <td>
-          952
+          951
           -
-          952
+          951
         </td>
         <td>
           Select
@@ -1178,12 +1162,33 @@
           32
         </td>
         <td>
-          215
+          60
         </td>
         <td>
-          952
+          951
           -
-          952
+          951
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.LinearGradient.&lt;init&gt;$default$2
+        </td>
+        <td style="background: #F0ADAD">
+          paint.this.LinearGradient.&lt;init&gt;$default$2
+        </td>
+      </tr><tr>
+        <td>
+          32
+        </td>
+        <td>
+          63
+        </td>
+        <td>
+          951
+          -
+          951
         </td>
         <td>
           Select
@@ -1199,12 +1204,12 @@
           33
         </td>
         <td>
-          132
+          55
         </td>
         <td>
-          993
+          992
           -
-          994
+          993
         </td>
         <td>
           Literal
@@ -1220,12 +1225,33 @@
           34
         </td>
         <td>
-          149
+          56
         </td>
         <td>
-          1018
+          1023
           -
-          1041
+          1027
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.Color.Cyan
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.scene.paint.Color.Cyan
+        </td>
+      </tr><tr>
+        <td>
+          34
+        </td>
+        <td>
+          58
+        </td>
+        <td>
+          1017
+          -
+          1040
         </td>
         <td>
           Apply
@@ -1241,12 +1267,12 @@
           34
         </td>
         <td>
-          11
+          57
         </td>
         <td>
-          1030
+          1029
           -
-          1040
+          1039
         </td>
         <td>
           Select
@@ -1259,57 +1285,15 @@
         </td>
       </tr><tr>
         <td>
-          34
-        </td>
-        <td>
-          96
-        </td>
-        <td>
-          1024
-          -
-          1028
-        </td>
-        <td>
-          Select
-        </td>
-        <td>
-          scalafx.scene.paint.Color.Cyan
-        </td>
-        <td style="background: #F0ADAD">
-          scalafx.scene.paint.Color.Cyan
-        </td>
-      </tr><tr>
-        <td>
           36
         </td>
         <td>
-          166
+          71
         </td>
         <td>
-          1077
+          1067
           -
-          1080
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          org.ui.ScalaFXSample.$anon.$anon.$anon.$anon.$anon.&lt;init&gt;
-        </td>
-        <td style="background: #F0ADAD">
-          new $anon()
-        </td>
-      </tr><tr>
-        <td>
-          36
-        </td>
-        <td>
-          75
-        </td>
-        <td>
-          1068
-          -
-          1194
+          1193
         </td>
         <td>
           Apply
@@ -1333,36 +1317,36 @@
         </td>
       </tr><tr>
         <td>
-          37
+          36
         </td>
         <td>
-          7
+          70
         </td>
         <td>
-          1116
+          1076
           -
-          1126
+          1079
         </td>
         <td>
-          Select
+          Apply
         </td>
         <td>
-          scalafx.scene.paint.Color.DodgerBlue
+          it.ui.ScalaFXSample.$anon.$anon.$anon.$anon.$anon.&lt;init&gt;
         </td>
         <td style="background: #F0ADAD">
-          scalafx.scene.paint.Color.DodgerBlue
+          new $anon()
         </td>
       </tr><tr>
         <td>
           37
         </td>
         <td>
-          150
+          67
         </td>
         <td>
-          1108
+          1107
           -
-          1126
+          1125
         </td>
         <td>
           Apply
@@ -1375,15 +1359,36 @@
         </td>
       </tr><tr>
         <td>
+          37
+        </td>
+        <td>
+          66
+        </td>
+        <td>
+          1115
+          -
+          1125
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scalafx.scene.paint.Color.DodgerBlue
+        </td>
+        <td style="background: #F0ADAD">
+          scalafx.scene.paint.Color.DodgerBlue
+        </td>
+      </tr><tr>
+        <td>
           38
         </td>
         <td>
-          69
+          68
         </td>
         <td>
-          1141
+          1140
           -
-          1152
+          1151
         </td>
         <td>
           Apply
@@ -1399,12 +1404,12 @@
           39
         </td>
         <td>
-          207
+          69
         </td>
         <td>
-          1167
+          1166
           -
-          1180
+          1179
         </td>
         <td>
           Apply
@@ -1414,6 +1419,48 @@
         </td>
         <td style="background: #F0ADAD">
           $anon.this.spread_=(0.25)
+        </td>
+      </tr><tr>
+        <td>
+          48
+        </td>
+        <td>
+          81
+        </td>
+        <td>
+          1290
+          -
+          1306
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scalafx.application.JFXApp.main
+        </td>
+        <td style="background: #F0ADAD">
+          ScalaFXSample.super.main(args)
+        </td>
+      </tr><tr>
+        <td>
+          49
+        </td>
+        <td>
+          82
+        </td>
+        <td>
+          1311
+          -
+          1330
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          scala.Predef.println
+        </td>
+        <td style="background: #F0ADAD">
+          scala.Predef.println(&quot;Started.&quot;)
         </td>
       </tr>
     </table>
