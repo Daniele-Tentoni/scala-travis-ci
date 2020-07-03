@@ -1,8 +1,10 @@
 # scala-travis-ci
 
-| Travis CI |
-| --- |
-| [![Build Status](https://travis-ci.com/Daniele-Tentoni/scala-travis-ci.svg?branch=master)](https://travis-ci.com/Daniele-Tentoni/scala-travis-ci) |
+### Integrations
+| NAME | VALUE |
+| --- | --- |
+| Travis CI | [![Build Status](https://travis-ci.com/Daniele-Tentoni/scala-travis-ci.svg?branch=master)](https://travis-ci.com/Daniele-Tentoni/scala-travis-ci) | 
+| Codecov | [![codecov](https://codecov.io/gh/Daniele-Tentoni/scala-travis-ci/branch/master/graph/badge.svg)](https://codecov.io/gh/Daniele-Tentoni/scala-travis-ci) |
 
 Find more infos on Pages [here!](https://daniele-tentoni.github.io/scala-travis-ci/)
 
@@ -32,6 +34,8 @@ You can get coverage reports with
 sbat coverage test coverageReport
 ```
 
+Starting with Java 11 JavaFX is no longer part of Java distribution. You need to add JavaFX binaries explicity to the project depended on your operating system.
+
 ### Travis CI
 
 We use [Travis CI](https://travis-ci.com/) for continuous integration.
@@ -50,4 +54,29 @@ Actual configured builds:
 | openjdk11 | osx |
 | openjdk11 | windows | | unsupported |
 
-We wanna try another useful integrations.
+You can test conditional build properties by parse and eval. More infos on: [Testing Condition](https://docs-staging.travis-ci.com/user/conditions-testing)
+* Parse
+
+  Check the syntax of a condition by inspecting the resulting abstract syntax tree.
+  ```bash
+  $ travis-conditions parse "branch = foo"
+  [:eq, [:var, :branch], [:val, "foo"]]
+
+  ```
+  
+* Eval
+
+  Check conditions against a given data hash.
+  ```bash
+  $ travis-conditions eval "branch = foo" --data '{"branch": "foo"}'
+  true
+  
+  $ echo '{"branch": "foo"}' | travis-conditions eval "branch = foo"
+  true
+  ```
+  
+  You can represent data with Array and JSON notation too.
+
+------
+
+We wanna try some other useful integrations.
