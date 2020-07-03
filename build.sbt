@@ -77,7 +77,7 @@ lazy val commons = (project in file("commons")).settings(
 lazy val server = (project in file("server")).settings(
   name := "server",
   settings,
-  mainClass := Some("it.parttimeteam.RandomProducer"),
+  mainClass in (Compile, run) := Some("it.parttimeteam.ConstantProducer"),
   libraryDependencies ++= (akkaDependencies ++
     testDependencies
     )
@@ -89,7 +89,7 @@ lazy val server = (project in file("server")).settings(
 lazy val client = (project in file("client")).settings(
   name := "client",
   settings,
-  mainClass := Some("it.parttimeteam.ConstantProducer"),
+  mainClass in (Compile, run) := Some("it.ui.ScalaFXSample"),
   libraryDependencies ++= (akkaDependencies ++
     testDependencies ++
     scalaFXDep.union(Seq(scalafx))
