@@ -24,6 +24,7 @@ lazy val osName = System.getProperty("os.name") match {
 // val scalatest = "org.scalatest" %% "scalatest" % scalatestV % "test"
 val scalamock= "org.scalamock" %% "scalamock" % "4.4.0" % Test
 val scalatest = "org.scalatest" %% "scalatest" % "3.1.0" % Test
+val scalacheck = "org.scalacheck" %% "scalacheck" % "1.14.0" % Test
 
 // val scalactic = "org.scalactic" %% "scalactic" % scalatestV
 val scalafx = "org.scalafx" %% "scalafx" % "14-R19"
@@ -46,7 +47,8 @@ lazy val akkaDependencies = Seq(
 
 lazy val testDependencies = Seq(
   scalatest,
-  scalamock
+  scalamock,
+  scalacheck
 )
 
 // Add JavaFX dependencies
