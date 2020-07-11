@@ -1,6 +1,74 @@
 <scoverage 
-statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00" version="1.0" timestamp="1593764707162">
+statement-count="14" statements-invoked="14" statement-rate="100.00" branch-rate="100.00" version="1.0" timestamp="1594468334950">
     <packages>
+        <package name="com" statement-count="13" statements-invoked="13" statement-rate="100.00">
+            <classes>
+                <class 
+                name="com.Server" filename="com/ServerWithCache.scala" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com/Server/serve" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com" class="Server" class-type="Class" full-class-name="com.Server" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="219" end="238" line="8" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com/Server/processRequest" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com" class="Server" class-type="Class" full-class-name="com.Server" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="processRequest" start="146" end="180" line="7" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="Server" class-type="Class" full-class-name="com.Server" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="processRequest" start="155" end="179" line="7" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.ServerWithCache" filename="com/ServerWithCache.scala" statement-count="10" statements-invoked="10" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com/ServerWithCache/serve" statement-count="10" statements-invoked="10" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="647" end="661" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="717" end="736" line="26" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="588" end="604" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="571" end="586" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="616" end="752" line="22" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="620" end="637" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="691" end="710" line="25" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="647" end="661" line="23" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="673" end="752" line="24" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="588" end="604" line="21" branch="true" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
         <package name="it.parttimeteam" statement-count="1" statements-invoked="1" statement-rate="100.00">
             <classes>
                 <class 

@@ -2,7 +2,7 @@
       <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <title id="title">
-          univ/people/Student.scala.html
+          com/ServerWithCache.scala.html
         </title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/css/theme.default.min.css" type="text/css"/><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.20.1/js/jquery.tablesorter.min.js"></script><link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css"/><script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script><script type="text/javascript">
         $(document).ready(function() {$(".tablesorter").tablesorter();});
@@ -22,30 +22,36 @@
         </ul>
         <div class="tab-content">
           <div class="tab-pane active" id="codegrid">
-            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package univ.people
+            <pre style='font-size: 12pt; font-family: courier, monospace;'>1 <span style=''>package com
 </span>2 <span style=''>
-</span>3 <span style=''>import people.{Ager, Person}
-</span>4 <span style=''>
-</span>5 <span style=''>case class Student(
-</span>6 <span style=''>               override val name:String,
-</span>7 <span style=''>               override val surname:String,
-</span>8 <span style=''>               protected var _age:Int
-</span>9 <span style=''>             )
-</span>10 <span style=''>  extends Person
-</span>11 <span style=''>    with Frequenter
-</span>12 <span style=''>    with Ager {
-</span>13 <span style=''>  override def sayHello(person: Person): String = </span><span style='background: #AEF1AE'>&quot;Hello &quot; + person.toString</span><span style=''>
-</span>14 <span style=''>
-</span>15 <span style=''>  var courses: Set[String] = </span><span style='background: #AEF1AE'>Set.empty</span><span style=''>
+</span>3 <span style=''>case class Request(body: String)
+</span>4 <span style=''>case class Response(content: String)
+</span>5 <span style=''>
+</span>6 <span style=''>class Server {
+</span>7 <span style=''>  def processRequest(req: Request): Response = </span><span style='background: #AEF1AE'>Response(req.body + &quot;'s response&quot;)</span><span style=''>
+</span>8 <span style=''>  def serve(req: Request): Response = </span><span style='background: #AEF1AE'>processRequest(req)</span><span style=''>
+</span>9 <span style=''>}
+</span>10 <span style=''>
+</span>11 <span style=''>trait Cache[K, T] {
+</span>12 <span style=''>  def cached(key: K): Boolean
+</span>13 <span style=''>  def get(key: K): T
+</span>14 <span style=''>  def put(key: K, value: T): Unit
+</span>15 <span style=''>}
 </span>16 <span style=''>
-</span>17 <span style=''>  override def courseAvg(): Double = </span><span style='background: #AEF1AE'>courses.map(e =&gt; e.length).sum.doubleValue / courses.size</span><span style=''>
-</span>18 <span style=''>
-</span>19 <span style=''>  def addCourse(course: String): Unit =
-</span>20 <span style=''>    // if (!(courses contains course))
-</span>21 <span style=''>      </span><span style='background: #AEF1AE'>courses = courses + course</span><span style=''>
-</span>22 <span style=''>
-</span>23 <span style=''>  override def age: Int = </span><span style='background: #AEF1AE'>_age</span><span style=''>
-</span>24 <span style=''>}
+</span>17 <span style=''>class ServerWithCache(
+</span>18 <span style=''>                     private val cache: Cache[Request, Response],
+</span>19 <span style=''>                     private val cacheable: Request =&gt; Boolean)
+</span>20 <span style=''>extends Server {
+</span>21 <span style=''>  override def serve(req: Request): Response = if (</span><span style='background: #AEF1AE'>!cacheable(req)</span><span style=''>) </span><span style='background: #AEF1AE'>super.serve(req)</span><span style=''> else {
+</span>22 <span style=''>    </span><span style='background: #AEF1AE'>if (cache.cached(req)) {
+</span>23 <span style=''></span><span style='background: #AEF1AE'>      cache.get(req)
+</span>24 <span style=''></span><span style='background: #AEF1AE'>    } else {
+</span>25 <span style=''></span><span style='background: #AEF1AE'>      val res = processRequest(req)
+</span>26 <span style=''></span><span style='background: #AEF1AE'>      cache.put(req, res)
+</span>27 <span style=''></span><span style='background: #AEF1AE'>      res
+</span>28 <span style=''></span><span style='background: #AEF1AE'>    }</span><span style=''>
+</span>29 <span style=''>  }
+</span>30 <span style=''>}
 </span></pre>
           </div>
           <div class="tab-pane" id="statementlist">
@@ -59,15 +65,15 @@
         <th>Code</th>
       </tr><tr>
         <td>
-          13
+          7
         </td>
         <td>
-          122
+          91
         </td>
         <td>
-          312
+          155
           -
-          338
+          179
         </td>
         <td>
           Apply
@@ -76,259 +82,270 @@
           java.lang.String.+
         </td>
         <td style="background: #AEF1AE">
-          &quot;Hello &quot;.+(person.toString())
+          req.body.+(&quot;\'s response&quot;)
         </td>
       </tr><tr>
         <td>
-          13
+          7
         </td>
         <td>
-          106
+          85
         </td>
         <td>
-          323
+          146
           -
-          338
+          180
         </td>
         <td>
           Apply
         </td>
         <td>
-          people.Person.toString
+          com.Response.apply
         </td>
         <td style="background: #AEF1AE">
-          person.toString()
+          Response.apply(req.body.+(&quot;\'s response&quot;))
         </td>
       </tr><tr>
         <td>
-          13
+          8
         </td>
         <td>
-          108
+          94
         </td>
         <td>
-          312
+          219
           -
-          320
+          238
         </td>
         <td>
-          Literal
+          Apply
+        </td>
+        <td>
+          com.Server.processRequest
+        </td>
+        <td style="background: #AEF1AE">
+          Server.this.processRequest(req)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          86
+        </td>
+        <td>
+          588
+          -
+          604
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.Server.serve
+        </td>
+        <td style="background: #AEF1AE">
+          ServerWithCache.super.serve(req)
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          88
+        </td>
+        <td>
+          571
+          -
+          586
+        </td>
+        <td>
+          Select
+        </td>
+        <td>
+          scala.Boolean.unary_!
+        </td>
+        <td style="background: #AEF1AE">
+          ServerWithCache.this.cacheable.apply(req).unary_!
+        </td>
+      </tr><tr>
+        <td>
+          21
+        </td>
+        <td>
+          96
+        </td>
+        <td>
+          588
+          -
+          604
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          com.Server.serve
+        </td>
+        <td style="background: #AEF1AE">
+          ServerWithCache.super.serve(req)
+        </td>
+      </tr><tr>
+        <td>
+          22
+        </td>
+        <td>
+          89
+        </td>
+        <td>
+          616
+          -
+          752
+        </td>
+        <td>
+          If
         </td>
         <td>
           &lt;nosymbol&gt;
         </td>
         <td style="background: #AEF1AE">
-          &quot;Hello &quot;
+          if (ServerWithCache.this.cache.cached(req))
+  ServerWithCache.this.cache.get(req)
+else
+  {
+    val res: com.Response = ServerWithCache.this.processRequest(req);
+    ServerWithCache.this.cache.put(req, res);
+    res
+  }
         </td>
       </tr><tr>
         <td>
-          15
+          22
         </td>
         <td>
-          112
+          90
         </td>
         <td>
-          369
+          620
           -
-          378
-        </td>
-        <td>
-          TypeApply
-        </td>
-        <td>
-          scala.collection.generic.ImmutableSetFactory.empty
-        </td>
-        <td style="background: #AEF1AE">
-          scala.Predef.Set.empty[String]
-        </td>
-      </tr><tr>
-        <td>
-          17
-        </td>
-        <td>
-          109
-        </td>
-        <td>
-          417
-          -
-          474
+          637
         </td>
         <td>
           Apply
         </td>
         <td>
-          scala.Double./
+          com.Cache.cached
         </td>
         <td style="background: #AEF1AE">
-          scala.Predef.int2Integer(Student.this.courses.map[Int, scala.collection.immutable.Set[Int]](((e: String) =&gt; e.length()))(immutable.this.Set.canBuildFrom[Int]).sum[Int](math.this.Numeric.IntIsIntegral)).doubleValue()./(Student.this.courses.size)
-        </td>
-      </tr><tr>
-        <td>
-          17
-        </td>
-        <td>
-          103
-        </td>
-        <td>
-          417
-          -
-          447
-        </td>
-        <td>
-          ApplyToImplicitArgs
-        </td>
-        <td>
-          scala.collection.TraversableOnce.sum
-        </td>
-        <td style="background: #AEF1AE">
-          Student.this.courses.map[Int, scala.collection.immutable.Set[Int]](((e: String) =&gt; e.length()))(immutable.this.Set.canBuildFrom[Int]).sum[Int](math.this.Numeric.IntIsIntegral)
-        </td>
-      </tr><tr>
-        <td>
-          17
-        </td>
-        <td>
-          120
-        </td>
-        <td>
-          462
-          -
-          474
-        </td>
-        <td>
-          Select
-        </td>
-        <td>
-          scala.collection.TraversableOnce.size
-        </td>
-        <td style="background: #AEF1AE">
-          Student.this.courses.size
-        </td>
-      </tr><tr>
-        <td>
-          17
-        </td>
-        <td>
-          114
-        </td>
-        <td>
-          444
-          -
-          444
-        </td>
-        <td>
-          Select
-        </td>
-        <td>
-          scala.math.Numeric.IntIsIntegral
-        </td>
-        <td style="background: #AEF1AE">
-          math.this.Numeric.IntIsIntegral
-        </td>
-      </tr><tr>
-        <td>
-          17
-        </td>
-        <td>
-          117
-        </td>
-        <td>
-          428
-          -
-          428
-        </td>
-        <td>
-          TypeApply
-        </td>
-        <td>
-          scala.collection.immutable.Set.canBuildFrom
-        </td>
-        <td style="background: #AEF1AE">
-          immutable.this.Set.canBuildFrom[Int]
-        </td>
-      </tr><tr>
-        <td>
-          17
-        </td>
-        <td>
-          102
-        </td>
-        <td>
-          434
-          -
-          442
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          java.lang.String.length
-        </td>
-        <td style="background: #AEF1AE">
-          e.length()
-        </td>
-      </tr><tr>
-        <td>
-          21
-        </td>
-        <td>
-          107
-        </td>
-        <td>
-          571
-          -
-          587
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          scala.collection.SetLike.+
-        </td>
-        <td style="background: #AEF1AE">
-          Student.this.courses.+(course)
-        </td>
-      </tr><tr>
-        <td>
-          21
-        </td>
-        <td>
-          121
-        </td>
-        <td>
-          561
-          -
-          587
-        </td>
-        <td>
-          Apply
-        </td>
-        <td>
-          univ.people.Student.courses_=
-        </td>
-        <td style="background: #AEF1AE">
-          Student.this.courses_=(Student.this.courses.+(course))
+          ServerWithCache.this.cache.cached(req)
         </td>
       </tr><tr>
         <td>
           23
         </td>
         <td>
-          111
+          83
         </td>
         <td>
-          615
+          647
           -
-          619
+          661
         </td>
         <td>
-          Select
+          Apply
         </td>
         <td>
-          univ.people.Student._age
+          com.Cache.get
         </td>
         <td style="background: #AEF1AE">
-          Student.this._age
+          ServerWithCache.this.cache.get(req)
+        </td>
+      </tr><tr>
+        <td>
+          23
+        </td>
+        <td>
+          93
+        </td>
+        <td>
+          647
+          -
+          661
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          com.Cache.get
+        </td>
+        <td style="background: #AEF1AE">
+          ServerWithCache.this.cache.get(req)
+        </td>
+      </tr><tr>
+        <td>
+          24
+        </td>
+        <td>
+          95
+        </td>
+        <td>
+          673
+          -
+          752
+        </td>
+        <td>
+          Block
+        </td>
+        <td>
+          &lt;nosymbol&gt;
+        </td>
+        <td style="background: #AEF1AE">
+          {
+  val res: com.Response = ServerWithCache.this.processRequest(req);
+  ServerWithCache.this.cache.put(req, res);
+  res
+}
+        </td>
+      </tr><tr>
+        <td>
+          25
+        </td>
+        <td>
+          92
+        </td>
+        <td>
+          691
+          -
+          710
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.Server.processRequest
+        </td>
+        <td style="background: #AEF1AE">
+          ServerWithCache.this.processRequest(req)
+        </td>
+      </tr><tr>
+        <td>
+          26
+        </td>
+        <td>
+          84
+        </td>
+        <td>
+          717
+          -
+          736
+        </td>
+        <td>
+          Apply
+        </td>
+        <td>
+          com.Cache.put
+        </td>
+        <td style="background: #AEF1AE">
+          ServerWithCache.this.cache.put(req, res)
         </td>
       </tr>
     </table>

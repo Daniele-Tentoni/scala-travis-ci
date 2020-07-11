@@ -1,6 +1,74 @@
 <scoverage 
-statement-count="109" statements-invoked="28" statement-rate="25.69" branch-rate="100.00" version="1.0" timestamp="1593764707347">
+statement-count="122" statements-invoked="41" statement-rate="33.61" branch-rate="100.00" version="1.0" timestamp="1594468335174">
     <packages>
+        <package name="com" statement-count="13" statements-invoked="13" statement-rate="100.00">
+            <classes>
+                <class 
+                name="com.Server" filename="com/ServerWithCache.scala" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com/Server/serve" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com" class="Server" class-type="Class" full-class-name="com.Server" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="219" end="238" line="8" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="com/Server/processRequest" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com" class="Server" class-type="Class" full-class-name="com.Server" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="processRequest" start="155" end="179" line="7" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="Server" class-type="Class" full-class-name="com.Server" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="processRequest" start="146" end="180" line="7" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+                <class 
+                name="com.ServerWithCache" filename="com/ServerWithCache.scala" statement-count="10" statements-invoked="10" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="com/ServerWithCache/serve" statement-count="10" statements-invoked="10" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="691" end="710" line="25" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="647" end="661" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="673" end="752" line="24" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="588" end="604" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="616" end="752" line="22" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="571" end="586" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="588" end="604" line="21" branch="true" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="620" end="637" line="22" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="717" end="736" line="26" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="com" class="ServerWithCache" class-type="Class" full-class-name="com.ServerWithCache" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/server/src/main/scala/com/ServerWithCache.scala" method="serve" start="647" end="661" line="23" branch="true" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
+            </classes>
+        </package>
         <package name="it.parttimeteam" statement-count="6" statements-invoked="6" statement-rate="100.00">
             <classes>
                 <class 
@@ -36,9 +104,6 @@ statement-count="109" statements-invoked="28" statement-rate="25.69" branch-rate
                         name="it.parttimeteam/ProducerUtils/getMany" statement-count="4" statements-invoked="4" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="121" end="122" line="6" branch="false" invocation-count="1" ignored="false">
-</statement>
-                                <statement 
                                 package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="111" end="149" line="6" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
@@ -46,6 +111,9 @@ statement-count="109" statements-invoked="28" statement-rate="25.69" branch-rate
 </statement>
                                 <statement 
                                 package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="135" end="149" line="6" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="it.parttimeteam" class="ProducerUtils" class-type="Trait" full-class-name="it.parttimeteam.ProducerUtils" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/commons/src/main/scala/it/parttimeteam/ProducerUtils.scala" method="getMany" start="121" end="122" line="6" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -334,13 +402,13 @@ statement-count="109" statements-invoked="28" statement-rate="25.69" branch-rate
                         name="people/Person/toString" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
                             <statements>
                                 <statement 
-                                package="people" class="Person" class-type="Trait" full-class-name="people.Person" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/people/Person.scala" method="toString" start="331" end="338" line="23" branch="false" invocation-count="1" ignored="false">
-</statement>
-                                <statement 
                                 package="people" class="Person" class-type="Trait" full-class-name="people.Person" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/people/Person.scala" method="toString" start="318" end="338" line="23" branch="false" invocation-count="1" ignored="false">
 </statement>
                                 <statement 
                                 package="people" class="Person" class-type="Trait" full-class-name="people.Person" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/people/Person.scala" method="toString" start="325" end="328" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="people" class="Person" class-type="Trait" full-class-name="people.Person" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/people/Person.scala" method="toString" start="331" end="338" line="23" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
@@ -350,6 +418,75 @@ statement-count="109" statements-invoked="28" statement-rate="25.69" branch-rate
         </package>
         <package name="univ.people" statement-count="19" statements-invoked="19" statement-rate="100.00">
             <classes>
+                <class 
+                name="univ.people.Student" filename="univ/people/Student.scala" statement-count="13" statements-invoked="13" statement-rate="100.00" branch-rate="100.00">
+                    <methods>
+                        <method 
+                        name="univ.people/Student/addCourse" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="addCourse" start="571" end="587" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="addCourse" start="561" end="587" line="21" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="univ.people/Student/&lt;none&gt;" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="&lt;none&gt;" start="369" end="378" line="15" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="univ.people/Student/age" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="age" start="615" end="619" line="23" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="univ.people/Student/courseAvg" statement-count="6" statements-invoked="6" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="417" end="474" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="417" end="447" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="462" end="474" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="444" end="444" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="428" end="428" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="434" end="442" line="17" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                        <method 
+                        name="univ.people/Student/sayHello" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
+                            <statements>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="312" end="338" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="323" end="338" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                                <statement 
+                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="312" end="320" line="13" branch="false" invocation-count="1" ignored="false">
+</statement>
+                            </statements>
+</method>
+                    </methods>
+</class>
                 <class 
                 name="univ.people.Teacher" filename="univ/people/Teacher.scala" statement-count="6" statements-invoked="6" statement-rate="100.00" branch-rate="100.00">
                     <methods>
@@ -388,75 +525,6 @@ statement-count="109" statements-invoked="28" statement-rate="25.69" branch-rate
                             <statements>
                                 <statement 
                                 package="univ.people" class="Teacher" class-type="Class" full-class-name="univ.people.Teacher" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Teacher.scala" method="&lt;none&gt;" start="250" end="252" line="10" branch="false" invocation-count="1" ignored="false">
-</statement>
-                            </statements>
-</method>
-                    </methods>
-</class>
-                <class 
-                name="univ.people.Student" filename="univ/people/Student.scala" statement-count="13" statements-invoked="13" statement-rate="100.00" branch-rate="100.00">
-                    <methods>
-                        <method 
-                        name="univ.people/Student/addCourse" statement-count="2" statements-invoked="2" statement-rate="100.00" branch-rate="100.00">
-                            <statements>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="addCourse" start="571" end="587" line="21" branch="false" invocation-count="1" ignored="false">
-</statement>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="addCourse" start="561" end="587" line="21" branch="false" invocation-count="1" ignored="false">
-</statement>
-                            </statements>
-</method>
-                        <method 
-                        name="univ.people/Student/&lt;none&gt;" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
-                            <statements>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="&lt;none&gt;" start="369" end="378" line="15" branch="false" invocation-count="1" ignored="false">
-</statement>
-                            </statements>
-</method>
-                        <method 
-                        name="univ.people/Student/age" statement-count="1" statements-invoked="1" statement-rate="100.00" branch-rate="100.00">
-                            <statements>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="age" start="615" end="619" line="23" branch="false" invocation-count="1" ignored="false">
-</statement>
-                            </statements>
-</method>
-                        <method 
-                        name="univ.people/Student/courseAvg" statement-count="6" statements-invoked="6" statement-rate="100.00" branch-rate="100.00">
-                            <statements>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="444" end="444" line="17" branch="false" invocation-count="1" ignored="false">
-</statement>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="428" end="428" line="17" branch="false" invocation-count="1" ignored="false">
-</statement>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="434" end="442" line="17" branch="false" invocation-count="1" ignored="false">
-</statement>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="462" end="474" line="17" branch="false" invocation-count="1" ignored="false">
-</statement>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="417" end="474" line="17" branch="false" invocation-count="1" ignored="false">
-</statement>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="courseAvg" start="417" end="447" line="17" branch="false" invocation-count="1" ignored="false">
-</statement>
-                            </statements>
-</method>
-                        <method 
-                        name="univ.people/Student/sayHello" statement-count="3" statements-invoked="3" statement-rate="100.00" branch-rate="100.00">
-                            <statements>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="312" end="320" line="13" branch="false" invocation-count="1" ignored="false">
-</statement>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="312" end="338" line="13" branch="false" invocation-count="1" ignored="false">
-</statement>
-                                <statement 
-                                package="univ.people" class="Student" class-type="Class" full-class-name="univ.people.Student" source="/home/travis/build/Daniele-Tentoni/scala-travis-ci/model/src/main/scala/univ/people/Student.scala" method="sayHello" start="323" end="338" line="13" branch="false" invocation-count="1" ignored="false">
 </statement>
                             </statements>
 </method>
