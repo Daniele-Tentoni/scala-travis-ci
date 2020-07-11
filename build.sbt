@@ -20,9 +20,13 @@ lazy val osName = System.getProperty("os.name") match {
  */
 
 // TESTS.
-val scalatestV = "3.2.0"
-val scalatest = "org.scalatest" %% "scalatest" % scalatestV % "test"
-val scalactic = "org.scalactic" %% "scalactic" % scalatestV
+// val scalatestV = "3.2.0"
+// val scalatest = "org.scalatest" %% "scalatest" % scalatestV % "test"
+val scalamock= "org.scalamock" %% "scalamock" % "4.4.0" % Test
+val scalatest = "org.scalatest" %% "scalatest" % "3.1.0" % Test
+val scalacheck = "org.scalacheck" %% "scalacheck" % "1.14.0" % Test
+
+// val scalactic = "org.scalactic" %% "scalactic" % scalatestV
 val scalafx = "org.scalafx" %% "scalafx" % "14-R19"
 
 // AKKA ACTORS.
@@ -43,7 +47,8 @@ lazy val akkaDependencies = Seq(
 
 lazy val testDependencies = Seq(
   scalatest,
-  scalactic
+  scalamock,
+  scalacheck
 )
 
 // Add JavaFX dependencies
@@ -131,7 +136,7 @@ libraryDependencies += scalafx
 // Fork a new JVM for 'run' and 'test:run', to avoid JavaFX double initialization problems
 fork := true
 
-coverageEnabled := true
+coverageEnabled := false
 
 // Removed Scala.JS plugin, we'll use ScalaFX instead.
 // libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "1.0.0"
