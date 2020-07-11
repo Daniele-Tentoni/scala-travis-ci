@@ -136,7 +136,7 @@ libraryDependencies += scalafx
 // Fork a new JVM for 'run' and 'test:run', to avoid JavaFX double initialization problems
 fork := true
 
-coverageEnabled := true
+coverageEnabled := false
 
 // Removed Scala.JS plugin, we'll use ScalaFX instead.
 // libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "1.0.0"
