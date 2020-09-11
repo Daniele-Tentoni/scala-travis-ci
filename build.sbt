@@ -5,7 +5,7 @@ scalaVersion in ThisBuild := "2.12.11"
 organization in ThisBuild := "it.parttimeteam.scalatravisci"
 
 // Project version
-version := "0.1.0"
+version := "0.1.1"
 
 // Determine OS version of JavaFX binaries
 lazy val osName = System.getProperty("os.name") match {
@@ -135,8 +135,6 @@ libraryDependencies += scalafx
 
 // Fork a new JVM for 'run' and 'test:run', to avoid JavaFX double initialization problems
 fork := true
-
-coverageEnabled := false
 
 // Removed Scala.JS plugin, we'll use ScalaFX instead.
 // libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "1.0.0"
