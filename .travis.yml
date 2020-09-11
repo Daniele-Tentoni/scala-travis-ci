@@ -31,14 +31,14 @@ cache:
     - $HOME/.sbt
 
 script:
-  - bash travis_scripts/compile_for_release.sh
+  - sbt clean package
   # Set up git user name and tag this commit.
   - git config --local user.name "Daniele Tentoni"
   - git config --local user.email "daniele.tentoni.1996@gmail.com"
   - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
   - git tag $TRAVIS_TAG
-  - ll client/target/scala-*/
-  - ll server/target/scala-*/
+  - ls client/target/scala-2.12/
+  - ls server/target/scala-2.12/
 
 deploy:
   provider: releases
@@ -46,8 +46,8 @@ deploy:
   token: $GH_TOKEN
   file_glob: true
   file:
-    - client/target/scala-*/*SNAPSHOT.jar
-    - server/target/scala-*/*SNAPSHOT.jar
+    - client/target/scala-2.12/*SNAPSHOT.jar
+    - server/target/scala-2.12/*SNAPSHOT.jar
   on:
     branch: master
     tags: true
