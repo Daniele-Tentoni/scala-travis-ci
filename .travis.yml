@@ -21,71 +21,30 @@ branches:
     - master # build master branch only.
     - dev
 
-
 # These directories are cached to S3 at the end of the build.
 cache:
   directories:
     - $HOME/.ivy2/cache
-    - $HOME/.sbt/boot/
-    - $HOME/.sbt/launchers
+    - /tmp/texlive
+    - $HOME/.texlive
+    - $HOME/.cache/coursier
+    - $HOME/.sbt
 
-# We've enabled by default coverage functionality.
-# script:
-#   - bash deploy_to_pages.sh # generate static files.
-
-# Send notifications to those address.
-# notifications:
-#   email:
-#     recipients:
-#       - d.tentoni@wedoit.io
-#       - daniele.tentoni2@studio.unibo.it
-#       - l.giorgetti@wedoit.io
-#       - luca.giorgetti@studio.unibo.it
-#       - lorenzo.pagnini@studio.unibo.it
-#       - daniele.tentoni.1996@gmail.com
-#     on_success: change
-#     on_failure: always
-
-jobs:
-  include:
-    - stage: Run sbt with openjdk11
-      os: linux
-      script: sbt compile coverage test
-    - stage: Run sbt with openjdk11
-      os: osx
-      script: sbt compile coverage test
-    - stage: Deploy to Github Pages
-      script: bash travis_scripts/deploy_to_pages.sh
-      deploy:
-        provider: pages
-        strategy: git
-        skip_cleanup: true
-        token: $GH_TOKEN
-        keep_history: true
-        on:
-          branch: master
-        local_dir: public
-      after_success:
-        - bash <(curl -s https://codecov.io/bash)
-    - stage: Deploy to Github Releases
-      script: bash travis_scripts/compile_for_release.sh # Deploying artifacts need only compile.
-      deploy:
-        provider: releases
-        skip_cleanup: true
-        token: $GH_TOKEN
-        file_glob: true
-        file:
-          - client/target/scala-*/*SNAPSHOT.jar
-          - server/target/scala-*/*SNAPSHOT.jar
-        on:
-          branch: master
-          tags: true
-
-# Conditional builds
-stages:
-  - name: Run sbt with openjdk11 # Run this only if is a pr or push on master or dev.
-    if: type IN (pull_request, push) AND branch IN (master, dev)
-  - name: Deploy to Github Pages # Run this only if is a push on master or dev.
-    if: type = push AND branch IN (master, dev)
-  - name: Deploy to Github Releases # Run this only if is a push on master. (See other rules on deploy.)
-    if: type = push AND branch = master AND tag IS present
+before_deploy:
+  - bash travis_scripts/compile_for_release.sh
+  # Set up git user name and tag this commit.
+  - git config --local user.name "Daniele Tentoni"
+  - git config --local user.email "YOUR GIT USER EMAIL"
+  - export TRAVIS_TAG=${TRAVIS_TAG:-$(date +'%Y%m%d%H%M%S')-$(git log --format=%h -1)}
+  - git tag $TRAVIS_TAG
+deploy:
+  provider: releases
+  skip_cleanup: true
+  token: $GH_TOKEN
+  file_glob: true
+  file:
+    - client/target/scala-*/*SNAPSHOT.jar
+    - server/target/scala-*/*SNAPSHOT.jar
+  on:
+    branch: master
+    tags: true
